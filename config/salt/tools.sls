@@ -58,9 +58,8 @@ wp_cli:
     - require:
       - pkg: php5-cli
       - pkg: git
-
-/usr/bin/wp:
   file.symlink:
+    - name: /usr/bin/wp
     - target: /home/{{ grains['user'] }}/.wp-cli/bin/wp
 
 oh_my_zsh:
