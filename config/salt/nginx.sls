@@ -33,7 +33,7 @@ nginx:
 
 /srv/www/default/index.php:
   file.managed:
-    - user: root
-    - group: root
+    - user: {{ grains['user'] }}
+    - group: {{ grains['user'] }}
     - mode: 644
     - contents: "not found"
