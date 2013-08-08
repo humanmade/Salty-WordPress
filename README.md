@@ -2,6 +2,8 @@
 
 A flavorful way to manage your entire WordPress stack. Built and maintained by [Human Made](http://hmn.md/).
 
+**Coming soon**: Provisioning production servers with Salty WordPress.
+
 ### Getting Building
 
 Salty WordPress uses three great technologies: [Salt](http://saltstack.com/), [Vagrant](http://www.vagrantup.com/), and [WordPress](http://wordpress.org/). It's intended to get you building amazing projects as quickly and effectively as possible.
