@@ -8,5 +8,6 @@ base:
   'salty-wordpress':
     - vagrant
     - tools.ruby
+    - tools.python
     - memcached
     - mysql

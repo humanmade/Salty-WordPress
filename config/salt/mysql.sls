@@ -1,11 +1,12 @@
-mysql-server-5.5:
-  pkg.installed
+mysql-server:
+  pkg.installed:
+    - name: mysql-server-5.5
 
 mysql:
   service.running:
     - name: mysql
     - require:
-      - pkg: mysql-server-5.5
+      - pkg: mysql-server
     - watch:
       - file: /etc/mysql/my.cnf
 
