@@ -15,6 +15,8 @@ Here's how to get building:
 1. In your `/etc/hosts` file, point any domains you plan to work on to `192.168.50.10`. The virtual machine is configured to handle all requests to `*.dev`. The WordPress trunk install, for instance, should be `wordpress-trunk.dev`.
 1. Access your virtual machine with `vagrant ssh`.
 
+Navigate to `wordpress-trunk.dev` in your browser to see a fully-functional WordPress install, powered by Salty WordPress. The default admin username/password is `humanmade/humanmade`.
+
 ## Neat Tricks
 
 Make your Salty WordPress experience even more awesome with these neat tricks.
