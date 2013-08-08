@@ -1,6 +1,6 @@
 # Salty WordPress
 
-A flavorful way to manage your entire WordPress stack.
+A flavorful way to manage your entire WordPress stack. Built and maintained by [Human Made](http://hmn.md/).
 
 ### Getting Building
 
