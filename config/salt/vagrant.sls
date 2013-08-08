@@ -1,3 +1,23 @@
+wordpress-trunk:
+  git.latest:
+    - name: git://github.com/WordPress/WordPress.git
+    - rev: master
+    - target: /srv/www/wordpress-trunk.dev
+    - runas: vagrant
+    - submodules: True
+    - force: False
+    - require:
+      - pkg: git
+  mysql_database.present:
+    - name: wordpress_trunk
+    - require:
+      - pkg: mysql-server
+      - pkg: python-mysqldb
+  cmd.run:
+    - name: cd /srv/www/wordpress-trunk.dev; wp core config --dbname=wordpress_trunk --dbuser=root; wp core install --title="Salty WordPress" --url=http://wordpress-trunk.dev --admin_name=humanmade --admin_password=humanmade --admin_email=hello@hmn.md
+    - unless: cd /srv/www/wordpress-trunk.dev; wp core is-installed
+
+
 wp-cli-tests-mysql:
   mysql_user.present:
     - name: wp_cli_test
