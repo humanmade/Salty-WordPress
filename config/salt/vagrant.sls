@@ -50,13 +50,6 @@ php_phpunit:
     - require:
       - pkg: php-pear
 
-wp_cli_dev_build:
-  cmd.run:
-    - name: cd /srv/www/wp-cli; ./utils/dev-build
-    - require:
-      - service: php5-fpm
-    - unless: ls /usr/bin/wp
-
 /var/log/php.log:
   file.symlink:
     - target: /srv/logs/php.log
