@@ -14,3 +14,19 @@ Here's how to get building:
 1. Change into the Salty WordPress directory and run `vagrant up`. This will take some time. Behind the scenes, Vagrant and Salt are downloading all of the system utilities (e.g. Nginx, PHP5-FPM, Memcached, etc.) to run your virtual machine.
 1. In your `/etc/hosts` file, point any domains you plan to work on to `192.168.50.10`. The virtual machine is configured to handle all requests to `*.dev`. The WordPress trunk install, for instance, should be `wordpress-trunk.dev`.
 1. Access your virtual machine with `vagrant ssh`.
+
+## Neat Tricks
+
+Make your Salty WordPress experience even more awesome with these neat tricks.
+
+### CLI Hacks
+
+Deserialize data with `$~ serialize '[php serialized code]'`
+
+### Open Remote Files in Sublime Text
+
+Using couple of neat tools, [rsub](https://github.com/henrikpersson/rsub) and [rmate](https://github.com/textmate/rmate), you can open files located in Vagrant in Sublime Text. We've even bound `subl` so the syntax is similar to what you have in your local machine.
+
+However, for this functionality to work properly, you'll need to SSH into Vagrant using SSH (and port forwarding), not `vagrant ssh`. Use `vagrant ssh-config` ([ref](http://docs.vagrantup.com/v2/cli/ssh_config.html)) to generate what you need to put in `~/.ssh/config`. Then, add `RemoteForward 52698 127.0.0.1:52698` to the entry ([ref](https://github.com/henrikpersson/rsub#ssh-tunneling)).
+
+Now, when you SSH into Vagrant, you'll automatically set up a connection for rmate to communicate to rsub (a Sublime Text plugin).
