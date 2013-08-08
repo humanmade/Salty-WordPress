@@ -52,11 +52,12 @@ htop:
 
 wp_cli:
   cmd.run:
-    - name: curl http://wp-cli.org/installer.sh | bash
+    - name: curl https://raw.github.com/wp-cli/wp-cli.github.com/master/installer.sh | bash
     - unless: which wp
     - user: {{ grains['user'] }}
     - require:
       - pkg: php5-cli
+      - pkg: git
 
 /usr/bin/wp:
   file.symlink:
