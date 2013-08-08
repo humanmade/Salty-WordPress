@@ -7,10 +7,14 @@ wp-cli-tests-mysql:
       - pkg: python-mysqldb
   mysql_database.present:
     - name: wp_cli_test
+    - require:
+      - pkg: python-mysqldb
   mysql_grants.present:
     - grant: all privileges
     - database: wp_cli_test.*
     - user: wp_cli_test
+    - require:
+      - pkg: python-mysqldb
 
 php_pear:
   pkg.installed:
