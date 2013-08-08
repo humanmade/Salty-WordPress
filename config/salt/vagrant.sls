@@ -16,6 +16,8 @@ wordpress-trunk:
   cmd.run:
     - name: cd /srv/www/wordpress-trunk.dev; wp core config --dbname=wordpress_trunk --dbuser=root; wp core install --title="Salty WordPress" --url=http://wordpress-trunk.dev --admin_name=humanmade --admin_password=humanmade --admin_email=hello@hmn.md
     - unless: cd /srv/www/wordpress-trunk.dev; wp core is-installed
+    - require:
+      - cmd: wp_cli
 
 
 wp-cli-tests-mysql:
@@ -49,13 +51,6 @@ php_phpunit:
     - unless: which phpunit
     - require:
       - pkg: php-pear
-
-wp_cli_dev_build:
-  cmd.run:
-    - name: cd /srv/www/wp-cli; ./utils/dev-build
-    - require:
-      - service: php5-fpm
-    - unless: ls /usr/bin/wp
 
 /var/log/php.log:
   file.symlink:
