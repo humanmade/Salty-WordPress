@@ -11,13 +11,14 @@ wordpress-trunk:
   mysql_database.present:
     - name: wordpress_trunk
     - require:
-      - pkg: mysql-server
+      - service: mysql
       - pkg: python-mysqldb
   cmd.run:
     - name: cd /srv/www/wordpress-trunk.dev; wp core config --dbname=wordpress_trunk --dbuser=root; wp core install --title="Salty WordPress" --url=http://wordpress-trunk.dev --admin_name=humanmade --admin_password=humanmade --admin_email=hello@hmn.md
     - unless: cd /srv/www/wordpress-trunk.dev; wp core is-installed
     - require:
       - cmd: wp_cli
+      - service: mysql
 
 
 wp-cli-tests-mysql:
@@ -26,19 +27,19 @@ wp-cli-tests-mysql:
     - password: password1
     - host: localhost
     - require:
-      - pkg: mysql-server
+      - service: mysql
       - pkg: python-mysqldb
   mysql_database.present:
     - name: wp_cli_test
     - require:
-      - pkg: mysql-server
+      - service: mysql
       - pkg: python-mysqldb
   mysql_grants.present:
     - grant: all privileges
     - database: wp_cli_test.*
     - user: wp_cli_test
     - require:
-      - pkg: mysql-server
+      - service: mysql
       - pkg: python-mysqldb
 
 php_pear:
