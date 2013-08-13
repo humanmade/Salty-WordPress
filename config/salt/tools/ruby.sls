@@ -5,7 +5,7 @@ ruby:
 
 ruby-hub:
   cmd.run:
-    - name: curl http://defunkt.io/hub/standalone -sLo /usr/bin/hub && chmod +x /usr/bin/hub
+    - name: curl http://hub.github.com/standalone -sLo /usr/bin/hub && chmod +x /usr/bin/hub
     - unless: ls /usr/bin/hub
   require:
     - name: ruby
