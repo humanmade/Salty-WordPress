@@ -18,6 +18,7 @@ wordpress-trunk:
     - unless: cd /srv/www/wordpress-trunk.dev; wp core is-installed
     - require:
       - cmd: wp_cli
+      - service: mysql
 
 
 wp-cli-tests-mysql:
