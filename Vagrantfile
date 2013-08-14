@@ -24,6 +24,7 @@ Vagrant.configure("2") do |config|
   config.vm.network :private_network, ip: "192.168.50.10"
 
   config.ssh.forward_agent = true
+  config.ssh.max_tries = 150
 
   nfs = Kernel.is_mac?
   config.vm.synced_folder "config", "/home/vagrant/config", :nfs => nfs
