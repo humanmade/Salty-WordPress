@@ -17,6 +17,13 @@ nginx:
     - group: root
     - mode: 644
 
+/etc/nginx/fastcgi_params:
+  file.managed:
+    - source: salt://config/nginx/fastcgi_params
+    - user: root
+    - group: root
+    - mode: 644
+
 /etc/nginx/sites-enabled/default:
   file.managed:
     - source: salt://config/nginx/default
