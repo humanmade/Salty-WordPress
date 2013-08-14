@@ -58,6 +58,13 @@ mysql_client:
   pkg.installed:
     - name: mysql-client
 
+composer:
+  cmd.run:
+    - name: curl -sS https://getcomposer.org/installer | php; mv composer.phar /usr/local/bin/composer
+    - unless: which composer
+    - require:
+      - pkg: php_cli
+
 # Configuration files for php5-fpm
 
 /etc/php5/fpm/php.ini:
