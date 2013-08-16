@@ -1,8 +1,22 @@
-nodeRepo:
+npm-repo:
   pkgrepo.managed:
-    - humanname: Node Repo
-    - mirrorlist: ppa:chris-lea/node.js
+    - ppa: chris-lea/node.js
+    - require_in:
+      - pkg: nodejs
 
 nodejs:
-  pkg.installed:
-    - name: nodejs
+  pkg.installed
+
+npm:
+  pkg.installed
+
+sass:
+  gem.installed:
+    - name: sass
+
+grunt-cli:
+  npm.installed:
+    - name: grunt-cli
+    - require:
+      - pkg: nodejs
+      - pkg: npm
