@@ -5,6 +5,7 @@
 FileUtils.mkdir_p(File.dirname(__FILE__)+'/projects')
 FileUtils.mkdir_p(File.dirname(__FILE__)+'/logs')
 FileUtils.mkdir_p(File.dirname(__FILE__)+'/databases')
+FileUtils.mkdir_p(File.dirname(__FILE__)+'/config/salt/projects')
 
 def Kernel.is_mac?
     # Detect if we are running on Mac
