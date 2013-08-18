@@ -46,6 +46,10 @@ php_pear:
   pkg.installed:
     - name: php-pear
 
+php_ssh2:
+  pkg.installed:
+    - name: libssh2-php
+
 php_phpunit:
   cmd.run:
     - name: pear channel-discover pear.phpunit.de ; pear config-set auto_discover 1 ; sudo pear install phpunit/PHPUnit
