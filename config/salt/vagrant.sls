@@ -46,9 +46,6 @@ php_pear:
   pkg.installed:
     - name: php-pear
 
-php_ssh2:
-  pkg.installed:
-    - name: libssh2-php
 
 php_phpunit:
   cmd.run:
