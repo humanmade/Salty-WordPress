@@ -62,7 +62,8 @@ dnsmasq:
     - installed
   service.running:
     - name: dnsmasq
-
-/etc/dnsmasq.conf:
+    - watch:
+      - file: /etc/dnsmasq.conf
   file.managed:
+    - name: /etc/dnsmasq.conf
     - contents: address=/.dev/192.168.50.10
