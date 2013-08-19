@@ -56,3 +56,13 @@ php_phpunit:
 /var/log/php.log:
   file.symlink:
     - target: /srv/logs/php.log
+
+dnsmasq:
+  pkg:
+    - installed
+  service.running:
+    - name: dnsmasq
+
+/etc/dnsmasq.conf:
+  file.managed:
+    - contents: address=/.dev/192.168.50.10
