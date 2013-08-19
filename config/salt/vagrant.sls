@@ -46,6 +46,7 @@ php_pear:
   pkg.installed:
     - name: php-pear
 
+
 php_phpunit:
   cmd.run:
     - name: pear channel-discover pear.phpunit.de ; pear config-set auto_discover 1 ; sudo pear install phpunit/PHPUnit
