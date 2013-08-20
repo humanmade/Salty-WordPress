@@ -45,7 +45,13 @@ server {
         location ~ /\. {
                 deny all;
         }
-        
+
+        # Block access to build scripts.
+        location ~* /(Gruntfile\.js|package\.json|node_modules) {
+                deny all;
+                return 404;
+        }
+
         location / {
                 try_files $uri $uri/ /index.php?$args;
         }
