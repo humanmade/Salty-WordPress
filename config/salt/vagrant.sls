@@ -18,7 +18,11 @@ wordpress-trunk:
     - unless: cd /srv/www/wordpress-trunk.dev; wp core is-installed
     - require:
       - cmd: wp_cli
+      - file: wp_cli
+      - git: git://github.com/WordPress/WordPress.git
+      - mysql_database: wordpress_trunk
       - service: mysql
+      - pkg: php5-mysql
 
 
 wp-cli-tests-mysql:
