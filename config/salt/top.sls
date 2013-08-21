@@ -12,3 +12,4 @@ base:
     - memcached
     - mysql
     - xdebug
+    - node

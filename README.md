@@ -11,7 +11,7 @@ Salty WordPress uses three great technologies: [Salt](http://saltstack.com/), [V
 Here's how to get building:
 
 1. Clone the repo: `cd ~/; git clone git@github.com:humanmade/Salty-WordPress.git`.
-1. Install the latest versions of [Vagrant](http://downloads.vagrantup.com/) and [Virtual Box](https://www.virtualbox.org/wiki/Downloads).
+1. Install the version of [Vagrant](http://downloads.vagrantup.com/) and version 4.2.12 of [Virtual Box](https://www.virtualbox.org/wiki/Download_Old_Builds_4_2).
 1. Once Vagrant is installed, install [Salty Vagrant](https://github.com/saltstack/salty-vagrant) plugin to provision (aka configure) your virtual machine with Salt. All you need to do is `vagrant plugin install vagrant-salt` from your local machine. Ignore the other instructions on the Salty Vagrant repo. Salty Vagrant [will eventually be merged](https://github.com/mitchellh/vagrant/pull/1626) into Vagrant itself.
 1. Change into the Salty WordPress directory and run `vagrant up`. This will take some time. Behind the scenes, Vagrant and Salt are downloading all of the system utilities (e.g. Nginx, PHP5-FPM, Memcached, etc.) to run your virtual machine.
 1. In your `/etc/hosts` file, point any domains you plan to work on to `192.168.50.10`. The virtual machine is configured to handle all requests to `*.dev`. The WordPress trunk install, for instance, should be `wordpress-trunk.dev`.
@@ -25,7 +25,9 @@ Make your Salty WordPress experience even more awesome with these neat tricks.
 
 ### CLI Hacks
 
-Deserialize data with `$~ serialize '[php serialized code]'`
+ - Deserialize data with `$~ serialize '[php serialized code]'`
+ - Display a timestamp as a human readable string `$~ timestamp 1143123342` [ouputs "2006-03-23T14:15:42+00:00"]
+
 
 ### Open Remote Files in Sublime Text
 
