@@ -18,7 +18,11 @@ wordpress-trunk:
     - unless: cd /srv/www/wordpress-trunk.dev; wp core is-installed
     - require:
       - cmd: wp_cli
+      - file: wp_cli
+      - git: git://github.com/WordPress/WordPress.git
+      - mysql_database: wordpress_trunk
       - service: mysql
+      - pkg: php5-mysql
 
 
 wp-cli-tests-mysql:
@@ -56,3 +60,14 @@ php_phpunit:
 /var/log/php.log:
   file.symlink:
     - target: /srv/logs/php.log
+
+dnsmasq:
+  pkg:
+    - installed
+  service.running:
+    - name: dnsmasq
+    - watch:
+      - file: /etc/dnsmasq.conf
+  file.managed:
+    - name: /etc/dnsmasq.conf
+    - contents: address=/.dev/192.168.50.10
