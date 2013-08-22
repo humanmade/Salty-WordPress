@@ -24,7 +24,7 @@ server {
                 rewrite ^(/wp-(admin|includes)/(.*))$ /wordpress$1 last;
                 rewrite ^(/wp-[^/]*\.php)$ /wordpress$1 last;
         }
-        
+
         # rewrite for multisite in subdirs, e.g. example.com/subsite1/
         # if the file doest exist for wp-admin/* or wp-*.php, try looking in the parent dir
         if ( !-e $request_filename ) {
@@ -32,8 +32,8 @@ server {
                 rewrite ^(/[^/]+)?(/wp-.*) $2 last;
                 rewrite ^(/[^/]+)?(/.*\.php) $2 last;
         }
-        
-        # wordpress multisite files handler (this is technically legacy but 
+
+        # wordpress multisite files handler (this is technically legacy but
         # still used on a lot of mutlisite installs)
         location ~ ^(/[^/]+/)?files/(.+) {
                 try_files $uri /wp-includes/ms-files.php?file=$2 ;
@@ -45,7 +45,13 @@ server {
         location ~ /\. {
                 deny all;
         }
-        
+
+        # Block access to build scripts.
+        location ~* /(Gruntfile\.js|package\.json|node_modules) {
+                deny all;
+                return 404;
+        }
+
         location / {
                 try_files $uri $uri/ /index.php?$args;
         }
