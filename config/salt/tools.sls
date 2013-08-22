@@ -34,6 +34,11 @@ svn:
   pkg.installed:
     - name: subversion
 
+tig:
+  pkg.installed:
+    - require:
+      - pkg: git
+
 zip:
   pkg:
     - installed
