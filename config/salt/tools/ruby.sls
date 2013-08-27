@@ -13,3 +13,7 @@ ruby-hub:
 ruby-rmate:
   gem.installed:
     - name: rmate
+
+ruby-compass:
+  gem.installed:
+    - name: compass
