@@ -72,6 +72,7 @@ composer:
     - source: salt://config/php5-fpm/php.ini
     - user: root
     - group: root
+    - template: jinja
     - mode: 644
 
 /etc/php5/fpm/pool.d/www.conf:
