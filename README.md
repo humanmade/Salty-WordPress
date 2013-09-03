@@ -16,6 +16,8 @@ Here's how to get building:
 1. Change into the Salty WordPress directory and run `vagrant up`. This will take some time. Behind the scenes, Vagrant and Salt are downloading all of the system utilities (e.g. Nginx, PHP5-FPM, Memcached, etc.) to run your virtual machine.
 1. In your `/etc/hosts` file, point any domains you plan to work on to `192.168.50.10`. The virtual machine is configured to handle all requests to `*.dev`. The WordPress trunk install, for instance, should be `wordpress-trunk.dev`.
 1. Access your virtual machine with `vagrant ssh`.
+   -  If you are running on a Windows machine, you will see an output of the SSH info and the location of the key file instead.
+   -  You will be able to feed this information into any SSH program, but not cmd.exe. Vagrant [suggests PuTTY](http://docs-v1.vagrantup.com/v1/docs/getting-started/ssh.html).
 
 Navigate to `wordpress-trunk.dev` in your browser to see a fully-functional WordPress install, powered by Salty WordPress. The default admin username/password is `humanmade/humanmade`.
 
