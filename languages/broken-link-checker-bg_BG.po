@@ -1,0 +1,1674 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: broken-link-checker\n"
+"Report-Msgid-Bugs-To: http://wordpress.org/tag/broken-link-checker\n"
+"POT-Creation-Date: 2010-12-25 11:10:52+00:00\n"
+"PO-Revision-Date: \n"
+"Last-Translator: shivangi <shivangi@outshinesolutions.com>\n"
+"Language-Team: Team Ajoft < info@ajoft.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Poedit-Language: Bulgarian\n"
+"X-Poedit-Country: BULGARIA\n"
+"X-Poedit-SourceCharset: utf-8\n"
+
+#: modules/containers/dummy.php:34
+#: modules/containers/dummy.php:45
+msgid "I don't know how to edit a '%s' [%d]."
+msgstr "Аз не знам как да редактирате '%s ' [%d]."
+
+#: modules/containers/custom_field.php:84
+msgid "Failed to update the meta field '%s' on %s [%d]"
+msgstr "Неуспешно  обновяване '%s' мета областта на% s [% d]"
+
+#: modules/containers/custom_field.php:110
+msgid "Failed to delete the meta field '%s' on %s [%d]"
+msgstr "Неуспешно  да изтриете '%s' мета областта  на% s [% d]"
+
+#: modules/containers/custom_field.php:187
+msgid "Edit this post"
+msgstr "Редактиране  на този пост"
+
+#: modules/containers/custom_field.php:197
+#: includes/any-post.php:455
+msgid "Edit this item"
+msgstr "Редактиране  на тази позиция,"
+
+#: modules/containers/custom_field.php:197
+#: modules/containers/blogroll.php:46
+#: modules/containers/comment.php:153
+#: includes/any-post.php:397
+msgid "Edit"
+msgstr "редактирам"
+
+#: modules/containers/custom_field.php:203
+#: includes/any-post.php:405
+msgid "Move this item to the Trash"
+msgstr "Преместване  този елемент на Trash"
+
+#: modules/containers/custom_field.php:205
+#: includes/any-post.php:407
+msgid "Trash"
+msgstr "боклук"
+
+#: modules/containers/custom_field.php:210
+#: includes/any-post.php:412
+msgid "Delete this item permanently"
+msgstr "Изтриване на този елемент постоянно"
+
+#: modules/containers/custom_field.php:212
+#: modules/containers/blogroll.php:47
+#: includes/any-post.php:414
+msgid "Delete"
+msgstr "Изтриване"
+
+#: modules/containers/custom_field.php:217
+msgid "View \"%s\""
+msgstr "оглед \"% s \""
+
+#: modules/containers/custom_field.php:217
+#: modules/containers/comment.php:166
+#: includes/any-post.php:436
+msgid "View"
+msgstr "оглед"
+
+#: modules/containers/custom_field.php:284
+#: includes/any-post.php:564
+msgid "Failed to delete post \"%s\" (%d)"
+msgstr "Неуспешно  изтриване на мнение \"% s \" (% d)"
+
+#: modules/containers/custom_field.php:303
+#: includes/any-post.php:583
+msgid "Can't move post \"%s\" (%d) to the trash because the trash feature is disabled"
+msgstr "Не може да се  движат след \"%s \" (%d) в кошчето,  защото функцията на боклука е забранено"
+
+#: modules/containers/custom_field.php:322
+#: includes/any-post.php:603
+msgid "Failed to move post \"%s\" (%d) to the trash"
+msgstr "Неуспешен  опит да се движат след \"%s\" (%d) в кошчето"
+
+#: modules/containers/blogroll.php:21
+msgid "Bookmark"
+msgstr "Bookmark"
+
+#: modules/containers/blogroll.php:27
+#: modules/containers/blogroll.php:46
+msgid "Edit this bookmark"
+msgstr "Редактиране на тази маркировка"
+
+#: modules/containers/blogroll.php:47
+msgid ""
+"You are about to delete this link '%s'\n"
+"  'Cancel' to stop, 'OK' to delete."
+msgstr ""
+"Вие сте за да изтриете  тази връзка \"%s '\n"
+"  \"Отказ\", за да се спре, 'ОК', за да изтриете."
+
+#: modules/containers/blogroll.php:83
+#: modules/containers/comment.php:43
+#: includes/any-post.php:519
+msgid "Nothing to update"
+msgstr "Няма  нищо да се актуализира"
+
+#: modules/containers/blogroll.php:97
+msgid "Updating bookmark %d failed"
+msgstr "Актуализиране  маркер%dне успя"
+
+#: modules/containers/blogroll.php:128
+msgid "Failed to delete blogroll link \"%s\" (%d)"
+msgstr "Неуспешно  изтриване на блогрол връзка \"% s  \" (% d)"
+
+#: modules/containers/blogroll.php:298
+msgid "%d blogroll link deleted."
+msgid_plural "%d blogroll links deleted."
+msgstr[0] "%d блогрол връзка заличава."
+msgstr[1] "%d блогрол връзка заличава."
+
+#: modules/containers/comment.php:53
+msgid "Updating comment %d failed"
+msgstr "Актуализиране на коментар%d не успя"
+
+#: modules/containers/comment.php:74
+msgid "Failed to delete comment %d"
+msgstr "Неуспешно  изтриване на коментар %d"
+
+#: modules/containers/comment.php:95
+msgid "Can't move comment %d to the trash"
+msgstr "Не мога да се движат  коментар %d  в кошчето"
+
+#: modules/containers/comment.php:153
+#: modules/containers/comment.php:195
+msgid "Edit comment"
+msgstr "Редактиране на коментар"
+
+#: modules/containers/comment.php:160
+msgid "Delete Permanently"
+msgstr "изтриете за постоянно"
+
+#: modules/containers/comment.php:162
+msgid "Move this comment to the trash"
+msgstr "Преместете  този коментар в кошчето"
+
+#: modules/containers/comment.php:162
+msgctxt "verb"
+msgid "Trash"
+msgstr "боклук"
+
+#: modules/containers/comment.php:166
+msgid "View comment"
+msgstr "Преглед на коментар"
+
+#: modules/containers/comment.php:183
+msgid "Comment"
+msgstr "коментар"
+
+#: modules/containers/comment.php:371
+msgid "%d comment has been deleted."
+msgid_plural "%d comments have been deleted."
+msgstr[0] " %d коментар  е бил изтрит."
+msgstr[1] " %d коментар  е бил изтрит."
+
+#: modules/containers/comment.php:390
+msgid "%d comment moved to the Trash."
+msgid_plural "%d comments moved to the Trash."
+msgstr[0] "%d коментар преместен в кошчето."
+msgstr[1] "%d коментар преместен в кошчето."
+
+#: modules/checkers/http.php:242
+msgid "Server Not Found"
+msgstr "Проблем със сървъра е намерена"
+
+#: modules/checkers/http.php:257
+msgid "Connection Failed"
+msgstr "връзката не се"
+
+#: modules/checkers/http.php:263
+#: modules/extras/mediafire.php:96
+#: includes/links.php:845
+msgid "Unknown Error"
+msgstr "Неизвестна грешка"
+
+#: modules/checkers/http.php:292
+#: modules/checkers/http.php:362
+msgid "HTTP code : %d"
+msgstr "HTTP  код: %d"
+
+#: modules/checkers/http.php:294
+#: modules/checkers/http.php:364
+msgid "(No response)"
+msgstr "(№ отговор)"
+
+#: modules/checkers/http.php:300
+msgid "Most likely the connection timed out or the domain doesn't exist."
+msgstr "Най-вероятно  връзката приключи или домейнът не съществува."
+
+#: modules/checkers/http.php:371
+msgid "Request timed out."
+msgstr "Заявка за времето."
+
+#: modules/checkers/http.php:389
+msgid "Using Snoopy"
+msgstr "Използването на Снупи"
+
+#: modules/parsers/image.php:156
+msgid "Image"
+msgstr "изображение"
+
+#: modules/parsers/metadata.php:117
+msgid "Custom field"
+msgstr "персонализирано поле"
+
+#: modules/extras/dailymotion-embed.php:23
+msgid "DailyMotion Video"
+msgstr "DailyMotion  Видео"
+
+#: modules/extras/dailymotion-embed.php:24
+msgid "Embedded DailyMotion video"
+msgstr "Вграден  DailyMotion видео"
+
+#: modules/extras/rapidshare.php:142
+#: modules/extras/mediafire.php:91
+#: modules/extras/megaupload.php:109
+msgid "Not Found"
+msgstr "Не е намерена"
+
+#: modules/extras/rapidshare.php:148
+#: modules/extras/rapidshare.php:154
+#: modules/extras/rapidshare.php:181
+#: modules/extras/megaupload.php:101
+#: includes/links.php:875
+msgctxt "link status"
+msgid "OK"
+msgstr "OK"
+
+#: modules/extras/rapidshare.php:161
+msgid "RS Server Down"
+msgstr "RS  сървъри"
+
+#: modules/extras/rapidshare.php:168
+msgid "File Blocked"
+msgstr "File  Блокирани"
+
+#: modules/extras/rapidshare.php:175
+msgid "File Locked"
+msgstr "File  Заключени"
+
+#: modules/extras/rapidshare.php:186
+msgid "RapidShare : %s"
+msgstr "%s: RapidShare"
+
+#: modules/extras/rapidshare.php:192
+msgid "RapidShare API error: %s"
+msgstr "RapidShare  API за грешка:%s"
+
+#: modules/extras/embed-parser-base.php:140
+msgid "Embedded videos can't be edited using Broken Link Checker. Please edit or replace the video in question manually."
+msgstr "Вградените  видеоклипове не могат да бъдат редактирани чрез Broken  Link Checker.  Моля, редактирате  или замени въпросното видео в ръчно."
+
+#: modules/extras/vimeo-embed.php:24
+msgid "Vimeo Video"
+msgstr "Vimeo Video"
+
+#: modules/extras/vimeo-embed.php:25
+msgid "Embedded Vimeo video"
+msgstr "Embedded video Vimeo"
+
+#: modules/extras/youtube.php:63
+#: modules/extras/youtube.php:66
+msgid "Video Not Found"
+msgstr "Видеоклипът не беше намерен"
+
+#: modules/extras/youtube.php:74
+msgid "Video Removed"
+msgstr "Видеоклипът е премахнат"
+
+#: modules/extras/youtube.php:82
+msgid "Invalid Video ID"
+msgstr "Невалиден  Video ID"
+
+#: modules/extras/youtube.php:94
+msgid "Video OK"
+msgstr "Видео  OK"
+
+#: modules/extras/youtube.php:95
+#: modules/extras/youtube.php:122
+#: core/core.php:966
+msgid "OK"
+msgstr "OK"
+
+#: modules/extras/youtube.php:108
+msgid "Video status : %s%s"
+msgstr "Видео  положение: % s% s"
+
+#: modules/extras/youtube.php:127
+msgid "Video Restricted"
+msgstr "Видео  Ограничен"
+
+#: modules/extras/youtube.php:144
+msgid "Unknown YouTube API response received."
+msgstr "Неизвестна  YouTube API отговор получи."
+
+#: modules/extras/youtube-embed.php:22
+msgid "YouTube Video"
+msgstr "YouTube видео"
+
+#: modules/extras/youtube-embed.php:23
+msgid "Embedded YouTube video"
+msgstr "Embedded YouTube video"
+
+#: modules/extras/megaupload.php:116
+msgid "File Temporarily Unavailable"
+msgstr "File  временно недостъпен"
+
+#: modules/extras/megaupload.php:122
+msgid "API Error"
+msgstr "API  Грешка"
+
+#: core/init.php:234
+msgid "Once Weekly"
+msgstr "веднъж седмично"
+
+#: core/init.php:240
+msgid "Twice a Month"
+msgstr "Два пъти месечно"
+
+#: core/init.php:309
+msgid "Broken Link Checker installation failed. Try deactivating and then reactivating the plugin."
+msgstr "Broken Link Checker инсталация провали. Опитайте се да деактивирате и след това реактивиращи плъгина."
+
+#: core/core.php:153
+#: includes/admin/links-page-js.php:37
+msgid "Loading..."
+msgstr "Зареждане ..."
+
+#: core/core.php:177
+#: includes/admin/options-page-js.php:18
+msgid "[ Network error ]"
+msgstr "[Network  грешка]"
+
+#: core/core.php:202
+msgid "Automatically expand the widget if broken links have been detected"
+msgstr "Автоматично  разширяване на джаджа,  ако прекъснатите връзки са  открити"
+
+#: core/core.php:324
+msgid "Link Checker Settings"
+msgstr "Настройки  на Link Checker"
+
+#: core/core.php:325
+msgid "Link Checker"
+msgstr "Link  Checker"
+
+#: core/core.php:330
+#: includes/link-query.php:26
+msgid "Broken Links"
+msgstr "Неактивни връзки"
+
+#: core/core.php:346
+msgid "View Broken Links"
+msgstr "Неактивни връзки"
+
+#: core/core.php:361
+msgid "Feedback"
+msgstr "обратна връзка"
+
+#: core/core.php:373
+msgid "Go to Settings"
+msgstr "Отидете в Настройки"
+
+#: core/core.php:380
+msgid "Go to Broken Links"
+msgstr "Неактивни връзки"
+
+#: core/core.php:398
+msgid "Settings"
+msgstr "Настройки"
+
+#: core/core.php:410
+#: core/core.php:1213
+msgid "Error: The plugin's database tables are not up to date! (Current version : %d, expected : %d)"
+msgstr "Грешка: таблиците в базата данни на  плъгин не са актуални! (Текуща версия:%d, който се очаква:%d)"
+
+#: core/core.php:549
+msgid "Settings saved."
+msgstr "Настройките са запазени."
+
+#: core/core.php:555
+msgid "Thank you for your donation!"
+msgstr "Благодаря ви за вашето дарение!"
+
+#: core/core.php:562
+msgid "Complete site recheck started."
+msgstr "Пълния сайт проверете отново започна."
+
+#: core/core.php:571
+#: core/core.php:2768
+msgid "Details"
+msgstr "детайли"
+
+#: core/core.php:585
+msgid "General"
+msgstr "общ"
+
+#: core/core.php:586
+msgid "Look For Links In"
+msgstr "Потърсете  връзки в"
+
+#: core/core.php:587
+msgid "Which Links To Check"
+msgstr "Кои  връзки да се провери"
+
+#: core/core.php:588
+msgid "Protocols & APIs"
+msgstr "Протоколи  и APIs"
+
+#: core/core.php:589
+msgid "Advanced"
+msgstr "напреднал"
+
+#: core/core.php:604
+msgid "Broken Link Checker Options"
+msgstr "Broken  Link Checker Опции"
+
+#: core/core.php:646
+#: includes/admin/table-printer.php:168
+msgid "Status"
+msgstr "Статус"
+
+#: core/core.php:648
+#: includes/admin/options-page-js.php:56
+msgid "Show debug info"
+msgstr "Покажи  дебъгване информация"
+
+#: core/core.php:676
+msgid "Check each link"
+msgstr "Проверете  всяка връзка"
+
+#: core/core.php:681
+msgid "Every %s hours"
+msgstr "Всеки %s часа"
+
+#: core/core.php:690
+msgid "Existing links will be checked this often. New links will usually be checked ASAP."
+msgstr "Съществуващите  връзки ще бъдат проверени това често.  Новите връзки ще обикновено се проверяват най-скоро."
+
+#: core/core.php:697
+msgid "E-mail notifications"
+msgstr "Е-поща"
+
+#: core/core.php:703
+msgid "Send me e-mail notifications about newly detected broken links"
+msgstr "Изпратете  ми имейл уведомления за нови открити  счупени връзки"
+
+#: core/core.php:710
+msgid "Link tweaks"
+msgstr "Линк  ощипвам"
+
+#: core/core.php:716
+msgid "Apply custom formatting to broken links"
+msgstr "Нанесете  обичай форматиране на  прекъснати връзки"
+
+#: core/core.php:720
+#: core/core.php:748
+msgid "Edit CSS"
+msgstr "Редактиране на CSS"
+
+#: core/core.php:744
+msgid "Apply custom formatting to removed links"
+msgstr "Нанесете  обичай форматиране на премахнатите връзки"
+
+#: core/core.php:772
+msgid "Stop search engines from following broken links"
+msgstr "Спри търсене  двигатели от следните  счупени хипервръзки"
+
+#: core/core.php:789
+msgid "Look for links in"
+msgstr "Потърсете  връзки в"
+
+#: core/core.php:800
+msgid "Post statuses"
+msgstr "Мнение  статуси"
+
+#: core/core.php:833
+msgid "Link types"
+msgstr "Линк  видове"
+
+#: core/core.php:839
+msgid "Error : All link parsers missing!"
+msgstr "Грешка:  Всички връзка парсери, липсва!"
+
+#: core/core.php:846
+msgid "Exclusion list"
+msgstr "изключване  списък"
+
+#: core/core.php:847
+msgid "Don't check links where the URL contains any of these words (one per line) :"
+msgstr "Не проверите връзки в случаите, когато URL адрес съдържа някоя от тези думи (по една на ред):"
+
+#: core/core.php:865
+msgid "Check links using"
+msgstr "Проверете  връзки използване"
+
+#: core/core.php:884
+#: includes/links.php:849
+msgid "Timeout"
+msgstr "Timeout"
+
+#: core/core.php:890
+#: core/core.php:936
+#: core/core.php:2895
+msgid "%s seconds"
+msgstr "%s  секунди"
+
+#: core/core.php:899
+msgid "Links that take longer than this to load will be marked as broken."
+msgstr "Връзки,  че да отнеме повече време  от това да се зареди,  ще бъдат маркирани като счупени."
+
+#: core/core.php:906
+msgid "Link monitor"
+msgstr "Линк  монитор"
+
+#: core/core.php:914
+msgid "Run continuously while the Dashboard is open"
+msgstr "Работят непрекъснато, докато Dashboard е отворен"
+
+#: core/core.php:922
+msgid "Run hourly in the background"
+msgstr "Run  час във фонов режим"
+
+#: core/core.php:930
+msgid "Max. execution time"
+msgstr "Макс.  време за изпълнение"
+
+#: core/core.php:947
+msgid "The plugin works by periodically launching a background job that parses your posts for links, checks the discovered URLs, and performs other time-consuming tasks. Here you can set for how long, at most, the link monitor may run each time before stopping."
+msgstr "В плъгин работи, като периодично  стартиране на фона работа, прави разбор  вашите мнения за връзки проверява  откритите URL адреси,  и изпълнява други задачи, отнемащи време. Тук можете да настроите колко дълго, най-много, връзката  на монитора да изпълнявате  всеки път, преди да спрете."
+
+#: core/core.php:957
+msgid "Custom temporary directory"
+msgstr "Потребителски  временна директория"
+
+#: core/core.php:969
+msgid "Error : This directory isn't writable by PHP."
+msgstr "Грешка:  Тази директория не се записва от PHP."
+
+#: core/core.php:974
+msgid "Error : This directory doesn't exist."
+msgstr "Грешка:  Тази директория не съществува."
+
+#: core/core.php:982
+msgid "Set this field if you want the plugin to use a custom directory for its lockfiles. Otherwise, leave it blank."
+msgstr "Задайте тази област, ако  искате плъгин за използване потребителски директория за lockfiles си. В противен случай, оставете полето празно."
+
+#: core/core.php:989
+msgid "Server load limit"
+msgstr "Лимит  на натоварване на сървъра"
+
+#: core/core.php:1004
+msgid "Current load : %s"
+msgstr "Текуща  натоварване:%s"
+
+#: core/core.php:1009
+msgid "Link checking will be suspended if the average <a href=\"%s\">server load</a> rises above this number. Leave this field blank to disable load limiting."
+msgstr "Линк  проверка ще бъде спряно, ако средната<a meán href=\"%s\">  натоварване на сървъра </a> се издига над  този номер. Оставете  това поле празно, за да деактивирате натоварване ограничаване."
+
+#: core/core.php:1018
+msgid "Not available"
+msgstr "Не се предлага"
+
+#: core/core.php:1020
+msgid "Load limiting only works on Linux-like systems where <code>/proc/loadavg</code> is present and accessible."
+msgstr "Заредете ограничаване работи само върху Linux-системи,  където <code> / ргос / loadavg </ код е налице и достъпни."
+
+#: core/core.php:1028
+msgid "Forced recheck"
+msgstr "Принудителна  повторна проверка"
+
+#: core/core.php:1031
+msgid "Re-check all pages"
+msgstr "Re  проверка на всички страници"
+
+#: core/core.php:1035
+msgid "The \"Nuclear Option\". Click this button to make the plugin empty its link database and recheck the entire site from scratch."
+msgstr " \"Ядрен вариант \". Щракнете върху този бутон, за да се направи  плъгин празен връзка база данни и проверете пак целия сайт от нулата."
+
+#: core/core.php:1046
+msgid "Save Changes"
+msgstr "Запазване на промените"
+
+#: core/core.php:1097
+msgid "Configure"
+msgstr "Конфигуриране"
+
+#: core/core.php:1179
+msgid "Check URLs entered in these custom fields (one per line) :"
+msgstr "Проверете  URL адреси,  вписани в тези персонализирани полета (по една на ред):"
+
+#: core/core.php:1313
+#: core/core.php:1395
+#: core/core.php:1427
+msgid "Database error : %s"
+msgstr "Грешка в база данни: %s"
+
+#: core/core.php:1377
+msgid "You must enter a filter name!"
+msgstr "Трябва да въведете филтър име!"
+
+#: core/core.php:1381
+msgid "Invalid search query."
+msgstr "Invalid search query."
+
+#: core/core.php:1390
+msgid "Filter \"%s\" created"
+msgstr "Filter   \"%s \", създаден"
+
+#: core/core.php:1417
+msgid "Filter ID not specified."
+msgstr "Филтър  ID не са посочени."
+
+#: core/core.php:1424
+msgid "Filter deleted"
+msgstr "Филтър  изтрити"
+
+#: core/core.php:1471
+msgid "Replaced %d redirect with a direct link"
+msgid_plural "Replaced %d redirects with direct links"
+msgstr[0] "%d Заменените  пренасочи с директна връзка"
+msgstr[1] "%d Заменените  пренасочи с директна връзка"
+
+#: core/core.php:1482
+msgid "Failed to fix %d redirect"
+msgid_plural "Failed to fix %d redirects"
+msgstr[0] "Неуспешен  опит да се определи%d пренасочи"
+msgstr[1] "Неуспешен  опит да се определи%d пренасочи"
+
+#: core/core.php:1493
+msgid "None of the selected links are redirects!"
+msgstr "Нито една от  избраните линкове пренасочващи страници!"
+
+#: core/core.php:1571
+msgid "%d link updated."
+msgid_plural "%d links updated."
+msgstr[0] "%d  връзка актуализира."
+msgstr[1] "%d  връзка актуализира."
+
+#: core/core.php:1582
+msgid "Failed to update %d link."
+msgid_plural "Failed to update %d links."
+msgstr[0] "Theip  AR%d  nasc thabhairt suas Чун данни."
+msgstr[1] "Theip  AR%d  nasc thabhairt suas Чун данни."
+
+#: core/core.php:1636
+msgid "%d link removed"
+msgid_plural "%d links removed"
+msgstr[0] "%d връзка  премахнати"
+msgstr[1] "%d връзка  премахнати"
+
+#: core/core.php:1647
+msgid "Failed to remove %d link"
+msgid_plural "Failed to remove %d links"
+msgstr[0] "Неуспех  да премахнете%d връзка"
+msgstr[1] "Неуспех  да премахнете%d връзка"
+
+#: core/core.php:1756
+msgid "%d item was skipped because it can't be moved to the Trash. You need to delete it manually."
+msgid_plural "%d items were skipped because they can't be moved to the Trash. You need to delete them manually."
+msgstr[0] "%d статията е  пропуснат, защото не може да да бъде  преместен в кошчето. Трябва да го изтриете ръчно."
+msgstr[1] "%d статията е  пропуснат, защото не може да да бъде  преместен в кошчето. Трябва да го изтриете ръчно."
+
+#: core/core.php:1778
+msgid "Didn't find anything to delete!"
+msgstr "Не  намери нищо,  за да изтриете!"
+
+#: core/core.php:1805
+msgid "%d link scheduled for rechecking"
+msgid_plural "%d links scheduled for rechecking"
+msgstr[0] "%d  връзка насрочено за повторно проверяване"
+msgstr[1] "%d  връзка насрочено за повторно проверяване"
+
+#: core/core.php:1851
+#: core/core.php:2455
+msgid "This link was manually marked as working by the user."
+msgstr "Тази връзка  е ръчно маркирани като работа от страна на потребителя."
+
+#: core/core.php:1858
+msgid "Couldn't modify link %d"
+msgstr "Не  може да се променя връзка %d"
+
+#: core/core.php:1868
+msgid "%d link marked as not broken"
+msgid_plural "%d links marked as not broken"
+msgstr[0] "%d връзка маркирани като не са счупени"
+msgstr[1] "%d връзка маркирани като не са счупени"
+
+#: core/core.php:1908
+msgid "Table columns"
+msgstr "колони в таблицата"
+
+#: core/core.php:1927
+msgid "Show on screen"
+msgstr "Покажи  на екрана."
+
+#: core/core.php:1934
+msgid "links"
+msgstr "връзки"
+
+#: core/core.php:1935
+#: includes/admin/table-printer.php:136
+msgid "Apply"
+msgstr "Нанесете"
+
+#: core/core.php:1939
+msgid "Misc"
+msgstr "Разни"
+
+#: core/core.php:1954
+msgid "Highlight links broken for at least %s days"
+msgstr "Подчертали връзките с разбивка  за дни най-малко%s"
+
+#: core/core.php:1963
+msgid "Color-code status codes"
+msgstr "Color-код на състоянието кодове"
+
+#: core/core.php:1980
+#: core/core.php:2440
+#: core/core.php:2476
+#: core/core.php:2539
+msgid "You're not allowed to do that!"
+msgstr "Вие  не ти е позволено да направи това!"
+
+#: core/core.php:2321
+msgid "View broken links"
+msgstr "Преглед  на прекъснати връзки"
+
+#: core/core.php:2322
+msgid "Found %d broken link"
+msgid_plural "Found %d broken links"
+msgstr[0] "Намерени%d невалидна връзка"
+msgstr[1] "Намерени%d невалидна връзка"
+
+#: core/core.php:2328
+msgid "No broken links found."
+msgstr "Не  са намерени счупени хипервръзки."
+
+#: core/core.php:2335
+msgid "%d URL in the work queue"
+msgid_plural "%d URLs in the work queue"
+msgstr[0] "%d URL в опашката за  работа"
+msgstr[1] "%d URL в опашката за  работа"
+
+#: core/core.php:2338
+msgid "No URLs in the work queue."
+msgstr "Липса  на URL адреси в работата опашка."
+
+#: core/core.php:2344
+msgid "Detected %d unique URL"
+msgid_plural "Detected %d unique URLs"
+msgstr[0] "Открит %d уникален  URL"
+msgstr[1] "Открит %d уникален  URL"
+
+#: core/core.php:2345
+msgid "in %d link"
+msgid_plural "in %d links"
+msgstr[0] "i% d nasc"
+msgstr[1] "в%d връзка "
+
+#: core/core.php:2350
+msgid "and still searching..."
+msgstr "и  все още търсят ..."
+
+#: core/core.php:2356
+msgid "Searching your blog for links..."
+msgstr "Търсене  на вашия блог за връзки ..."
+
+#: core/core.php:2358
+msgid "No links detected."
+msgstr "Не  връзки открити."
+
+#: core/core.php:2384
+msgctxt "current load"
+msgid "Unknown"
+msgstr "неизвестен"
+
+#: core/core.php:2448
+#: core/core.php:2486
+#: core/core.php:2549
+msgid "Oops, I can't find the link %d"
+msgstr "Опа,  не мога да намеря връзката. %d"
+
+#: core/core.php:2461
+msgid "Oops, couldn't modify the link!"
+msgstr "Опа,  не може да променя връзка!"
+
+#: core/core.php:2464
+#: core/core.php:2575
+msgid "Error : link_id not specified"
+msgstr "Опа, НЕ може  да променя връзка!"
+
+#: core/core.php:2496
+msgid "Oops, the new URL is invalid!"
+msgstr "Опа, нов URL  адрес е невалиден!"
+
+#: core/core.php:2507
+#: core/core.php:2558
+msgid "An unexpected error occured!"
+msgstr "Възникна  неочаквана грешка!"
+
+#: core/core.php:2525
+msgid "Error : link_id or new_url not specified"
+msgstr "Грешка:  link_id, или  new_url които не са посочени"
+
+#: core/core.php:2584
+msgid "You don't have sufficient privileges to access this information!"
+msgstr "Вие нямате  достатъчно привилегии за достъп до тази информация!"
+
+#: core/core.php:2597
+msgid "Error : link ID not specified"
+msgstr "Грешка:  връзката ID, които не са посочени"
+
+#: core/core.php:2611
+msgid "Failed to load link details (%s)"
+msgstr "Неуспешно зареждане на детайли  за връзка (%s)"
+
+#. #-#-#-#-#  plugin.pot (Broken Link Checker 1.2.2)  #-#-#-#-#
+#. Plugin Name of the plugin/theme
+#: core/core.php:2740
+msgid "Broken Link Checker"
+msgstr "Broken  Link Checker"
+
+#: core/core.php:2754
+msgid "The current temporary directory is not accessible; please <a href=\"%s\">set a different one</a>."
+msgstr "Настоящата  временна директория не е достъпна, моля, <a href=\"%s\"> различен </a>."
+
+#: core/core.php:2759
+msgid "Please make the directory <code>%1$s</code> writable by plugins or <a href=\"%2$s\">set a custom temporary directory</a>."
+msgstr "Моля, направете  директория<code>%1$s</code> писане от плъгини или  <a href=\"%2$s\">  зададете персонализиран временна директория </ A>."
+
+#: core/core.php:2766
+msgid "Broken Link Checker can't create a lockfile."
+msgstr "Broken  Link Checker не може да създаде lockfile."
+
+#: core/core.php:2771
+msgid "The plugin uses a file-based locking mechanism to ensure that only one instance of the resource-heavy link checking algorithm is running at any given time. Unfortunately, BLC can't find a writable directory where it could store the lockfile - it failed to detect the location of your server's temporary directory, and the plugin's own directory isn't writable by PHP. To fix this problem, please make the plugin's directory writable or enter a specify a custom temporary directory in the plugin's settings."
+msgstr "В плъгин използва файлове, заключващ механизъм, за  да се гарантира, че само едно копие  на ресурса тежки алгоритъм за проверка на връзка във всеки даден момент. За съжаление,  BLC не могат да намерят записваем директорията, където може да  съхранявате на lockfile - тя  не успя да открие местоположението на временна директория на вашия сървър и собствена директория плъгин не  се записва от PHP. За да решите този проблем, моля да направи  директорията плъгин за писане или  въведете укажете потребителски временна директория  в настройките на плъгин."
+
+#: core/core.php:2790
+msgid "PHP version"
+msgstr "PHP  версия"
+
+#: core/core.php:2796
+msgid "MySQL version"
+msgstr "MySQL  версия"
+
+#: core/core.php:2809
+msgid "You have an old version of CURL. Redirect detection may not work properly."
+msgstr "Вие сте със стара версия на CURL.  Пренасочване откриване  може да не работи правилно."
+
+#: core/core.php:2821
+#: core/core.php:2837
+#: core/core.php:2842
+msgid "Not installed"
+msgstr "Не е  инсталиран"
+
+#: core/core.php:2824
+msgid "CURL version"
+msgstr "CURL  версия"
+
+#: core/core.php:2830
+msgid "Installed"
+msgstr "Инсталирани"
+
+#: core/core.php:2843
+msgid "You must have either CURL or Snoopy installed for the plugin to work!"
+msgstr "Вие трябва да имате  инсталиран или CURL или Снупи  за плъгина да работи!"
+
+#: core/core.php:2854
+msgid "On"
+msgstr "на"
+
+#: core/core.php:2855
+msgid "Redirects may be detected as broken links when safe_mode is on."
+msgstr "Пренасочвания  могат да бъдат открити като счупени връзки, когато защитният режим е включен."
+
+#: core/core.php:2860
+#: core/core.php:2874
+msgid "Off"
+msgstr "от"
+
+#: core/core.php:2868
+msgid "On ( %s )"
+msgstr "на ( %s )"
+
+#: core/core.php:2869
+msgid "Redirects may be detected as broken links when open_basedir is on."
+msgstr "Пренасочвания  могат да бъдат открити както  за счупени хипервръзки, когато open_basedir е на."
+
+#: core/core.php:2888
+msgid "Can't create a lockfile. Please specify a custom temporary directory."
+msgstr "Не можете да създадете lockfile. Моля, посочете по избор временна директория."
+
+#: core/core.php:2912
+msgid "If this value is zero even after several page reloads you have probably encountered a bug."
+msgstr "Ако тази стойност е равна на нула, дори и след няколко презарежда  страницата вероятно сте  срещнали бъг."
+
+#: core/core.php:2983
+msgid "[%s] Broken links detected"
+msgstr "[%s] Broken  открити връзки"
+
+#: core/core.php:2988
+msgid "Broken Link Checker has detected %d new broken link on your site."
+msgid_plural "Broken Link Checker has detected %d new broken links on your site."
+msgstr[0] "Broken Link Checker откри%d невалидна връзка на вашия сайт."
+msgstr[1] "Broken Link Checker откри%d невалидна връзка на вашия сайт."
+
+#: core/core.php:3003
+msgid "Here's a list of the first %d broken links:"
+msgid_plural "Here's a list of the first %d broken links:"
+msgstr[0] "Broken Link Checker откри%d  невалидна връзка на вашия сайт"
+msgstr[1] "Broken Link Checker откри%d  невалидна връзка на вашия сайт"
+
+#: core/core.php:3012
+msgid "Here's a list of the new broken links: "
+msgstr "Ето  списък на нови доклади за счупени хипервръзки:"
+
+#: core/core.php:3024
+msgid "Link text : %s"
+msgstr "Nasc téacs:%s"
+
+#: core/core.php:3025
+msgid "Link URL : <a href=\"%s\">%s</a>"
+msgstr "Връзка  към URL:% s href=\"%s\"> <a </ a>"
+
+#: core/core.php:3026
+msgid "Source : %s"
+msgstr "Източник: %s "
+
+#: core/core.php:3040
+msgid "You can see all broken links here:"
+msgstr "Можете да видите всички счупени хипервръзки тук:"
+
+#: includes/admin/links-page-js.php:58
+#: includes/admin/links-page-js.php:301
+msgid "Wait..."
+msgstr "Изчакайте ..."
+
+#: includes/admin/links-page-js.php:99
+#: includes/admin/table-printer.php:587
+msgid "Not broken"
+msgstr "не са счупени"
+
+#: includes/admin/links-page-js.php:213
+msgid "%d instances of the link were successfully modified."
+msgstr "%d случаи  на връзката бяха променени успешно."
+
+#: includes/admin/links-page-js.php:219
+msgid "However, %d instances couldn't be edited and still point to the old URL."
+msgstr "Въпреки това,%dслучаи, не могат да бъдат редактирани и все още точка  на старите URL."
+
+#: includes/admin/links-page-js.php:225
+msgid "The link could not be modified."
+msgstr "Връзката  не може да бъде модифициран."
+
+#: includes/admin/links-page-js.php:228
+#: includes/admin/links-page-js.php:353
+msgid "The following error(s) occured :"
+msgstr "Възникна  следната грешка (и):"
+
+#: includes/admin/links-page-js.php:339
+msgid "%d instances of the link were successfully unlinked."
+msgstr "%d случаи  на връзката бяха успешно  в несвързано."
+
+#: includes/admin/links-page-js.php:345
+msgid "However, %d instances couldn't be removed."
+msgstr "Въпреки това,%d случаи, не могат да бъдат отстранени."
+
+#: includes/admin/links-page-js.php:350
+msgid "The plugin failed to remove the link."
+msgstr "В плъгин не успя да премахнете връзката."
+
+#: includes/admin/links-page-js.php:361
+#: includes/admin/table-printer.php:237
+#: includes/admin/table-printer.php:581
+msgid "Unlink"
+msgstr "разединявам"
+
+#: includes/admin/links-page-js.php:405
+msgid "Enter a name for the new custom filter"
+msgstr "Въведете  име за новия потребителски  филтър"
+
+#: includes/admin/links-page-js.php:416
+msgid ""
+"You are about to delete the current filter.\n"
+"'Cancel' to stop, 'OK' to delete"
+msgstr ""
+"Вие сте да изтриете текущия филтър \n"
+"\"Отказ\", за да се спре, 'ОК', за да изтриете"
+
+#: includes/admin/links-page-js.php:439
+msgid ""
+"Are you sure you want to delete all posts, bookmarks or other items that contain any of the selected links? This action can't be undone.\n"
+"'Cancel' to stop, 'OK' to delete"
+msgstr ""
+"Сигурни ли сте, че искате да изтриете всички съобщения, маркери или други елементи, които съдържат  някоя от избраните линкове?  Това действие не може да бъде отменено. \n"
+"\"Отказ\", за да се спре, 'ОК', за да изтриете"
+
+#: includes/admin/links-page-js.php:449
+msgid ""
+"Are you sure you want to remove the selected links? This action can't be undone.\n"
+"'Cancel' to stop, 'OK' to remove"
+msgstr ""
+"AСигурни ли сте, че искате да премахнете избрания  връзки? Това действие не може да бъде отменено. \n"
+"\"Отказ\", за да се спре, 'ОК', за да премахнете"
+
+#: includes/admin/links-page-js.php:558
+msgid "Enter a search string first."
+msgstr "Въведете  низ за търсене на първо място."
+
+#: includes/admin/links-page-js.php:565
+msgid "Select one or more links to edit."
+msgstr "Изберете един или повече връзки, за да редактирате."
+
+#: includes/admin/search-form.php:16
+msgid "Save This Search As a Filter"
+msgstr "Запази това търсене като филтър"
+
+#: includes/admin/search-form.php:26
+msgid "Delete This Filter"
+msgstr "Изтриване  на този филтър"
+
+#: includes/admin/search-form.php:32
+#: includes/link-query.php:53
+msgid "Search"
+msgstr "търсене"
+
+#: includes/admin/search-form.php:42
+msgid "Link text"
+msgstr "Link  текст"
+
+#: includes/admin/search-form.php:45
+#: includes/admin/table-printer.php:173
+msgid "URL"
+msgstr "URL"
+
+#: includes/admin/search-form.php:48
+#: includes/admin/table-printer.php:455
+msgid "HTTP code"
+msgstr "HTTP  код"
+
+#: includes/admin/search-form.php:51
+msgid "Link status"
+msgstr "Линк  статус"
+
+#: includes/admin/search-form.php:68
+#: includes/admin/search-form.php:85
+msgid "Link type"
+msgstr "Линк  тип"
+
+#: includes/admin/search-form.php:70
+msgid "Any"
+msgstr "Всеки"
+
+#: includes/admin/search-form.php:74
+msgid "Links used in"
+msgstr "Връзките, използвани в"
+
+#: includes/admin/search-form.php:112
+msgid "Search Links"
+msgstr "Търсене Връзки"
+
+#: includes/admin/search-form.php:113
+#: includes/admin/table-printer.php:313
+#: includes/admin/table-printer.php:595
+#: includes/admin/table-printer.php:601
+msgid "Cancel"
+msgstr "Отказ"
+
+#: includes/admin/sidebar.php:2
+msgid "Donate $10, $20 or $50!"
+msgstr "Дарете  $10, $20 или $50!"
+
+#: includes/admin/sidebar.php:5
+msgid "If you like this plugin, please donate to support development and maintenance!"
+msgstr "Ако ви харесва  този плъгин, моля,  дари в подкрепа на развитието и поддръжката!"
+
+#: includes/admin/sidebar.php:22
+msgid "Return to WordPress Dashboard"
+msgstr "Назад  към WordPress Dashboard"
+
+#: includes/admin/sidebar.php:34
+msgid "Recommended"
+msgstr "Препоръчителна"
+
+#: includes/admin/options-page-js.php:54
+msgid "Hide debug info"
+msgstr "Скрий  дебъгване информация"
+
+#: includes/admin/table-printer.php:150
+msgid "Compact View"
+msgstr "Compact View"
+
+#: includes/admin/table-printer.php:151
+msgid "Detailed View"
+msgstr "Детайлен преглед"
+
+#: includes/admin/table-printer.php:178
+msgid "Source"
+msgstr "източник"
+
+#: includes/admin/table-printer.php:184
+msgid "Link Text"
+msgstr "текст за връзка"
+
+#: includes/admin/table-printer.php:232
+msgid "Bulk Actions"
+msgstr "Bulk  Действия"
+
+#: includes/admin/table-printer.php:233
+#: includes/admin/table-printer.php:578
+msgid "Edit URL"
+msgstr "Редактиране на URL адреса"
+
+#: includes/admin/table-printer.php:234
+msgid "Recheck"
+msgstr "Повторна проверка"
+
+#: includes/admin/table-printer.php:235
+msgid "Fix redirects"
+msgstr "Fix  на пренасочващи страници"
+
+#: includes/admin/table-printer.php:236
+msgid "Mark as not broken"
+msgstr "Маркирай като не са счупени"
+
+#: includes/admin/table-printer.php:240
+msgid "Move sources to Trash"
+msgstr "Преместване на източници в кошчето"
+
+#: includes/admin/table-printer.php:242
+msgid "Delete sources"
+msgstr "Изтриване на източници"
+
+#: includes/admin/table-printer.php:257
+msgid "&laquo;"
+msgstr "&laquo;"
+
+#: includes/admin/table-printer.php:258
+msgid "&raquo;"
+msgstr "&raquo;"
+
+#: includes/admin/table-printer.php:266
+msgid "Displaying %s&#8211;%s of <span class=\"current-link-count\">%s</span>"
+msgstr "Показани%s&#8211;%s of <span class=\"current-link-count\">%s</span>"
+
+#: includes/admin/table-printer.php:289
+msgid "Bulk Edit URLs"
+msgstr "Групово редактиране URL адреси"
+
+#: includes/admin/table-printer.php:291
+msgid "Find"
+msgstr "Вижте"
+
+#: includes/admin/table-printer.php:295
+msgid "Replace with"
+msgstr "Замяна с"
+
+#: includes/admin/table-printer.php:303
+msgid "Case sensitive"
+msgstr "буквите"
+
+#: includes/admin/table-printer.php:307
+msgid "Regular expression"
+msgstr "Регулярен израз"
+
+#: includes/admin/table-printer.php:315
+msgid "Update"
+msgstr "Актуализация"
+
+#: includes/admin/table-printer.php:440
+msgid "Post published on"
+msgstr "Мнение  публикувани на"
+
+#: includes/admin/table-printer.php:445
+msgid "Link last checked"
+msgstr "Линк  последно проверява"
+
+#: includes/admin/table-printer.php:449
+msgid "Never"
+msgstr "никога"
+
+#: includes/admin/table-printer.php:460
+msgid "Response time"
+msgstr "време за реакция"
+
+#: includes/admin/table-printer.php:462
+msgid "%2.3f seconds"
+msgstr "% 2.3f секунди"
+
+#: includes/admin/table-printer.php:465
+msgid "Final URL"
+msgstr "Final URL"
+
+#: includes/admin/table-printer.php:470
+msgid "Redirect count"
+msgstr "Пренасочване на броя"
+
+#: includes/admin/table-printer.php:475
+msgid "Instance count"
+msgstr "съд  брой"
+
+#: includes/admin/table-printer.php:484
+msgid "This link has failed %d time."
+msgid_plural "This link has failed %d times."
+msgstr[0] "Тази връзка не е успял%d време."
+msgstr[1] "Тази връзка не е успял%d време."
+
+#: includes/admin/table-printer.php:492
+msgid "This link has been broken for %s."
+msgstr "Тази връзка е счупена  за %s."
+
+#: includes/admin/table-printer.php:503
+msgid "Log"
+msgstr "Вход"
+
+#: includes/admin/table-printer.php:524
+msgid "Show more info about this link"
+msgstr "Покажи  повече информация за тази връзка"
+
+#: includes/admin/table-printer.php:542
+msgctxt "checked how long ago"
+msgid "Checked"
+msgstr "Проверени"
+
+#: includes/admin/table-printer.php:558
+msgid "Broken for"
+msgstr "Broken  за"
+
+#: includes/admin/table-printer.php:578
+msgid "Edit link URL"
+msgstr "Редактиране  на URL връзка"
+
+#: includes/admin/table-printer.php:580
+msgid "Remove this link from all posts"
+msgstr "Премахване на този линк от всички мнения"
+
+#: includes/admin/table-printer.php:586
+msgid "Remove this link from the list of broken links and mark it as valid"
+msgstr "Премахване на този линк от списъка  на счупени връзки и го маркирате като валидни"
+
+#: includes/admin/table-printer.php:595
+msgid "Cancel URL editing"
+msgstr "Отказ  за редактиране на URL"
+
+#: includes/admin/table-printer.php:602
+msgid "Update URL"
+msgstr "Актуализация на URL"
+
+#: includes/admin/table-printer.php:624
+msgid "[An orphaned link! This is a bug.]"
+msgstr "[Сираци връзка! Това е грешка.]"
+
+#: includes/admin/db-upgrade.php:95
+msgid "Failed to delete old DB tables. Database error : %s"
+msgstr "Неуспешно  да изтрива старите таблици  DB.Грешка в база данни: %s"
+
+#: includes/parsers.php:109
+msgid "Editing is not implemented in the '%s' parser"
+msgstr "Редактиране  не се изпълнява в парсер '%s\""
+
+#: includes/parsers.php:124
+msgid "Unlinking is not implemented in the '%s' parser"
+msgstr "Прекратяване на връзката не се осъществява в парсер  '%s \""
+
+#: includes/link-query.php:25
+msgid "Broken"
+msgstr "Broken"
+
+#: includes/link-query.php:27
+msgid "No broken links found"
+msgstr "Не са намерени счупени хипервръзки"
+
+#: includes/link-query.php:34
+msgid "Redirects"
+msgstr "Пренасочвания"
+
+#: includes/link-query.php:35
+msgid "Redirected Links"
+msgstr "пренасочване  Връзки"
+
+#: includes/link-query.php:36
+msgid "No redirects found"
+msgstr "Не  на пренасочващи страници намерени"
+
+#: includes/link-query.php:44
+msgid "All"
+msgstr "всички"
+
+#: includes/link-query.php:45
+msgid "Detected Links"
+msgstr "Открит  Връзки"
+
+#: includes/link-query.php:46
+msgid "No links found (yet)"
+msgstr "Няма намерени връзки (все още)"
+
+#: includes/link-query.php:54
+msgid "Search Results"
+msgstr "Search Results"
+
+#: includes/link-query.php:55
+#: includes/link-query.php:106
+msgid "No links found for your query"
+msgstr "№  връзки, за вашата заявка"
+
+#: includes/any-post.php:427
+msgid "Preview &#8220;%s&#8221;"
+msgstr "предварителен преглед &#8220;%s&#8221;"
+
+#: includes/any-post.php:428
+msgid "Preview"
+msgstr "предварителен преглед"
+
+#: includes/any-post.php:435
+msgid "View &#8220;%s&#8221;"
+msgstr "Преглед на &#8220;%s&#8221;"
+
+#: includes/any-post.php:529
+msgid "Updating post %d failed"
+msgstr "Актуализиране  пост%d  не успя"
+
+#: includes/any-post.php:711
+msgid "%d post deleted."
+msgid_plural "%d posts deleted."
+msgstr[0] "%d пост заличава."
+msgstr[1] "%d пост заличава."
+
+#: includes/any-post.php:713
+msgid "%d page deleted."
+msgid_plural "%d pages deleted."
+msgstr[0] "%d страница заличава."
+msgstr[1] "%d страница заличава."
+
+#: includes/any-post.php:715
+msgid "%d \"%s\" deleted."
+msgid_plural "%d \"%s\" deleted."
+msgstr[0] "% d \"% s \"a заличава."
+msgstr[1] "% d \"% s \"aзаличава. "
+
+#: includes/any-post.php:734
+msgid "%d post moved to the Trash."
+msgid_plural "%d posts moved to the Trash."
+msgstr[0] "%d  пост преместен в кошчето."
+msgstr[1] "%d  пост преместен в кошчето."
+
+#: includes/any-post.php:736
+msgid "%d page moved to the Trash."
+msgid_plural "%d pages moved to the Trash."
+msgstr[0] "%d пост преместен в кошчето."
+msgstr[1] "%d пост преместен в кошчето."
+
+#: includes/any-post.php:738
+msgid "%d \"%s\" moved to the Trash."
+msgid_plural "%d \"%s\" moved to the Trash."
+msgstr[0] "% d \"% s \" преместена в кошчето."
+msgstr[1] "% d \"% s \" преместена в кошчето."
+
+#: includes/containers.php:122
+msgid "%d '%s' has been deleted"
+msgid_plural "%d '%s' have been deleted"
+msgstr[0] "'% s'% d е била изтрита"
+msgstr[1] "'% s'% d е била изтрита"
+
+#: includes/containers.php:883
+#: includes/containers.php:901
+msgid "Container type '%s' not recognized"
+msgstr "Контейнер  тип \"%s\"  не са признати"
+
+#: includes/links.php:215
+msgid "The plugin script was terminated while trying to check the link."
+msgstr "В плъгин скрипт е било прекратено,  докато се опитва да проверите  връзката."
+
+#: includes/links.php:261
+msgid "The plugin doesn't know how to check this type of link."
+msgstr "В добавка  не знаят как да проверите  този тип връзка."
+
+#: includes/links.php:349
+msgid "Link is valid."
+msgstr "Link  е валидна."
+
+#: includes/links.php:351
+msgid "Link is broken."
+msgstr "Връзката е прекъсната."
+
+#: includes/links.php:564
+#: includes/links.php:666
+#: includes/links.php:693
+msgid "Link is not valid"
+msgstr "Връзката не е валидна"
+
+#: includes/links.php:581
+msgid "This link can not be edited because it is not used anywhere on this site."
+msgstr "Тази връзка  не може да бъде редактиран, защото тя не се използва никъде на този сайт."
+
+#: includes/links.php:607
+msgid "Failed to create a DB entry for the new URL."
+msgstr "Неуспешно създаване на DB влизане  за новия URL."
+
+#: includes/links.php:673
+msgid "This link is not a redirect"
+msgstr "Тази връзка не е пренасочване"
+
+#: includes/links.php:720
+#: includes/links.php:757
+msgid "Couldn't delete the link's database record"
+msgstr "Не може да изтриете връзката  на бази данни"
+
+#: includes/links.php:831
+msgctxt "link status"
+msgid "Unknown"
+msgstr "неизвестен"
+
+#: includes/links.php:869
+msgid "Not checked"
+msgstr "Не се  проверява"
+
+#: includes/links.php:872
+msgid "False positive"
+msgstr "Фалшиво положителни"
+
+#: includes/extra-strings.php:2
+msgctxt "module name"
+msgid "Basic HTTP"
+msgstr "Basic HTTP"
+
+#: includes/extra-strings.php:3
+msgctxt "module name"
+msgid "Blogroll items"
+msgstr "Blogroll  позиции"
+
+#: includes/extra-strings.php:4
+msgctxt "module name"
+msgid "Comments"
+msgstr "Коментари"
+
+#: includes/extra-strings.php:5
+msgctxt "module name"
+msgid "Custom fields"
+msgstr "потребителски полета"
+
+#: includes/extra-strings.php:6
+msgctxt "module name"
+msgid "Embedded DailyMotion videos"
+msgstr "Вградени  видео DailyMotion"
+
+#: includes/extra-strings.php:7
+msgctxt "module name"
+msgid "Embedded Vimeo videos"
+msgstr "Embedded  Vimeo клипове"
+
+#: includes/extra-strings.php:8
+msgctxt "module name"
+msgid "Embedded YouTube videos"
+msgstr "Embedded  YouTube клипове"
+
+#: includes/extra-strings.php:9
+msgctxt "module name"
+msgid "HTML images"
+msgstr "HTML  изображения"
+
+#: includes/extra-strings.php:10
+msgctxt "module name"
+msgid "HTML links"
+msgstr "HTML  връзки"
+
+#: includes/extra-strings.php:11
+msgctxt "module name"
+msgid "MediaFire API"
+msgstr "MediaFire  API"
+
+#: includes/extra-strings.php:12
+msgctxt "module name"
+msgid "MegaUpload API"
+msgstr "файлове  API"
+
+#: includes/extra-strings.php:13
+msgctxt "module name"
+msgid "Plaintext URLs"
+msgstr "прав текст URL адреси"
+
+#: includes/extra-strings.php:14
+msgctxt "module name"
+msgid "RapidShare API"
+msgstr "RapidShare API"
+
+#: includes/extra-strings.php:15
+msgctxt "module name"
+msgid "YouTube API"
+msgstr "YouTube API"
+
+#: includes/extra-strings.php:16
+msgctxt "module name"
+msgid "Posts"
+msgstr "Мнения"
+
+#: includes/extra-strings.php:17
+msgctxt "module name"
+msgid "Pages"
+msgstr "Страници"
+
+#: includes/utility-class.php:286
+msgid "%d second"
+msgid_plural "%d seconds"
+msgstr[0] "%d втори"
+msgstr[1] "%d втори"
+
+#: includes/utility-class.php:287
+msgid "%d second ago"
+msgid_plural "%d seconds ago"
+msgstr[0] "%d преди секунда"
+msgstr[1] "%d преди секунда"
+
+#: includes/utility-class.php:290
+msgid "%d minute"
+msgid_plural "%d minutes"
+msgstr[0] "%d минута"
+msgstr[1] "%d минута"
+
+#: includes/utility-class.php:291
+msgid "%d minute ago"
+msgid_plural "%d minutes ago"
+msgstr[0] "%d преди минута"
+msgstr[1] "%d преди минута"
+
+#: includes/utility-class.php:294
+msgid "%d hour"
+msgid_plural "%d hours"
+msgstr[0] "%d часа"
+msgstr[1] "%d часа"
+
+#: includes/utility-class.php:295
+msgid "%d hour ago"
+msgid_plural "%d hours ago"
+msgstr[0] "%d преди час"
+msgstr[1] "%d преди час"
+
+#: includes/utility-class.php:298
+msgid "%d day"
+msgid_plural "%d days"
+msgstr[0] "%d дни"
+msgstr[1] "%d дни"
+
+#: includes/utility-class.php:299
+msgid "%d day ago"
+msgid_plural "%d days ago"
+msgstr[0] "%d Преди ден"
+msgstr[1] "%d Преди ден"
+
+#: includes/utility-class.php:302
+msgid "%d month"
+msgid_plural "%d months"
+msgstr[0] "%d  месец"
+msgstr[1] "%d  месец"
+
+#: includes/utility-class.php:303
+msgid "%d month ago"
+msgid_plural "%d months ago"
+msgstr[0] "%d преди месец"
+msgstr[1] "%d преди месец"
+
+#: includes/instances.php:102
+#: includes/instances.php:158
+msgid "Container %s[%d] not found"
+msgstr "контейнер %s [%d] Ní bhfuarthas an"
+
+#: includes/instances.php:111
+#: includes/instances.php:167
+msgid "Parser '%s' not found."
+msgstr "Parser '%s'  не е намерен."
+
+#. Plugin URI of the plugin/theme
+msgid "http://w-shadow.com/blog/2007/08/05/broken-link-checker-for-wordpress/"
+msgstr "http://w-shadow.com/blog/2007/08/05/broken-link-checker-for-wordpress/"
+
+#. Description of the plugin/theme
+msgid "Checks your blog for broken links and missing images and notifies you on the dashboard if any are found."
+msgstr "Проверява  вашия блог за счупени хипервръзки и липсващи изображения и ще ви уведоми, на арматурното табло,  ако такива бъдат намерени."
+
+#. Author of the plugin/theme
+msgid "Janis Elsts"
+msgstr "Janis  Elsts"
+
+#. Author URI of the plugin/theme
+msgid "http://w-shadow.com/blog/"
+msgstr "http://w-shadow.com/blog/"
+
+#~ msgid "Broken link CSS"
+#~ msgstr "टूटी हुई कड़ी सीएसएस"
+
+#~ msgid "Removed link CSS"
+#~ msgstr "हटाया लिंक  सीएसएस"
+
+#~ msgid "Apply <em>class=\"removed_link\"</em> to unlinked links"
+#~ msgstr "लागू करना  <em>class=\"removed_link\"</em> लिंक को हटाया"
+
+#~ msgid "Normal link"
+#~ msgstr "सामान्य लिंक"
+
+#~ msgid ""
+#~ "You are about to delete this post '%s'\n"
+#~ " 'Cancel' to stop, 'OK' to delete."
+#~ msgstr ""
+#~ "तुम्हारे बारे में इस पद को नष्ट कर रहे हैं '%s'\n"
+#~ "  'Cancel' बंद के लिए  'OK' नष्ट करने के लिए'."
+
+#~ msgid "Excluded"
+#~ msgstr "अपवर्जित"
+
+#~ msgid "Add this URL to the exclusion list"
+#~ msgstr "अपवर्जन सूची में इस URL जोड़ें"
+
+#~ msgid "Exclude"
+#~ msgstr "बाहर निकालें"
+
+#~ msgid "Discard"
+#~ msgstr "रद्द करें"
+
+#~ msgid "Save URL"
+#~ msgstr "सहेजें यूआरएल"
+
+#~ msgid "Saving changes..."
+#~ msgstr "बचत परिवर्तन ..."
+
+#~ msgid ""
+#~ "This link wasn't checked because a matching keyword was found on your "
+#~ "exclusion list."
+#~ msgstr ""
+#~ "इस लिंक की जाँच नहीं हुयी थी क्योंकि एक खोजशब्द मिलान आपके अपवर्जन सूची पर पाया गया "
+#~ "था."
+
+#~ msgid "URL %s was removed."
+#~ msgstr "यूआरएल% s हटा दिया गया."
+
+#~ msgid "URL %s added to the exclusion list"
+#~ msgstr "यूआरएल %s अपवर्जन सूची में शामिल "
+
+#~ msgid "Link ID not specified"
+#~ msgstr "लिंक आईडी निर्दिष्ट नहीं"
+
+#~ msgid "First try : %d"
+#~ msgstr "पहला प्रयास करें:  %d"
+
+#~ msgid "Trying a second time with different settings..."
+#~ msgstr "विभिन्न सेटिंग्स के साथ एक दूसरी बार कोशिश करे ..."
+
+#~ msgid "Second try : %d"
+#~ msgstr "दूसरा प्रयास करें:  %d"
+
+#~ msgid "Second try : 0 (No response)"
+#~ msgstr "दूसरा प्रयास करें:0 (कोई जवाब नहीं)"
+
+#~ msgid "Error adding link %s : %s"
+#~ msgstr "त्रुटि जोड़ने लिंक  %s : %s"
+
+#~ msgid "Error updating link %d : %s"
+#~ msgstr "त्रुटि अद्यतन कड़ी %d : %s"

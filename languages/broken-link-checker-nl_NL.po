@@ -1,0 +1,1955 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Broken-link-checker\n"
+"Report-Msgid-Bugs-To: http://wordpress.org/tag/broken-link-checker\n"
+"POT-Creation-Date: 2013-06-23 07:51:56+00:00\n"
+"PO-Revision-Date: \n"
+"Last-Translator: Robin Roelofsen <info@dreamdesignsolutions.nl>\n"
+"Language-Team: Brokenlinkchecker <gvmelle@gmail.com>\n"
+"Language: nl_NL\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-SourceCharset: utf-8\n"
+"X-Poedit-KeywordsList: __;_e;_c\n"
+"X-Poedit-Basepath: .\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 1.5.7\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPath-1: ..\n"
+
+#: core/core.php:151 includes/admin/links-page-js.php:37
+msgid "Loading..."
+msgstr "Aan het laden..."
+
+#: core/core.php:175 includes/admin/options-page-js.php:18
+msgid "[ Network error ]"
+msgstr "[ Netwerk fout ]"
+
+#: core/core.php:202
+msgid "Automatically expand the widget if broken links have been detected"
+msgstr ""
+"Automatisch de widget uitklappen wanneer er verbroken links zijn ontdekt"
+
+#: core/core.php:292
+msgid "Link Checker Settings"
+msgstr "Link Checker Instellingen"
+
+#: core/core.php:293
+msgid "Link Checker"
+msgstr "Broken Link Checker"
+
+#: core/core.php:298 includes/link-query.php:27
+msgid "Broken Links"
+msgstr "Verbroken Links"
+
+#: core/core.php:314
+msgid "View Broken Links"
+msgstr "Bekijk Verbroken Links"
+
+#: core/core.php:329
+msgid "Feedback"
+msgstr "Reacties"
+
+#: core/core.php:337
+msgid "Go to Broken Links"
+msgstr "Ga naar Verbroken Links"
+
+#: core/core.php:366
+msgid "Settings"
+msgstr "Instellingen"
+
+#: core/core.php:533
+msgid "Settings saved."
+msgstr "Instellingen opgeslagen."
+
+#: core/core.php:539
+msgid "Thank you for your donation!"
+msgstr "Bedankt voor je donatie!"
+
+#: core/core.php:547
+msgid "Complete site recheck started."
+msgstr "Volledige site controle begonnen."
+
+#: core/core.php:556
+msgid "Details"
+msgstr "Details"
+
+#: core/core.php:570
+msgid "General"
+msgstr "Algemeen"
+
+#: core/core.php:571
+msgid "Look For Links In"
+msgstr "Zoek Naar Links In"
+
+#: core/core.php:572
+msgid "Which Links To Check"
+msgstr "Deze Links Controleren"
+
+#: core/core.php:573
+msgid "Protocols & APIs"
+msgstr "Protocollen & APIs"
+
+#: core/core.php:574
+msgid "Advanced"
+msgstr "Geavanceerd"
+
+#: core/core.php:589
+msgid "Broken Link Checker Options"
+msgstr "Broken Link Checker Opties"
+
+#: core/core.php:631 includes/admin/table-printer.php:197
+msgid "Status"
+msgstr "Status:"
+
+#: core/core.php:633 includes/admin/options-page-js.php:56
+msgid "Show debug info"
+msgstr "Toon debug informatie"
+
+#: core/core.php:661
+msgid "Check each link"
+msgstr "Controleer iedere link:"
+
+#: core/core.php:666
+msgid "Every %s hours"
+msgstr "Elke %s uur"
+
+#: core/core.php:675
+msgid ""
+"Existing links will be checked this often. New links will usually be checked "
+"ASAP."
+msgstr ""
+"Bestaande links zullen met deze regelmaat worden gecontroleerd. Nieuwe links "
+"worden meestal zo snel mogelijk gecontroleerd. "
+
+#: core/core.php:682
+msgid "E-mail notifications"
+msgstr "E-mail meldingen:"
+
+#: core/core.php:688
+msgid "Send me e-mail notifications about newly detected broken links"
+msgstr "Stuur mij meldingen via e-mail over nieuw ontdekte verbroken links"
+
+#: core/core.php:696
+msgid "Send authors e-mail notifications about broken links in their posts"
+msgstr ""
+"Stuur schrijvers meldingen via e-mail over verbroken links in hun berichten"
+
+#: core/core.php:703
+msgid "Notification e-mail address"
+msgstr "E-mail adres voor meldingen:"
+
+#: core/core.php:715
+msgid ""
+"Leave empty to use the e-mail address specified in Settings &rarr; General."
+msgstr ""
+"Laat dit veld leeg om het e-mail adres te gebruiken dat is opgegeven bij "
+"Instellingen &rarr; Algemeen."
+
+#: core/core.php:722
+msgid "Link tweaks"
+msgstr "Link aanpassingen:"
+
+#: core/core.php:728
+msgid "Apply custom formatting to broken links"
+msgstr "Speciale formattering toepassen op verbroken links"
+
+#: core/core.php:732 core/core.php:763
+msgid "Edit CSS"
+msgstr "Bewerk CSS"
+
+#: core/core.php:748
+msgid "Example : Lorem ipsum <a %s>broken link</a>, dolor sit amet."
+msgstr "Voorbeeld: Lorem ipsum <a %s>verbroken link</a>, dolor sit amet."
+
+#: core/core.php:751 core/core.php:782
+msgid "Click \"Save Changes\" to update example output."
+msgstr "Klik op \"Instellingen opslaan\" om het voorbeeld te verversen."
+
+#: core/core.php:759
+msgid "Apply custom formatting to removed links"
+msgstr "Speciale formattering toepassen op verwijderde links"
+
+#: core/core.php:779
+msgid "Example : Lorem ipsum <span %s>removed link</span>, dolor sit amet."
+msgstr ""
+"Voorbeeld: Lorem ipsum <span %s>verwijderde link</span>, dolor sit amet."
+
+#: core/core.php:792
+msgid "Stop search engines from following broken links"
+msgstr "Verhinder dat zoekmachines verbroken links volgen"
+
+#: core/core.php:809
+msgid "Look for links in"
+msgstr "Zoek naar links in:"
+
+#: core/core.php:820
+msgid "Post statuses"
+msgstr "Bericht statussen:"
+
+#: core/core.php:853
+msgid "Link types"
+msgstr "Linksoorten:"
+
+#: core/core.php:859
+msgid "Error : All link parsers missing!"
+msgstr "Fout: alle linkparsers ontbreken! "
+
+#: core/core.php:866
+msgid "Exclusion list"
+msgstr "Uitsluitingslijst:"
+
+#: core/core.php:867
+msgid ""
+"Don't check links where the URL contains any of these words (one per line) :"
+msgstr ""
+"Controleer geen links waarbij de URL één of meerdere van deze woorden bevat "
+"(één per regel):"
+
+#: core/core.php:885
+msgid "Check links using"
+msgstr "Controleer links die gebruik maken van:"
+
+#: core/core.php:904 includes/links.php:856
+msgid "Timeout"
+msgstr "Timeout:"
+
+#: core/core.php:910 core/core.php:979 core/core.php:2823
+msgid "%s seconds"
+msgstr "%s seconden"
+
+#: core/core.php:919
+msgid "Links that take longer than this to load will be marked as broken."
+msgstr ""
+"Links die er langer over doen om te laden zullen worden aangemerkt als "
+"verbroken."
+
+#: core/core.php:926
+msgid "Link monitor"
+msgstr "Linkcontrole:"
+
+#: core/core.php:934
+msgid "Run continuously while the Dashboard is open"
+msgstr "Draai continu zolang het Dashboard openstaat"
+
+#: core/core.php:942
+msgid "Run hourly in the background"
+msgstr "Draai ieder uur in de achtergrond"
+
+#: core/core.php:950
+msgid "Show the dashboard widget for"
+msgstr "Laat het Dashboard widget zien voor:"
+
+#: core/core.php:955
+msgctxt "dashboard widget visibility"
+msgid "Administrator"
+msgstr "Beheerder"
+
+#: core/core.php:956
+msgctxt "dashboard widget visibility"
+msgid "Editor and above"
+msgstr "Redacteur en hoger"
+
+#: core/core.php:957
+msgctxt "dashboard widget visibility"
+msgid "Nobody (disables the widget)"
+msgstr "Niemand (deze optie zet de widget uit)"
+
+#: core/core.php:973
+msgid "Max. execution time"
+msgstr "Maximale uitvoeringstijd:"
+
+#: core/core.php:990
+msgid ""
+"The plugin works by periodically launching a background job that parses your "
+"posts for links, checks the discovered URLs, and performs other time-"
+"consuming tasks. Here you can set for how long, at most, the link monitor "
+"may run each time before stopping."
+msgstr ""
+"De plugin start regelmatig een proces in de achtergrond dat je berichten "
+"controleert op links, de ontdekte links controleert, en andere tijdrovende "
+"zaken uitvoert. Je kunt hier instellen hoe lang, op z'n langst, de "
+"linkcontrole elke keer mag draaien voor het stopt."
+
+#: core/core.php:999
+msgid "Server load limit"
+msgstr "Serverbelasting limiet:"
+
+#: core/core.php:1014
+msgid "Current load : %s"
+msgstr "Huidige serverbelasting: %s"
+
+#: core/core.php:1019
+msgid ""
+"Link checking will be suspended if the average <a href=\"%s\">server load</"
+"a> rises above this number. Leave this field blank to disable load limiting."
+msgstr ""
+"Links controleren zal worden stopgezet wanneer de gemiddelde <a href=\"%s"
+"\">serverbelasting</a> boven dit getal uitkomt. Laat dit veld leeg om "
+"belastinglimitering uit te zetten."
+
+#: core/core.php:1028
+msgid "Not available"
+msgstr "Niet beschikbaar"
+
+#: core/core.php:1030
+msgid ""
+"Load limiting only works on Linux-like systems where <code>/proc/loadavg</"
+"code> is present and accessible."
+msgstr ""
+"Belastinglimitering werkt alleen op Linux-achtige systemen waar <code>/proc/"
+"loadavg</code> aanwezig en bereikbaar is."
+
+#: core/core.php:1038
+msgid "Forced recheck"
+msgstr "Geforceerd controleren:"
+
+#: core/core.php:1041
+msgid "Re-check all pages"
+msgstr "Controleer nu all pagina's"
+
+#: core/core.php:1045
+msgid ""
+"The \"Nuclear Option\". Click this button to make the plugin empty its link "
+"database and recheck the entire site from scratch."
+msgstr ""
+"De \"Ultieme Optie\". Wanneer je op deze knop klikt maakt de plugin zijn "
+"link database leeg, en controleert het programma de volledige site."
+
+#: core/core.php:1056
+msgid "Save Changes"
+msgstr "Wijzigingen Opslaan"
+
+#: core/core.php:1107
+msgid "Configure"
+msgstr "Configureer"
+
+#: core/core.php:1189
+msgid "Check URLs entered in these custom fields (one per line) :"
+msgstr "Controleer de URLs die hieronder zijn ingevuld (één per regel):"
+
+#: core/core.php:1317 core/core.php:1399 core/core.php:1431
+msgid "Database error : %s"
+msgstr "Database fout: %s"
+
+#: core/core.php:1381
+msgid "You must enter a filter name!"
+msgstr "Je moet een filternaam invullen!"
+
+#: core/core.php:1385
+msgid "Invalid search query."
+msgstr "Onjuiste zoekopdracht"
+
+#: core/core.php:1394
+msgid "Filter \"%s\" created"
+msgstr "Filter \"%s\" aangemaakt"
+
+#: core/core.php:1421
+msgid "Filter ID not specified."
+msgstr "Filter ID niet opgegeven."
+
+#: core/core.php:1428
+msgid "Filter deleted"
+msgstr "Filter verwijderd"
+
+#: core/core.php:1475
+msgid "Replaced %d redirect with a direct link"
+msgid_plural "Replaced %d redirects with direct links"
+msgstr[0] "%d verwijzing vervangen door een directe link"
+msgstr[1] "%d verwijzingen vervangen door een directe link."
+
+#: core/core.php:1486
+msgid "Failed to fix %d redirect"
+msgid_plural "Failed to fix %d redirects"
+msgstr[0] "Kon %d verwijzing niet repareren"
+msgstr[1] "Kon %d verwijzingen niet repareren"
+
+#: core/core.php:1497
+msgid "None of the selected links are redirects!"
+msgstr "Geen van de geselecteerde links zijn verwijzingen!"
+
+#: core/core.php:1575
+msgid "%d link updated."
+msgid_plural "%d links updated."
+msgstr[0] "%d link bijgewerkt."
+msgstr[1] "%d links bijgewerkt."
+
+#: core/core.php:1586
+msgid "Failed to update %d link."
+msgid_plural "Failed to update %d links."
+msgstr[0] "Kon %d link niet aanpassen."
+msgstr[1] "Kon %d links niet aanpassen."
+
+#: core/core.php:1640
+msgid "%d link removed"
+msgid_plural "%d links removed"
+msgstr[0] "%d link verwijderd"
+msgstr[1] "%d links verwijderd"
+
+#: core/core.php:1651
+msgid "Failed to remove %d link"
+msgid_plural "Failed to remove %d links"
+msgstr[0] "Kon %d link niet verwijderen"
+msgstr[1] "Kon %d links niet verwijderen"
+
+#: core/core.php:1760
+msgid ""
+"%d item was skipped because it can't be moved to the Trash. You need to "
+"delete it manually."
+msgid_plural ""
+"%d items were skipped because they can't be moved to the Trash. You need to "
+"delete them manually."
+msgstr[0] ""
+"%d onderdeel is overgeslagen omdat het niet naar de Prullenbak kan worden "
+"verplaatst. Je moet deze handmatig verwijderen."
+msgstr[1] ""
+"%d onderdelen zijn overgeslagen omdat het niet naar de Prullenbak kan worden "
+"verplaatst. Je moet deze handmatig verwijderen."
+
+#: core/core.php:1782
+msgid "Didn't find anything to delete!"
+msgstr "Kon niets vinden om te verwijderen!"
+
+#: core/core.php:1810
+msgid "%d link scheduled for rechecking"
+msgid_plural "%d links scheduled for rechecking"
+msgstr[0] "%d link ingepland voor controle"
+msgstr[1] "%d links ingepland voor controle"
+
+#: core/core.php:1856 core/core.php:2465
+msgid "This link was manually marked as working by the user."
+msgstr "Deze link is handmatig aangemerkt als werkend door de gebruiker."
+
+#: core/core.php:1863
+msgid "Couldn't modify link %d"
+msgstr "Kon deze link niet bewerken: %d"
+
+#: core/core.php:1873
+msgid "%d link marked as not broken"
+msgid_plural "%d links marked as not broken"
+msgstr[0] "%d link gemarkeerd als niet verbroken"
+msgstr[1] "%d links gemarkeerd als niet verbroken"
+
+#: core/core.php:1913
+msgid "Table columns"
+msgstr "Tabel colommen"
+
+#: core/core.php:1932
+msgid "Show on screen"
+msgstr "Toon op scherm"
+
+#: core/core.php:1939
+msgid "links"
+msgstr "links"
+
+#: core/core.php:1940 includes/admin/table-printer.php:165
+msgid "Apply"
+msgstr "Toepassen"
+
+#: core/core.php:1944
+msgid "Misc"
+msgstr "Divers"
+
+#: core/core.php:1959
+msgid "Highlight links broken for at least %s days"
+msgstr "Laat links zien die minstens %s dagen verbroken zijn"
+
+#: core/core.php:1968
+msgid "Color-code status codes"
+msgstr "Kleurcodering voor status codes"
+
+#: core/core.php:1985 core/core.php:2450 core/core.php:2490 core/core.php:2523
+#: core/core.php:2586
+msgid "You're not allowed to do that!"
+msgstr "Je hebt geen toestemming om dat te doen!"
+
+#: core/core.php:2320
+msgid "View broken links"
+msgstr "Bekijk verbroken links"
+
+#: core/core.php:2321
+msgid "Found %d broken link"
+msgid_plural "Found %d broken links"
+msgstr[0] "%d verbroken link gevonden"
+msgstr[1] "%d verbroken links gevonden"
+
+#: core/core.php:2327
+msgid "No broken links found."
+msgstr "Geen verbroken links gevonden."
+
+#: core/core.php:2334
+msgid "%d URL in the work queue"
+msgid_plural "%d URLs in the work queue"
+msgstr[0] "%d URL in de wachtrij"
+msgstr[1] "%d URL&#x0027;s in de wachtrij"
+
+#: core/core.php:2337
+msgid "No URLs in the work queue."
+msgstr "Geen URLs meer in de wachtrij."
+
+#: core/core.php:2343
+msgctxt "for the \"Detected X unique URLs in Y links\" message"
+msgid "%d unique URL"
+msgid_plural "%d unique URLs"
+msgstr[0] "%d unieke URL"
+msgstr[1] "%d unieke URLs"
+
+#: core/core.php:2347
+msgctxt "for the \"Detected X unique URLs in Y links\" message"
+msgid "%d link"
+msgid_plural "%d links"
+msgstr[0] "%d link"
+msgstr[1] "%d links"
+
+#: core/core.php:2353
+msgid "Detected %1$s in %2$s and still searching..."
+msgstr "%1$s in %2$s gevonden, en nog steeds aan 't zoeken..."
+
+#: core/core.php:2359
+msgid "Detected %1$s in %2$s."
+msgstr "%1$s in %2$s gevonden."
+
+#: core/core.php:2366
+msgid "Searching your blog for links..."
+msgstr "Uw blog aan 't doorzoeken naar links..."
+
+#: core/core.php:2368
+msgid "No links detected."
+msgstr "Geen links gevonden."
+
+#: core/core.php:2394
+msgctxt "current load"
+msgid "Unknown"
+msgstr "Onbekend"
+
+#: core/core.php:2458 core/core.php:2498 core/core.php:2533 core/core.php:2596
+msgid "Oops, I can't find the link %d"
+msgstr "Oeps, ik kan link %d niet vinden"
+
+#: core/core.php:2471 core/core.php:2508
+msgid "Oops, couldn't modify the link!"
+msgstr "Oeps, ik kan deze link niet aanpassen!"
+
+#: core/core.php:2474 core/core.php:2511 core/core.php:2622
+msgid "Error : link_id not specified"
+msgstr "Fout : link_id niet opgegeven"
+
+#: core/core.php:2543
+msgid "Oops, the new URL is invalid!"
+msgstr "Oeps, de nieuwe URL is ongeldig!"
+
+#: core/core.php:2554 core/core.php:2605
+msgid "An unexpected error occured!"
+msgstr "Er is een onverwachte fout opgetreden!"
+
+#: core/core.php:2572
+msgid "Error : link_id or new_url not specified"
+msgstr "Fout: link_id of new_url niet opgegeven"
+
+#: core/core.php:2631
+msgid "You don't have sufficient privileges to access this information!"
+msgstr "U heeft niet genoeg rechten om deze informatie te bekijken! "
+
+#: core/core.php:2644
+msgid "Error : link ID not specified"
+msgstr "Fout : link ID niet opgegeven"
+
+#: core/core.php:2658
+msgid "Failed to load link details (%s)"
+msgstr "Kon linkgegevens (%s) niet laden"
+
+#. #-#-#-#-#  plugin.pot (Broken Link Checker 1.8)  #-#-#-#-#
+#. Plugin Name of the plugin/theme
+#: core/core.php:2712
+msgid "Broken Link Checker"
+msgstr "Broken Link Checker"
+
+#: core/core.php:2732
+msgid "PHP version"
+msgstr "PHP versie"
+
+#: core/core.php:2738
+msgid "MySQL version"
+msgstr "MySQL versie"
+
+#: core/core.php:2751
+msgid ""
+"You have an old version of CURL. Redirect detection may not work properly."
+msgstr ""
+"U draait een oude versie van CURL. Omleidingsdetectie werkt misschien niet "
+"goed."
+
+#: core/core.php:2763 core/core.php:2779 core/core.php:2784
+msgid "Not installed"
+msgstr "Niet ge&iuml;nstalleerd."
+
+#: core/core.php:2766
+msgid "CURL version"
+msgstr "CURL versie"
+
+#: core/core.php:2772
+msgid "Installed"
+msgstr "Ge&iuml;nstalleerd."
+
+#: core/core.php:2785
+msgid "You must have either CURL or Snoopy installed for the plugin to work!"
+msgstr ""
+"U moet CURL of Snoopy hebben ge&iuml;nstalleerd. Anders werkt de plugin niet!"
+
+#: core/core.php:2796
+msgid "On"
+msgstr "Aan"
+
+#: core/core.php:2797
+msgid "Redirects may be detected as broken links when safe_mode is on."
+msgstr ""
+"Omgeleide links worden misschien gezien als verbroken links wanneer "
+"safe_mode aan staat."
+
+#: core/core.php:2802 core/core.php:2816
+msgid "Off"
+msgstr "Uit"
+
+#: core/core.php:2810
+msgid "On ( %s )"
+msgstr "Aan (%s)"
+
+#: core/core.php:2811
+msgid "Redirects may be detected as broken links when open_basedir is on."
+msgstr ""
+"Omgeleide link worden misschien gezien als verbroken links wanneer "
+"open_basedir aan staan."
+
+#: core/core.php:2840
+msgid ""
+"If this value is zero even after several page reloads you have probably "
+"encountered a bug."
+msgstr ""
+"Wanneer deze waarde op nul staat, ook na het meerdere malen herladen van de "
+"pagina, heb je waarschijnlijk eenn bug ontdekt."
+
+#: core/core.php:2935 core/core.php:3033
+msgid "[%s] Broken links detected"
+msgstr "[%s] verbroken links gevonden"
+
+#: core/core.php:2940
+msgid "Broken Link Checker has detected %d new broken link on your site."
+msgid_plural ""
+"Broken Link Checker has detected %d new broken links on your site."
+msgstr[0] ""
+"Broken Link Checker heeft %d nieuwe verbroken link op jouw site gevonden."
+msgstr[1] ""
+"Broken Link Checker heeft %d nieuwe verbroken links op jouw site gevonden."
+
+#: core/core.php:2963
+msgid "Here's a list of the first %d broken links:"
+msgid_plural "Here's a list of the first %d broken links:"
+msgstr[0] "Hier is een lijst van de eerste %d verbroken links:"
+msgstr[1] "Hier is een lijst van de eerste %d verbroken links:"
+
+#: core/core.php:2972
+msgid "Here's a list of the new broken links: "
+msgstr "Hier is een lijst van de nieuwe verbroken links:"
+
+#: core/core.php:2981
+msgid "Link text : %s"
+msgstr "Linktekst: %s"
+
+#: core/core.php:2982
+msgid "Link URL : <a href=\"%s\">%s</a>"
+msgstr "Link URL : <a href=\"%s\">%s</a>"
+
+#: core/core.php:2983
+msgid "Source : %s"
+msgstr "Bron: %s"
+
+#: core/core.php:2996
+msgid "You can see all broken links here:"
+msgstr "Je kunt hier alle verbroken links zien:"
+
+#: core/core.php:3038
+msgid "Broken Link Checker has detected %d new broken link in your posts."
+msgid_plural ""
+"Broken Link Checker has detected %d new broken links in your posts."
+msgstr[0] ""
+"Broken Link Checker heeft %d nieuwe verbroken link in jouw berichten "
+"gevonden."
+msgstr[1] ""
+"Broken Link Checker heeft %d nieuwe verbroken links in jouw berichten "
+"gevonden."
+
+#: core/init.php:240
+msgid "Once Weekly"
+msgstr "Wekelijks"
+
+#: core/init.php:246
+msgid "Twice a Month"
+msgstr "Twee Keer per Maand"
+
+#: core/init.php:322
+msgid ""
+"Broken Link Checker installation failed. Try deactivating and then "
+"reactivating the plugin."
+msgstr ""
+"De installatie van Broken Link Checker is mislukt. Probeer de plugin te "
+"deactiveren en weer te activeren."
+
+#: includes/admin/db-upgrade.php:95
+msgid "Failed to delete old DB tables. Database error : %s"
+msgstr "Kon de oude databasetabellen niet verwijderen. Database fout: %s"
+
+#: includes/admin/links-page-js.php:55 includes/admin/links-page-js.php:403
+msgid "Wait..."
+msgstr "Wachten..."
+
+#: includes/admin/links-page-js.php:100 includes/admin/table-printer.php:630
+msgid "Not broken"
+msgstr "Niet verbroken"
+
+#: includes/admin/links-page-js.php:315
+msgid "%d instances of the link were successfully modified."
+msgstr "%d links zijn met succes aangepast."
+
+#: includes/admin/links-page-js.php:321
+msgid ""
+"However, %d instances couldn't be edited and still point to the old URL."
+msgstr ""
+"Alleen konden %d links niet worden aangepast, en deze wijzen nog steeds naar "
+"de oude URL."
+
+#: includes/admin/links-page-js.php:327
+msgid "The link could not be modified."
+msgstr "De link kon niet worden aangepast."
+
+#: includes/admin/links-page-js.php:330 includes/admin/links-page-js.php:455
+msgid "The following error(s) occured :"
+msgstr "De volgende fout(en) kwam(en) voor:"
+
+#: includes/admin/links-page-js.php:441
+msgid "%d instances of the link were successfully unlinked."
+msgstr "%d links zijn met succes verwijderd."
+
+#: includes/admin/links-page-js.php:447
+msgid "However, %d instances couldn't be removed."
+msgstr "%d links konden echter niet worden verwijderd."
+
+#: includes/admin/links-page-js.php:452
+msgid "The plugin failed to remove the link."
+msgstr "De plugin kon de link niet verwijderen."
+
+#: includes/admin/links-page-js.php:463 includes/admin/table-printer.php:273
+#: includes/admin/table-printer.php:624
+msgid "Unlink"
+msgstr "ontkoppel"
+
+#: includes/admin/links-page-js.php:507
+msgid "Enter a name for the new custom filter"
+msgstr "Geef een naam aan het nieuwe filter"
+
+#: includes/admin/links-page-js.php:518
+msgid ""
+"You are about to delete the current filter.\n"
+"'Cancel' to stop, 'OK' to delete"
+msgstr ""
+"Je staat op het punt om het huidige filter te verwijderen.\n"
+"'Annuleren' om te annuleren, 'OK' om te verwijderen"
+
+#: includes/admin/links-page-js.php:538
+msgid ""
+"Are you sure you want to delete all posts, bookmarks or other items that "
+"contain any of the selected links? This action can't be undone.\n"
+"'Cancel' to stop, 'OK' to delete"
+msgstr ""
+"Weet u zeker dat u alle berichten, bladwijzers en andere onderdelen die één "
+"van de geselecteerde links bevat wilt verijwderen? Dit kan niet "
+"teruggedraaid worden.\n"
+"'Annuleren' om te annuleren, 'OK' om te verwijderen"
+
+#: includes/admin/links-page-js.php:548
+msgid ""
+"Are you sure you want to remove the selected links? This action can't be "
+"undone.\n"
+"'Cancel' to stop, 'OK' to remove"
+msgstr ""
+"Weet je zeker dat je de geselecteerde links wilt verwijderen? Dit kan niet "
+"teruggedraaid worden.\n"
+"'Annuleren' om te annuleren, 'OK' om te verwijderen"
+
+#: includes/admin/links-page-js.php:657
+msgid "Enter a search string first."
+msgstr "Vul eerst een zoekopdracht in."
+
+#: includes/admin/links-page-js.php:664
+msgid "Select one or more links to edit."
+msgstr "Selecteer één of meerdere links om aan te passen."
+
+#: includes/admin/options-page-js.php:54
+msgid "Hide debug info"
+msgstr "Verberg Foutopsporingsinformatie"
+
+#: includes/admin/search-form.php:16
+msgid "Save This Search As a Filter"
+msgstr "Sla deze Zoekopdracht op als Filter"
+
+#: includes/admin/search-form.php:26
+msgid "Delete This Filter"
+msgstr "Verwijder Dit Filter"
+
+#: includes/admin/search-form.php:32 includes/link-query.php:65
+msgid "Search"
+msgstr "Zoek"
+
+#: includes/admin/search-form.php:42
+msgid "Link text"
+msgstr "Link tekst"
+
+#: includes/admin/search-form.php:45 includes/admin/table-printer.php:202
+msgid "URL"
+msgstr "URL"
+
+#: includes/admin/search-form.php:48 includes/admin/table-printer.php:491
+msgid "HTTP code"
+msgstr "HTTP code"
+
+#: includes/admin/search-form.php:51
+msgid "Link status"
+msgstr "Link status"
+
+#: includes/admin/search-form.php:68 includes/admin/search-form.php:85
+msgid "Link type"
+msgstr "Link type"
+
+#: includes/admin/search-form.php:70
+msgid "Any"
+msgstr "Elke"
+
+#: includes/admin/search-form.php:74
+msgid "Links used in"
+msgstr "Links gebruikt in"
+
+#: includes/admin/search-form.php:112
+msgid "Search Links"
+msgstr "Zoek Links"
+
+#: includes/admin/search-form.php:113 includes/admin/table-printer.php:349
+#: includes/admin/table-printer.php:652 includes/admin/table-printer.php:658
+msgid "Cancel"
+msgstr "Annuleren"
+
+#: includes/admin/sidebar.php:24
+msgid "More plugins by Janis Elsts"
+msgstr "Meer plugins van Janis Elsts"
+
+#: includes/admin/sidebar.php:47
+msgid "Donate $10, $20 or $50!"
+msgstr "Doneer $10, $20 of $50!"
+
+#: includes/admin/sidebar.php:50
+msgid ""
+"If you like this plugin, please donate to support development and "
+"maintenance!"
+msgstr ""
+"Bevalt deze plugin, help dan verdere ontwikkeling en onderhoud te "
+"ondersteunen door een bedrag te doneren!"
+
+#: includes/admin/sidebar.php:68
+msgid "Return to WordPress Dashboard"
+msgstr "Ga terug naar het WordPress Dashboard"
+
+#: includes/admin/table-printer.php:179
+msgid "Compact View"
+msgstr "Compacte Weergave"
+
+#: includes/admin/table-printer.php:180
+msgid "Detailed View"
+msgstr "Gedetailleerde Weergave"
+
+#: includes/admin/table-printer.php:209
+msgid "Source"
+msgstr "Bron"
+
+#: includes/admin/table-printer.php:215
+msgid "Link Text"
+msgstr "Link Tekst"
+
+#: includes/admin/table-printer.php:220
+msgid "Redirect URL"
+msgstr "URL omleiden"
+
+#: includes/admin/table-printer.php:268
+msgid "Bulk Actions"
+msgstr "Meerdere Acties"
+
+#: includes/admin/table-printer.php:269 includes/admin/table-printer.php:621
+msgid "Edit URL"
+msgstr "Bewerk URL"
+
+#: includes/admin/table-printer.php:270
+msgid "Recheck"
+msgstr "Controleer"
+
+#: includes/admin/table-printer.php:271
+msgid "Fix redirects"
+msgstr "Omleidingen repareren"
+
+#: includes/admin/table-printer.php:272
+msgid "Mark as not broken"
+msgstr "Markeer als niet verbroken"
+
+#: includes/admin/table-printer.php:276
+msgid "Move sources to Trash"
+msgstr "Verplaats bronnen naar Prullenbak"
+
+#: includes/admin/table-printer.php:278
+msgid "Delete sources"
+msgstr "Verwijder bronnen"
+
+#: includes/admin/table-printer.php:293
+msgid "&laquo;"
+msgstr "&laquo;"
+
+#: includes/admin/table-printer.php:294
+msgid "&raquo;"
+msgstr "&raquo;"
+
+#: includes/admin/table-printer.php:302
+msgid "Displaying %s&#8211;%s of <span class=\"current-link-count\">%s</span>"
+msgstr ""
+"Weergave van %s&#8211;%s van <span class=\"huidige-link-aantal\">%s</span>"
+
+#: includes/admin/table-printer.php:325
+msgid "Bulk Edit URLs"
+msgstr "Meerdere URLs Bewerken"
+
+#: includes/admin/table-printer.php:327
+msgid "Find"
+msgstr "Zoek"
+
+#: includes/admin/table-printer.php:331
+msgid "Replace with"
+msgstr "Vervang door"
+
+#: includes/admin/table-printer.php:339
+msgid "Case sensitive"
+msgstr "Hoofdlettergevoelig"
+
+#: includes/admin/table-printer.php:343
+msgid "Regular expression"
+msgstr "Reguliere expressie"
+
+#: includes/admin/table-printer.php:351
+msgid "Update"
+msgstr "Aanpassen"
+
+#: includes/admin/table-printer.php:476
+msgid "Post published on"
+msgstr "Bericht gepubliceer op"
+
+#: includes/admin/table-printer.php:481
+msgid "Link last checked"
+msgstr "Link laatst gecontroleerd op"
+
+#: includes/admin/table-printer.php:485
+msgid "Never"
+msgstr "Nooit"
+
+#: includes/admin/table-printer.php:496
+msgid "Response time"
+msgstr "Responstijd"
+
+#: includes/admin/table-printer.php:498
+msgid "%2.3f seconds"
+msgstr "%2.3f seconden"
+
+#: includes/admin/table-printer.php:501
+msgid "Final URL"
+msgstr "Uiteindelijke URL"
+
+#: includes/admin/table-printer.php:506
+msgid "Redirect count"
+msgstr "Aantal omleidingen"
+
+#: includes/admin/table-printer.php:511
+msgid "Instance count"
+msgstr "Aantal"
+
+#: includes/admin/table-printer.php:520
+msgid "This link has failed %d time."
+msgid_plural "This link has failed %d times."
+msgstr[0] "Deze link werkte %d keer niet."
+msgstr[1] "Deze link werkte %d keer niet."
+
+#: includes/admin/table-printer.php:528
+msgid "This link has been broken for %s."
+msgstr "Deze link is al %s verbroken."
+
+#: includes/admin/table-printer.php:539
+msgid "Log"
+msgstr "Logboek"
+
+#: includes/admin/table-printer.php:564
+msgid "Show more info about this link"
+msgstr "Toon meer informatie over deze link"
+
+#: includes/admin/table-printer.php:582
+msgctxt "checked how long ago"
+msgid "Checked"
+msgstr "Gecontroleerd"
+
+#: includes/admin/table-printer.php:598
+msgid "Broken for"
+msgstr "Verbroken gedurende"
+
+#: includes/admin/table-printer.php:621
+msgid "Edit link URL"
+msgstr "Bewerk link URL"
+
+#: includes/admin/table-printer.php:623
+msgid "Remove this link from all posts"
+msgstr "Verwijder deze link uit alle berichten"
+
+#: includes/admin/table-printer.php:629
+msgid "Remove this link from the list of broken links and mark it as valid"
+msgstr ""
+"Verwijder deze link uit de lijst met verbroken links en markeer hem als "
+"geldig"
+
+#: includes/admin/table-printer.php:637
+msgid "Hide this link and do not report it again unless its status changes"
+msgstr ""
+"Verberg deze link en laat het niet meer zien, behalve wanneer de status "
+"verandert"
+
+#: includes/admin/table-printer.php:638
+msgid "Dismiss"
+msgstr "Overslaan"
+
+#: includes/admin/table-printer.php:643
+msgid "Undismiss this link"
+msgstr "Sla deze link niet over"
+
+#: includes/admin/table-printer.php:644
+msgid "Undismiss"
+msgstr "Niet overslaan"
+
+#: includes/admin/table-printer.php:652
+msgid "Cancel URL editing"
+msgstr "Annuleer bewerken URL"
+
+#: includes/admin/table-printer.php:659
+msgid "Update URL"
+msgstr "Bijwerken URL"
+
+#: includes/admin/table-printer.php:686
+msgid "[An orphaned link! This is a bug.]"
+msgstr "[Een link zonder referentie! Dit is een bug.]"
+
+#: includes/any-post.php:397 modules/containers/blogroll.php:46
+#: modules/containers/comment.php:153 modules/containers/custom_field.php:197
+msgid "Edit"
+msgstr "Bewerken"
+
+#: includes/any-post.php:405 modules/containers/custom_field.php:203
+msgid "Move this item to the Trash"
+msgstr "Verplaats dit onderdeel naar de Prullenbak"
+
+#: includes/any-post.php:407 modules/containers/custom_field.php:205
+msgid "Trash"
+msgstr "Prullenbak"
+
+#: includes/any-post.php:412 modules/containers/custom_field.php:210
+msgid "Delete this item permanently"
+msgstr "Verwijder dit onderdeel permanent"
+
+#: includes/any-post.php:414 modules/containers/blogroll.php:47
+#: modules/containers/custom_field.php:212
+msgid "Delete"
+msgstr "Verwijderen"
+
+#: includes/any-post.php:427
+msgid "Preview &#8220;%s&#8221;"
+msgstr "Voorbeeld &#8220;%s&#8221;"
+
+#: includes/any-post.php:428
+msgid "Preview"
+msgstr "Voorbeeld"
+
+#: includes/any-post.php:435
+msgid "View &#8220;%s&#8221;"
+msgstr "Bekijk &#8220;%s&#8221;"
+
+#: includes/any-post.php:436 modules/containers/comment.php:166
+#: modules/containers/custom_field.php:217
+msgid "View"
+msgstr "Bekijken"
+
+#: includes/any-post.php:455 modules/containers/custom_field.php:197
+msgid "Edit this item"
+msgstr "Bewerk dit onderdeel"
+
+#: includes/any-post.php:519 modules/containers/blogroll.php:83
+#: modules/containers/comment.php:43
+msgid "Nothing to update"
+msgstr "Niets aan te passen"
+
+#: includes/any-post.php:529
+msgid "Updating post %d failed"
+msgstr "Kon bericht %d niet aanpassen"
+
+#: includes/any-post.php:566 modules/containers/custom_field.php:284
+msgid "Failed to delete post \"%s\" (%d)"
+msgstr "Kon dit bericht niet verwijderen: \"%s\" (%d)"
+
+#: includes/any-post.php:585 modules/containers/custom_field.php:303
+msgid ""
+"Can't move post \"%s\" (%d) to the trash because the trash feature is "
+"disabled"
+msgstr ""
+"Kan post \"%s\" (%d) niet naar de Prullenbak verplaatsen omdat de "
+"prullenbakmogelijkheid is uitgezet"
+
+#: includes/any-post.php:605 modules/containers/custom_field.php:322
+msgid "Failed to move post \"%s\" (%d) to the trash"
+msgstr "Kon bericht \"%s\" (%d) niet verplaatsen naar de Prullenbak"
+
+#: includes/any-post.php:713
+msgid "%d post deleted."
+msgid_plural "%d posts deleted."
+msgstr[0] "%d bericht verwijderd."
+msgstr[1] "%d berichten verwijderd."
+
+#: includes/any-post.php:715
+msgid "%d page deleted."
+msgid_plural "%d pages deleted."
+msgstr[0] "%d pagina verwijderd."
+msgstr[1] "%d pagina's verwijderd."
+
+#: includes/any-post.php:717
+msgid "%d \"%s\" deleted."
+msgid_plural "%d \"%s\" deleted."
+msgstr[0] "%d \"%s\" verwijderd."
+msgstr[1] "%d \"%s\" verwijderd."
+
+#: includes/any-post.php:736
+msgid "%d post moved to the Trash."
+msgid_plural "%d posts moved to the Trash."
+msgstr[0] "%d bericht verplaatst naar de Prullenbak."
+msgstr[1] "%d berichten verplaatst naar de Prullenbak."
+
+#: includes/any-post.php:738
+msgid "%d page moved to the Trash."
+msgid_plural "%d pages moved to the Trash."
+msgstr[0] "%d pagina verplaatst naar de Prullenbak."
+msgstr[1] "%d pagina's verplaatst naar de Prullenbak."
+
+#: includes/any-post.php:740
+msgid "%d \"%s\" moved to the Trash."
+msgid_plural "%d \"%s\" moved to the Trash."
+msgstr[0] "%d \"%s\" verplaatst naar de Prullenbak."
+msgstr[1] "%d \"%s\" verplaatst naar de Prullenbak."
+
+#: includes/containers.php:122
+msgid "%d '%s' has been deleted"
+msgid_plural "%d '%s' have been deleted"
+msgstr[0] "%d '%s' is verwijderd"
+msgstr[1] "%d '%s' zijn verwijderd"
+
+#: includes/containers.php:873 includes/containers.php:891
+msgid "Container type '%s' not recognized"
+msgstr "Container type '%s' niet herkend"
+
+#: includes/extra-strings.php:2
+msgctxt "module name"
+msgid "Basic HTTP"
+msgstr "Standaard HTTP"
+
+#: includes/extra-strings.php:3
+msgctxt "module name"
+msgid "Blogroll items"
+msgstr "Blogroll links"
+
+#: includes/extra-strings.php:4
+msgctxt "module name"
+msgid "Comments"
+msgstr "Reacties"
+
+#: includes/extra-strings.php:5
+msgctxt "module name"
+msgid "Custom fields"
+msgstr "Aangepaste velden"
+
+#: includes/extra-strings.php:6
+msgctxt "module name"
+msgid "Embedded DailyMotion videos"
+msgstr "Ingesloten DailyMotion videos"
+
+#: includes/extra-strings.php:7
+msgctxt "module name"
+msgid "Embedded GoogleVideo videos"
+msgstr "Ingesloten GoogleVideo videos"
+
+#: includes/extra-strings.php:8
+msgctxt "module name"
+msgid "Embedded Megavideo videos"
+msgstr "Ingesloten Megavideo videos"
+
+#: includes/extra-strings.php:9
+msgctxt "module name"
+msgid "Embedded Vimeo videos"
+msgstr "Ingesloten Vimeo videos"
+
+#: includes/extra-strings.php:10
+msgctxt "module name"
+msgid "Embedded YouTube playlists (old embed code)"
+msgstr "Ingesloten YouTube playlists (oude insluitingscode)"
+
+#: includes/extra-strings.php:11
+msgctxt "module name"
+msgid "Embedded YouTube videos"
+msgstr "Ingesloten YouTube videos"
+
+#: includes/extra-strings.php:12
+msgctxt "module name"
+msgid "Embedded YouTube videos (old embed code)"
+msgstr "Ingesloten YouTube videos (oude insluitingscode)"
+
+#: includes/extra-strings.php:13
+msgctxt "module name"
+msgid "FileServe API"
+msgstr "FileServe API"
+
+#: includes/extra-strings.php:14
+msgctxt "module name"
+msgid "HTML images"
+msgstr "HTML afbeeldingen"
+
+#: includes/extra-strings.php:15
+msgctxt "module name"
+msgid "HTML links"
+msgstr "HTML links"
+
+#: includes/extra-strings.php:16
+msgctxt "module name"
+msgid "MediaFire API"
+msgstr "MediaFire API"
+
+#: includes/extra-strings.php:17
+msgctxt "module name"
+msgid "MegaUpload API"
+msgstr "MegaUpload API"
+
+#: includes/extra-strings.php:18
+msgctxt "module name"
+msgid "Plaintext URLs"
+msgstr "Standaard tekst URLs"
+
+#: includes/extra-strings.php:19
+msgctxt "module name"
+msgid "RapidShare API"
+msgstr "RapidShare API"
+
+#: includes/extra-strings.php:20
+msgctxt "module name"
+msgid "Smart YouTube httpv:// URLs"
+msgstr "Smart YouTube httpv:// URLs"
+
+#: includes/extra-strings.php:21
+msgctxt "module name"
+msgid "YouTube API"
+msgstr "YouTube API"
+
+#: includes/extra-strings.php:22
+msgctxt "module name"
+msgid "Posts"
+msgstr "Berichten"
+
+#: includes/extra-strings.php:23
+msgctxt "module name"
+msgid "Pages"
+msgstr "Pagina's"
+
+#: includes/instances.php:104 includes/instances.php:160
+msgid "Container %s[%d] not found"
+msgstr "Container %s[%d] niet gevonden"
+
+#: includes/instances.php:113 includes/instances.php:169
+msgid "Parser '%s' not found."
+msgstr "Parser '%s' niet gevonden."
+
+#: includes/link-query.php:26
+msgid "Broken"
+msgstr "Verbroken"
+
+#: includes/link-query.php:28
+msgid "No broken links found"
+msgstr "Geen verbroken links gevonden."
+
+#: includes/link-query.php:36
+msgid "Redirects"
+msgstr "Omleidingen"
+
+#: includes/link-query.php:37
+msgid "Redirected Links"
+msgstr "Omgeleide Links"
+
+#: includes/link-query.php:38
+msgid "No redirects found"
+msgstr "Geen omleidingen gevonden."
+
+#: includes/link-query.php:46
+msgid "Dismissed"
+msgstr "Overgeslagen"
+
+#: includes/link-query.php:47
+msgid "Dismissed Links"
+msgstr "Overgeslagen Links"
+
+#: includes/link-query.php:48
+msgid "No dismissed links found"
+msgstr "Geen overgeslagen links gevonden."
+
+#: includes/link-query.php:56
+msgid "All"
+msgstr "Alles"
+
+#: includes/link-query.php:57
+msgid "Detected Links"
+msgstr "Gevonden links"
+
+#: includes/link-query.php:58
+msgid "No links found (yet)"
+msgstr "(Nog) geen links gevonden"
+
+#: includes/link-query.php:66
+msgid "Search Results"
+msgstr "Zoekresultaten"
+
+#: includes/link-query.php:67 includes/link-query.php:114
+msgid "No links found for your query"
+msgstr "Geen links gevonden voor deze zoekopdracht"
+
+#: includes/links.php:218
+msgid "The plugin script was terminated while trying to check the link."
+msgstr ""
+"Het plugin script stopte met werken tijdens het controleren van de link."
+
+#: includes/links.php:264
+msgid "The plugin doesn't know how to check this type of link."
+msgstr "De plugin weet niet hoe het dit type link moet controleren."
+
+#: includes/links.php:357
+msgid "Link is valid."
+msgstr "Link is geldig."
+
+#: includes/links.php:359
+msgid "Link is broken."
+msgstr "Link is verbroken."
+
+#: includes/links.php:571 includes/links.php:673 includes/links.php:700
+msgid "Link is not valid"
+msgstr "Link is niet geldig"
+
+#: includes/links.php:588
+msgid ""
+"This link can not be edited because it is not used anywhere on this site."
+msgstr ""
+"Deze link kan niet worden aangepast omdat deze nergens op deze site wordt "
+"gebruikt."
+
+#: includes/links.php:614
+msgid "Failed to create a DB entry for the new URL."
+msgstr "Kon geen databasevermelding voor de nieuwe URL maken."
+
+#: includes/links.php:680
+msgid "This link is not a redirect"
+msgstr "Deze link is geen omleiding"
+
+#: includes/links.php:727 includes/links.php:764
+msgid "Couldn't delete the link's database record"
+msgstr "Kon de databaseregel voor deze link niet verwijderen."
+
+#: includes/links.php:838
+msgctxt "link status"
+msgid "Unknown"
+msgstr "Onbekend"
+
+#: includes/links.php:852 modules/checkers/http.php:263
+#: modules/extras/mediafire.php:101
+msgid "Unknown Error"
+msgstr "Onbekende Fout"
+
+#: includes/links.php:876
+msgid "Not checked"
+msgstr "Niet gecontroleerd"
+
+#: includes/links.php:879
+msgid "False positive"
+msgstr "Vals positief"
+
+#: includes/links.php:882 modules/extras/fileserve.php:121
+#: modules/extras/megaupload.php:115 modules/extras/rapidshare.php:145
+#: modules/extras/rapidshare.php:151 modules/extras/rapidshare.php:178
+msgctxt "link status"
+msgid "OK"
+msgstr "OK"
+
+#: includes/parsers.php:109
+msgid "Editing is not implemented in the '%s' parser"
+msgstr "Aanpassen is niet geïmplementeerd in de '%s' parser"
+
+#: includes/parsers.php:124
+msgid "Unlinking is not implemented in the '%s' parser"
+msgstr "Link verwijderen is niet geïmplementeerd in de '%s' parser"
+
+#: includes/utility-class.php:245
+msgid "%d second"
+msgid_plural "%d seconds"
+msgstr[0] "%d seconde"
+msgstr[1] "%d seconden"
+
+#: includes/utility-class.php:246
+msgid "%d second ago"
+msgid_plural "%d seconds ago"
+msgstr[0] "%d seconde geleden"
+msgstr[1] "%d seconden geleden"
+
+#: includes/utility-class.php:249
+msgid "%d minute"
+msgid_plural "%d minutes"
+msgstr[0] "%d minuut"
+msgstr[1] "%d minuten"
+
+#: includes/utility-class.php:250
+msgid "%d minute ago"
+msgid_plural "%d minutes ago"
+msgstr[0] "%d minuut geleden"
+msgstr[1] "%d minuten geleden"
+
+#: includes/utility-class.php:253
+msgid "%d hour"
+msgid_plural "%d hours"
+msgstr[0] "%d uur"
+msgstr[1] "%d uren"
+
+#: includes/utility-class.php:254
+msgid "%d hour ago"
+msgid_plural "%d hours ago"
+msgstr[0] "%d uur geleden"
+msgstr[1] "%d uren geleden"
+
+#: includes/utility-class.php:257
+msgid "%d day"
+msgid_plural "%d days"
+msgstr[0] "%d dag"
+msgstr[1] "%d dagen"
+
+#: includes/utility-class.php:258
+msgid "%d day ago"
+msgid_plural "%d days ago"
+msgstr[0] "%d dag geleden"
+msgstr[1] "%d dagen geleden"
+
+#: includes/utility-class.php:261
+msgid "%d month"
+msgid_plural "%d months"
+msgstr[0] "%d maand"
+msgstr[1] "%d maanden"
+
+#: includes/utility-class.php:262
+msgid "%d month ago"
+msgid_plural "%d months ago"
+msgstr[0] "%d maand geleden"
+msgstr[1] "%d maanden geleden"
+
+#: modules/checkers/http.php:242
+msgid "Server Not Found"
+msgstr "Server Niet Gevonden"
+
+#: modules/checkers/http.php:257
+msgid "Connection Failed"
+msgstr "Verbinding Mislukt"
+
+#: modules/checkers/http.php:292 modules/checkers/http.php:362
+msgid "HTTP code : %d"
+msgstr "HTTP code: %d"
+
+#: modules/checkers/http.php:294 modules/checkers/http.php:364
+msgid "(No response)"
+msgstr "(Geen reactie)"
+
+#: modules/checkers/http.php:300
+msgid "Most likely the connection timed out or the domain doesn't exist."
+msgstr ""
+"Hoogstwaarschijnlijk is er een time-out voor de verbinding opgetreden, of "
+"het domein bestaat niet."
+
+#: modules/checkers/http.php:371
+msgid "Request timed out."
+msgstr "Time-out voor Verzoek opgetreden."
+
+#: modules/checkers/http.php:389
+msgid "Using Snoopy"
+msgstr "Gebruikt Snoopy"
+
+#: modules/containers/blogroll.php:21
+msgid "Bookmark"
+msgstr "Bladwijzer"
+
+#: modules/containers/blogroll.php:27 modules/containers/blogroll.php:46
+msgid "Edit this bookmark"
+msgstr "Bewerk deze bladwijzer "
+
+#: modules/containers/blogroll.php:47
+msgid ""
+"You are about to delete this link '%s'\n"
+"  'Cancel' to stop, 'OK' to delete."
+msgstr ""
+"U staat op het punt deze link '%s' te verwijderen\n"
+"  'Annuleren' om te stoppen, 'OK' om te verwijderen."
+
+#: modules/containers/blogroll.php:97
+msgid "Updating bookmark %d failed"
+msgstr "Aanpassen van bladwijzer %d mislukt."
+
+#: modules/containers/blogroll.php:128
+msgid "Failed to delete blogroll link \"%s\" (%d)"
+msgstr "Kon deze blogroll link niet verwijderen: \"%s\" (%d)"
+
+#: modules/containers/blogroll.php:298
+msgid "%d blogroll link deleted."
+msgid_plural "%d blogroll links deleted."
+msgstr[0] "%d blogroll link verwijderd."
+msgstr[1] "%d blogroll links verwijderd."
+
+#: modules/containers/comment.php:53
+msgid "Updating comment %d failed"
+msgstr "Aanpassen van reactie %d mislukt"
+
+#: modules/containers/comment.php:74
+msgid "Failed to delete comment %d"
+msgstr "Kon reactie %d niet verwijderen"
+
+#: modules/containers/comment.php:95
+msgid "Can't move comment %d to the trash"
+msgstr "Kan reactie %d niet naar de prullenbak verplaatsen"
+
+#: modules/containers/comment.php:153 modules/containers/comment.php:195
+msgid "Edit comment"
+msgstr "Reactie aanpassen"
+
+#: modules/containers/comment.php:160
+msgid "Delete Permanently"
+msgstr "Permanent Verwijderen"
+
+#: modules/containers/comment.php:162
+msgid "Move this comment to the trash"
+msgstr "Verplaats deze reactie naar de prullenbak"
+
+#: modules/containers/comment.php:162
+msgctxt "verb"
+msgid "Trash"
+msgstr "Weggooien"
+
+#: modules/containers/comment.php:166
+msgid "View comment"
+msgstr "Bekijk reactie"
+
+#: modules/containers/comment.php:183
+msgid "Comment"
+msgstr "Reactie"
+
+#: modules/containers/comment.php:355
+msgid "%d comment has been deleted."
+msgid_plural "%d comments have been deleted."
+msgstr[0] "%d reactie is verwijderd"
+msgstr[1] "%d reacties zijn verwijderd"
+
+#: modules/containers/comment.php:374
+msgid "%d comment moved to the Trash."
+msgid_plural "%d comments moved to the Trash."
+msgstr[0] "%d reactie verplaatst naar de Prullenbak."
+msgstr[1] "%d reacties verplaatst naar de Prullenbak."
+
+#: modules/containers/custom_field.php:84
+msgid "Failed to update the meta field '%s' on %s [%d]"
+msgstr "Kon meta veld '%s' op %s [%d] niet aanpassen."
+
+#: modules/containers/custom_field.php:110
+msgid "Failed to delete the meta field '%s' on %s [%d]"
+msgstr "Kon meta veld '%s' op %s [%d] niet verwijderen"
+
+#: modules/containers/custom_field.php:187
+msgid "Edit this post"
+msgstr "Bewerk dit bericht"
+
+#: modules/containers/custom_field.php:217
+msgid "View \"%s\""
+msgstr "Toon \"%s\""
+
+#: modules/containers/dummy.php:34 modules/containers/dummy.php:45
+msgid "I don't know how to edit a '%s' [%d]."
+msgstr "Ik weet niet hoe ik een '%s' [%d] kan bewerken."
+
+#: modules/extras/dailymotion-embed.php:23
+msgid "DailyMotion Video"
+msgstr "DailyMotion Video"
+
+#: modules/extras/dailymotion-embed.php:24
+msgid "Embedded DailyMotion video"
+msgstr "Ingesloten DailyMotion video"
+
+#: modules/extras/embed-parser-base.php:197
+msgid ""
+"Embedded videos can't be edited using Broken Link Checker. Please edit or "
+"replace the video in question manually."
+msgstr ""
+"Ingesloten videos kunnen niet worden bewerkt met Broken Link Checker. Bewerk "
+"of vervang de betreffende video alstublieft handmatig."
+
+#: modules/extras/fileserve.php:55
+msgid "Using FileServe API"
+msgstr "Gebruikt de FileServe API"
+
+#: modules/extras/fileserve.php:112 modules/extras/mediafire.php:91
+#: modules/extras/mediafire.php:96 modules/extras/megaupload.php:81
+#: modules/extras/megaupload.php:123 modules/extras/rapidshare.php:139
+msgid "Not Found"
+msgstr "Niet Gevonden"
+
+#: modules/extras/fileserve.php:115
+msgid "FileServe : %d %s"
+msgstr "FileServe: %d %s"
+
+#: modules/extras/googlevideo-embed.php:24
+msgid "GoogleVideo Video"
+msgstr "GoogleVideo Video"
+
+#: modules/extras/googlevideo-embed.php:25
+msgid "Embedded GoogleVideo video"
+msgstr "Ingesloten GoogleVideo video"
+
+#: modules/extras/megaupload.php:130
+msgid "File Temporarily Unavailable"
+msgstr "Besdtand Tijdelijk Niet Beschikbaar"
+
+#: modules/extras/megaupload.php:136
+msgid "API Error"
+msgstr "API Fout"
+
+#: modules/extras/megavideo-embed.php:24
+msgid "Megavideo Video"
+msgstr "Megavideo Video"
+
+#: modules/extras/megavideo-embed.php:25
+msgid "Embedded Megavideo video"
+msgstr "Ingesloten Megavideo video"
+
+#: modules/extras/rapidshare.php:51
+msgid "Using RapidShare API"
+msgstr "Gebruikt de RapidShare API"
+
+#: modules/extras/rapidshare.php:158
+msgid "RS Server Down"
+msgstr "RS Server Draait Niet"
+
+#: modules/extras/rapidshare.php:165
+msgid "File Blocked"
+msgstr "Bestand Geblokkeerd"
+
+#: modules/extras/rapidshare.php:172
+msgid "File Locked"
+msgstr "Bestand Op Slot"
+
+#: modules/extras/rapidshare.php:183
+msgid "RapidShare : %s"
+msgstr "RapidShare: %s"
+
+#: modules/extras/rapidshare.php:189
+msgid "RapidShare API error: %s"
+msgstr "RapidShare API fout: %s"
+
+#: modules/extras/vimeo-embed.php:24
+msgid "Vimeo Video"
+msgstr "Vimeo Video"
+
+#: modules/extras/vimeo-embed.php:25
+msgid "Embedded Vimeo video"
+msgstr "Ingesloten Vimeo video"
+
+#: modules/extras/youtube-embed.php:24 modules/extras/youtube-iframe.php:25
+msgid "YouTube Video"
+msgstr "YouTube Video"
+
+#: modules/extras/youtube-embed.php:25 modules/extras/youtube-iframe.php:26
+msgid "Embedded YouTube video"
+msgstr "Ingesloten YouTube video"
+
+#: modules/extras/youtube-playlist-embed.php:24
+msgid "YouTube Playlist"
+msgstr "YouTube Playlist"
+
+#: modules/extras/youtube-playlist-embed.php:25
+msgid "Embedded YouTube playlist"
+msgstr "Ingesloten YouTube playlist"
+
+#: modules/extras/youtube.php:124 modules/extras/youtube.php:127
+msgid "Video Not Found"
+msgstr "Video Niet Gevonden"
+
+#: modules/extras/youtube.php:135
+msgid "Video Removed"
+msgstr "Video Verwijderd"
+
+#: modules/extras/youtube.php:143
+msgid "Invalid Video ID"
+msgstr "Verkeerd Video ID"
+
+#: modules/extras/youtube.php:155
+msgid "Video OK"
+msgstr "Video OK"
+
+#: modules/extras/youtube.php:156 modules/extras/youtube.php:177
+#: modules/extras/youtube.php:249 modules/extras/youtube.php:289
+msgid "OK"
+msgstr "OK"
+
+#: modules/extras/youtube.php:170 modules/extras/youtube.php:271
+msgid "Video status : %s%s"
+msgstr "Video status: %s%s"
+
+#: modules/extras/youtube.php:182 modules/extras/youtube.php:280
+msgid "Video Restricted"
+msgstr "Video Afgeschermd"
+
+#: modules/extras/youtube.php:199 modules/extras/youtube.php:305
+msgid "Unknown YouTube API response received."
+msgstr "Onbekende YouTube API reactie ontvangen."
+
+#: modules/extras/youtube.php:217 modules/extras/youtube.php:220
+msgid "Playlist Not Found"
+msgstr "Playlist Niet Gevonden"
+
+#: modules/extras/youtube.php:227
+msgid "Playlist Restricted"
+msgstr "Playlist Afgeschermd"
+
+#: modules/extras/youtube.php:234
+msgid "Invalid Playlist"
+msgstr "Onbekende Playlist"
+
+#: modules/extras/youtube.php:248
+msgid "Playlist OK"
+msgstr "Playlist OK"
+
+#: modules/extras/youtube.php:255
+msgid "This playlist has no entries or all entries have been deleted."
+msgstr "Deze playlist bevat geen nummers, of alle nummers zijn verwijderd."
+
+#: modules/extras/youtube.php:256
+msgid "Empty Playlist"
+msgstr "Lege Playlist"
+
+#: modules/parsers/image.php:164
+msgid "Image"
+msgstr "Afbeelding"
+
+#: modules/parsers/metadata.php:118
+msgid "Custom field"
+msgstr "Aangepast Veld"
+
+#. Plugin URI of the plugin/theme
+msgid "http://w-shadow.com/blog/2007/08/05/broken-link-checker-for-wordpress/"
+msgstr "http://w-shadow.com/blog/2007/08/05/broken-link-checker-for-wordpress/"
+
+#. Description of the plugin/theme
+msgid ""
+"Checks your blog for broken links and missing images and notifies you on the "
+"dashboard if any are found."
+msgstr ""
+"Controleert je blog op verbroken links en ontbrekende afbeeldingen, en laat "
+"in het Dashboard zien of deze gevonden zijn."
+
+#. Author of the plugin/theme
+msgid "Janis Elsts"
+msgstr "Janis Elsts"
+
+#. Author URI of the plugin/theme
+msgid "http://w-shadow.com/"
+msgstr "http://w-shadow.com/"
+
+#~ msgid "Broken link CSS"
+#~ msgstr "Verbroken link CSS"
+
+#~ msgid "Custom temporary directory"
+#~ msgstr "Aangepaste tijdelijke map"
+
+#~ msgid "Error : This directory isn't writable by PHP."
+#~ msgstr "Fout : er zijn PHP geen schrijfrechten in deze map."
+
+#~ msgid "Error : This directory doesn't exist."
+#~ msgstr "Fout:  deze map bestaat niet."
+
+#~ msgid ""
+#~ "Set this field if you want the plugin to use a custom directory for its "
+#~ "lockfiles. Otherwise, leave it blank."
+#~ msgstr ""
+#~ "Vul dit veld in als u de invoegtoepassing een aangepaste map wilt laten "
+#~ "gebruiken voor zijn vergrendelingsbestanden. Zo niet, dan laat u het veld "
+#~ "leeg."
+
+#~ msgid "Excluded"
+#~ msgstr "Uitgesloten"
+
+#~ msgid "Add this URL to the exclusion list"
+#~ msgstr "Voeg deze URL toe aan de lijst met uitsluitingen"
+
+#~ msgid "Exclude"
+#~ msgstr "Uitsluiten"
+
+#~ msgid "Discard"
+#~ msgstr "Negeren"
+
+#~ msgid "Saving changes..."
+#~ msgstr "Veranderingen Opslaan..."
+
+#~ msgid ""
+#~ "This link wasn't checked because a matching keyword was found on your "
+#~ "exclusion list."
+#~ msgstr ""
+#~ "Deze koppeling is niet gecontroleerd omdat een overeenkomend sleutelwoord "
+#~ "is gevonden in uw lijst van uitsluitingen."
+
+#~ msgid "URL %s was removed."
+#~ msgstr "de URL %s is verwijderd."
+
+#~ msgid "URL %s added to the exclusion list"
+#~ msgstr "URL %s toegevoegd aan de lijst van uitsluitingen"
+
+#~ msgid ""
+#~ "The current temporary directory is not accessible; please <a href=\"%s"
+#~ "\">set a different one</a>."
+#~ msgstr ""
+#~ "De huidige tijdelijke map is niet toegankelijk: svp <a href=\"%s\">een "
+#~ "nieuwe instellen</a>."
+
+#~ msgid ""
+#~ "Please make the directory <code>%1$s</code> writable by plugins or <a "
+#~ "href=\"%2$s\">set a custom temporary directory</a>."
+#~ msgstr ""
+#~ "Geef spv de map <code>%1$s</code> schrijfrechten voor invoegtoepassingen "
+#~ "of <a href=\"%2$s\">stel een aangepaste tijdelijke map in</a>."
+
+#~ msgid "Broken Link Checker can't create a lockfile."
+#~ msgstr "BLC kan geen vergrendelbestand maken."
+
+#~ msgid ""
+#~ "The plugin uses a file-based locking mechanism to ensure that only one "
+#~ "instance of the\n"
+#~ "\t\t\t\tresource-heavy link checking algorithm is running at any given "
+#~ "time. Unfortunately,  \n"
+#~ "\t\t\t\tBLC can't find a writable directory where it could store the "
+#~ "lockfile - it failed to \n"
+#~ "\t\t\t\tdetect the location of your server's temporary directory, and the "
+#~ "plugin's own directory\n"
+#~ "\t\t\t\tisn't writable by PHP. To fix this problem, please make the "
+#~ "plugin's directory writable\n"
+#~ "\t\t\t\tor enter a specify a custom temporary directory in the plugin's "
+#~ "settings."
+#~ msgstr ""
+#~ "De invoegtoepassing gebruikt een vergrendelingsbestand om zeker te "
+#~ "stellen dat slechts exemplaar van het\n"
+#~ "\t\t\t\tveel geheugen inbeslagnemende algorithme voor kopplingscontrole "
+#~ "is geladen. Helaas kan \n"
+#~ "\t\t\t\tBLC geen beschrijfbare map vinden waar het zijn "
+#~ "vergrendelingsbestand kan opslaan. BLC kon \n"
+#~ "\t\t\t\tuw server&#x0027;s tijdelijke map niet vinden en de eigen map is "
+#~ "niet beschrijfbaar door PHP. \n"
+#~ "\t\t\t\t Om dit probleem op te lossen moet u de map schrijfrechten "
+#~ "geven \n"
+#~ "\t\t\t\tof zelf een tijdelijke map opgeven bij de instellingen van de "
+#~ "invoegtoepassing."
+
+#~ msgid ""
+#~ "Can't create a lockfile. Please specify a custom temporary directory."
+#~ msgstr ""
+#~ "Kan geen vergrendelingsbestand maken. Geef een aangepast tijdelijke mapm "
+#~ "op."
+
+#~ msgid "First try : %d"
+#~ msgstr "eerste poging : %d"
+
+#~ msgid "Trying a second time with different settings..."
+#~ msgstr "Een tweede poging met verschillende instellingen..."
+
+#~ msgid "Second try : 0 (No response)"
+#~ msgstr "Tweede poging : 0 (Geen reactie)"
+
+#~ msgid "Second try : %d"
+#~ msgstr "Tweede poging : %d"
+
+#~ msgid "Error adding link %s : %s"
+#~ msgstr "Fout bij het toevoegen van koppeling %s : %s"
+
+#~ msgid "Error updating link %d : %s"
+#~ msgstr "Fout bij het vernieuwen van de koppeling %d : %s"
+
+#~ msgid ""
+#~ "<span class='view'><a class='blc-details-button' href='javascript:void"
+#~ "(0)' title='Show more info about this link'>Details</a>"
+#~ msgstr ""
+#~ "<span class='view'><a class='blc-details-button' href='javascript:void"
+#~ "(0)' title='Toon meer info over deze link'>Details</a>"
+
+#~ msgid ""
+#~ "<span class='delete'><a class='submitdelete blc-unlink-button' "
+#~ "title='Remove this link from all posts' id='unlink-button-$rownum' "
+#~ "href='javascript:void(0);'>Unlink</a>"
+#~ msgstr ""
+#~ "<span class='delete'><a class='submitdelete blc-unlink-button' "
+#~ "title='Verwijder deze link uit alle berichten' id='unlink-button-$rownum' "
+#~ "href='javascript:void(0);'>Ontkoppel</a>"
+
+#~ msgid "<span class='delete'>Excluded"
+#~ msgstr "<span class='delete'>Uitgesloten"
+
+#~ msgid ""
+#~ "<span class='delete'><a class='submitdelete blc-exclude-button' "
+#~ "title='Add this URL to the exclusion list' id='exclude-button-$rownum' "
+#~ "href='javascript:void(0);'>Exclude</a>"
+#~ msgstr ""
+#~ "<span class='delete'><a class='submitdelete blc-unlink-button' "
+#~ "title='Voeg deze URL toe aan de lijst met uitzonderingen' id='unlink-"
+#~ "button-$rownum' href='javascript:void(0);'>Uitsluiten</a>"
+
+#~ msgid ""
+#~ "<span class='edit'><a href='javascript:void(0)' class='blc-edit-button' "
+#~ "title='Edit link URL'>Edit URL</a>"
+#~ msgstr ""
+#~ "<span class='edit'><a href='javascript:void(0)' class='blc-edit-button' "
+#~ "title='Bewerk link van URL'>Bewerk URL</a>"
+
+#~ msgid "'Remove this message and mark the link as valid'>Discard"
+#~ msgstr ""
+#~ "'Verwijder deze boodschap en markeer de koppling als geldig'>Negeren"
+
+#~ msgid ""
+#~ "<a href='%stools.php?page=view-broken-links' title='View broken "
+#~ "links'><strong>Found %d broken link%s</strong></a>"
+#~ msgstr ""
+#~ "<a href='%stools.php?page=view-broken-links' title='Bekijk verbroken "
+#~ "links'><strong>%d verbroken link%s gevonden</strong></a>"
+
+#~ msgid ""
+#~ "<a class=\"row-title\" href=\"post.php?action=edit&amp;post=$link"
+#~ "[source_id]\" title=\"Edit this post\">{$link[post_title]}</a>"
+#~ msgstr ""
+#~ "<a class=\"row-title\" href=\"post.php?action=edit&amp;post=$link"
+#~ "[source_id]\" title=\"Bewerk dit bericht\">{$link[post_title]}</a>"
+
+#~ msgid ""
+#~ "<a class=\"row-title\" href=\"link.php?action=edit&amp;link_id=$link"
+#~ "[source_id]\" title=\"Edit this bookmark\">{$link[link_text]}</a>"
+#~ msgstr ""
+#~ "<a class=\"row-title\" href=\"link.php?action=edit&amp;link_id=$link"
+#~ "[source_id]\" title=\"Bewerk deze bladwijzer\">{$link[link_text]}</a>"
