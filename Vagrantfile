@@ -26,12 +26,12 @@ Vagrant.configure("2") do |config|
   config.ssh.forward_agent = true
 
   # fixes an issue with latest virtualbox
-  config.ssh.max_tries = 150
+  # config.ssh.max_tries = 150
 
   nfs = Kernel.is_mac?
   config.vm.synced_folder "config", "/home/vagrant/config", :nfs => nfs
   config.vm.synced_folder "projects", "/srv/www", :nfs => nfs
-  config.vm.synced_folder "databases", "/var/lib/mysql", :extra => 'dmode=777,fmode=777'
+  config.vm.synced_folder "databases", "/var/lib/mysql", :mount_options => ["dmode=777","fmode=777"]
   config.vm.synced_folder "logs", "/srv/logs", :nfs => nfs
 
   config.vm.synced_folder "config/salt", "/srv/salt"
