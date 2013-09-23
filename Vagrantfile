@@ -28,7 +28,11 @@ Vagrant.configure("2") do |config|
   nfs = Kernel.is_mac?
   config.vm.synced_folder "config", "/home/vagrant/config", :nfs => nfs
   config.vm.synced_folder "projects", "/srv/www", :nfs => nfs
-  config.vm.synced_folder "databases", "/var/lib/mysql", :extra => 'dmode=777,fmode=777'
+  if Vagrant::VERSION.to_f > 1.2
+    config.vm.synced_folder "databases", "/var/lib/mysql", :mount_options => ["dmode=777","fmode=777"]
+  else 
+    config.vm.synced_folder "databases", "/var/lib/mysql", :extra => 'dmode=777,fmode=777'
+  end
   config.vm.synced_folder "logs", "/srv/logs", :nfs => nfs
 
   config.vm.synced_folder "config/salt", "/srv/salt"
