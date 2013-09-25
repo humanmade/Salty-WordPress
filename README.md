@@ -36,3 +36,7 @@ Using couple of neat tools, [rsub](https://github.com/henrikpersson/rsub) and [r
 However, for this functionality to work properly, you'll need to SSH into Vagrant using SSH (and port forwarding), not `vagrant ssh`. Use `vagrant ssh-config` ([ref](http://docs.vagrantup.com/v2/cli/ssh_config.html)) to generate what you need to put in `~/.ssh/config`. Then, add `RemoteForward 52698 127.0.0.1:52698` to the entry ([ref](https://github.com/henrikpersson/rsub#ssh-tunneling)).
 
 Now, when you SSH into Vagrant, you'll automatically set up a connection for rmate to communicate to rsub (a Sublime Text plugin).
+
+### Localize Your Environment
+
+Salty WordPress lets you localize your environment without having to edit tracked files. Create a local Salt file at `config/salt/local.sls` and Vagrant will include any declarations in the next provision.

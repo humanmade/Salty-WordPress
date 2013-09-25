@@ -11,4 +11,5 @@ base:
     - tools.python
     - memcached
     - mysql
+    - local
     - node
