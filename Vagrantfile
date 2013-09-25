@@ -28,7 +28,9 @@ Vagrant.configure("2") do |config|
   config.ssh.forward_agent = true
 
   # fixes an issue with latest virtualbox
-  config.ssh.max_tries = 150
+  if vagrant_version < "1.3.0"
+    config.ssh.max_tries = 150
+  end
 
   nfs = Kernel.is_mac?
   config.vm.synced_folder "config", "/home/vagrant/config", :nfs => nfs
