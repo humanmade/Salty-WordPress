@@ -39,3 +39,5 @@ Now, when you SSH into Vagrant, you'll automatically set up a connection for rma
 ### Localize Your Environment
 
 Salty WordPress lets you localize your environment without having to edit tracked files. Create a local Salt file at `config/salt/local.sls` and Vagrant will include any declarations in the next provision.
+
+Alternatively, customize your Vagrantfile by including a `Customfile` in Salty WordPress' base directory. You can include many declarations you might normally put in your Vagrantfile.
