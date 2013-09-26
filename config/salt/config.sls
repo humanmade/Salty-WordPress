@@ -1,3 +1,8 @@
+start_conf:
+  file.managed:
+    - name: /etc/init/salty-wordpress.conf
+    - source: salt://config/start_conf
+
 zshrc:
   file.managed:
     - name: /home/{{ grains['user'] }}/.zshrc
