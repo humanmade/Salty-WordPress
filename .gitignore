@@ -1,5 +1,6 @@
 .DS_Store
 .vagrant
+Customfile
 /config/salt/local.sls
 /projects
 /logs
