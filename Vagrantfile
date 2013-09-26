@@ -35,6 +35,10 @@ Vagrant.configure("2") do |config|
   nfs = Kernel.is_mac?
   config.vm.synced_folder "config", "/home/vagrant/config", :nfs => nfs
   config.vm.synced_folder "projects", "/srv/www", :nfs => nfs
+
+  if File.exists?(File.join(File.dirname(__FILE__),'Customfile')) then
+    eval(IO.read(File.join(File.dirname(__FILE__),'Customfile')), binding)
+  end
   
   if vagrant_version >= "1.3.0"
     config.vm.synced_folder "databases", "/var/lib/mysql", :mount_options => [ "dmode=777", "fmode=777" ]
