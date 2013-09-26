@@ -13,6 +13,8 @@ end
 
 Vagrant.configure("2") do |config|
 
+  vagrant_version = Vagrant::VERSION.sub(/^v/, '') 
+
 	config.vm.provider :virtualbox do |v|
     v.customize ["modifyvm", :id, "--memory", 512]
   end
@@ -26,12 +28,20 @@ Vagrant.configure("2") do |config|
   config.ssh.forward_agent = true
 
   # fixes an issue with latest virtualbox
-  config.ssh.max_tries = 150
+  if vagrant_version < "1.3.0"
+    config.ssh.max_tries = 150
+  end
 
   nfs = Kernel.is_mac?
   config.vm.synced_folder "config", "/home/vagrant/config", :nfs => nfs
   config.vm.synced_folder "projects", "/srv/www", :nfs => nfs
-  config.vm.synced_folder "databases", "/var/lib/mysql", :extra => 'dmode=777,fmode=777'
+  
+  if vagrant_version >= "1.3.0"
+    config.vm.synced_folder "databases", "/var/lib/mysql", :mount_options => [ "dmode=777", "fmode=777" ]
+  else 
+    config.vm.synced_folder "databases", "/var/lib/mysql", :extra => 'dmode=777,fmode=777'
+  end
+
   config.vm.synced_folder "logs", "/srv/logs", :nfs => nfs
 
   config.vm.synced_folder "config/salt", "/srv/salt"
