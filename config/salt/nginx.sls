@@ -16,6 +16,7 @@ nginx:
     - user: root
     - group: root
     - mode: 644
+    - template: jinja
 
 /etc/nginx/sites-enabled/default:
   file.managed:
