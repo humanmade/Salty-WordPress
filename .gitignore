@@ -1,6 +1,7 @@
 .DS_Store
 .vagrant
 Customfile
+/wp-cli
 /config/salt/local.sls
 /projects
 /logs
