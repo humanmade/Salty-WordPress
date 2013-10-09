@@ -41,3 +41,7 @@ Now, when you SSH into Vagrant, you'll automatically set up a connection for rma
 Salty WordPress lets you localize your environment without having to edit tracked files. Create a local Salt file at `config/salt/local.sls` and Vagrant will include any declarations in the next provision.
 
 Alternatively, customize your Vagrantfile by including a `Customfile` in Salty WordPress' base directory. You can include many declarations you might normally put in your Vagrantfile.
+
+For instance, to more easily contribute to WP-CLI, use the following in your `Customfile` to have WP-CLI loaded from a shared directory:
+
+`config.vm.synced_folder "wp-cli", "/home/vagrant/.wp-cli", :nfs => true`
