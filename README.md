@@ -45,3 +45,15 @@ Alternatively, customize your Vagrantfile by including a `Customfile` in Salty W
 For instance, to more easily contribute to WP-CLI, use the following in your `Customfile` to have WP-CLI loaded from a shared directory:
 
 `config.vm.synced_folder "wp-cli", "/home/vagrant/.wp-cli", :nfs => true`
+
+## primary-contact  
+ 
+Daniel Bachhuber  
+
+@danielbachhuber
+
+## secondary-contact
+
+-
+
+-
