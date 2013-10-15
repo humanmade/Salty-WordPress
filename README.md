@@ -46,14 +46,6 @@ For instance, to more easily contribute to WP-CLI, use the following in your `Cu
 
 `config.vm.synced_folder "wp-cli", "/home/vagrant/.wp-cli", :nfs => true`
 
-## primary-contact  
- 
-Daniel Bachhuber  
+## Contribution guidelines ##
 
-@danielbachhuber
-
-## secondary-contact
-
--
-
--
+see https://github.com/humanmade/Salty-WordPress/blob/master/CONTRIBUTING.md
