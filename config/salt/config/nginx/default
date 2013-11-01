@@ -15,8 +15,6 @@ server {
                 set $root 'default';
         }
 
-        include /srv/vhosts/nginx-additions.conf;
-
         root /srv/www/$root;
 
         index index.php;
