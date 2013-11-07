@@ -17,7 +17,7 @@ server {
 
         root /srv/www/$root;
 
-        index index.php;
+        index index.php index.html;
 
         # rewrite for multiple sub-domain sets
         if ( -d /srv/www/$root/wordpress ) {
