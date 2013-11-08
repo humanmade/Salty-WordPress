@@ -15,7 +15,7 @@ server {
                 set $root 'default';
         }
 
-        include /srv/vhosts/nginx-additions.conf;
+        include /srv/vhosts/nginx-additions*.conf;
 
         root /srv/www/$root;
 
