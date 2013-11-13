@@ -15,9 +15,11 @@ server {
                 set $root 'default';
         }
 
+        include /srv/vhosts/nginx-additions*.conf;
+
         root /srv/www/$root;
 
-        index index.php;
+        index index.php index.html;
 
         # rewrite for multiple sub-domain sets
         if ( -d /srv/www/$root/wordpress ) {
