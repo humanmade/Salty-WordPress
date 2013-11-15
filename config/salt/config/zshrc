@@ -30,3 +30,8 @@ source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
 export PATH=$PATH:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/local/rvm/bin:/usr/local/rvm/bin:
+
+# WP-CLI Bash completions
+autoload bashcompinit
+bashcompinit
+source $HOME/.wp-cli/vendor/wp-cli/wp-cli/utils/wp-completion.bash
