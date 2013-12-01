@@ -20,3 +20,9 @@ grunt-cli:
     - require:
       - pkg: nodejs
       - pkg: npm
+
+yo:
+  npm.installed
+
+generator-hmbase:
+  npm.installed
