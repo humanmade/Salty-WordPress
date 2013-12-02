@@ -26,3 +26,8 @@ yo:
 
 generator-hmbase:
   npm.installed
+
+/home/{{ grains['user'] }}/.config/configstore/update-notifier-yo.yml:
+  file.managed:
+    - user: {{ grains['user'] }}
+    - group: {{ grains['user'] }}  
