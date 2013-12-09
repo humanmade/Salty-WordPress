@@ -36,7 +36,7 @@ Vagrant.configure("2") do |config|
     config.ssh.max_tries = 150
   end
 
-  nfs = Kernel.is_mac?
+  nfs = false 
   config.vm.synced_folder "config", "/home/vagrant/config", :nfs => nfs
   config.vm.synced_folder "projects", "/srv/www", :nfs => nfs
 
