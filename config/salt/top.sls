@@ -4,6 +4,7 @@ base:
     - config
     - nginx
     - php_fpm
+    - postfix
 
   'salty-wordpress':
     - vagrant
