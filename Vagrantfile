@@ -19,8 +19,8 @@ Vagrant.configure("2") do |config|
     v.customize ["modifyvm", :id, "--memory", 512]
   end
 
-  config.vm.box = "raring-1304"
-  config.vm.box_url = "http://cloud-images.ubuntu.com/vagrant/raring/current/raring-server-cloudimg-i386-vagrant-disk1.box"
+  config.vm.box = "raring-1310"
+  config.vm.box_url = "http://brennovich.s3.amazonaws.com/saucy64_vmware_fusion.box"
 
   config.vm.hostname = "salty-wordpress"
   config.vm.network :private_network, ip: "192.168.50.10"
@@ -32,7 +32,7 @@ Vagrant.configure("2") do |config|
     config.ssh.max_tries = 150
   end
 
-  nfs = Kernel.is_mac?
+  nfs = false
   config.vm.synced_folder "config", "/home/vagrant/config", :nfs => nfs
   config.vm.synced_folder "projects", "/srv/www", :nfs => nfs
 

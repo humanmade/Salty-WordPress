@@ -5,6 +5,7 @@ base:
     - nginx
     - php_fpm
     - postfix
+    - hhvm
 
   'salty-wordpress':
     - vagrant
