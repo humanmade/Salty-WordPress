@@ -63,6 +63,14 @@ mysql_client:
   pkg.installed:
     - name: mysql-client
 
+libssh2-1-dev:
+  pkg.installed:
+    - name: libssh2-1-dev
+
+libssh2-php:
+  pkg.installed:
+    - name: libssh2-php
+
 composer:
   cmd.run:
     - name: curl -sS https://getcomposer.org/installer | php; mv composer.phar /usr/local/bin/composer
