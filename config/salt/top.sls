@@ -1,4 +1,7 @@
 base:
+
+{% set states = salt['cp.list_states'](env) %}
+
   '*':
     - tools
     - config
@@ -12,5 +15,8 @@ base:
     - tools.python
     - memcached
     - mysql
-    - local
     - node
+
+{% if 'local' in states %}
+    - local
+{% endif %}
