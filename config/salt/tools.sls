@@ -13,6 +13,10 @@ nano:
 autojump:
   pkg.installed
 
+# Ensure server time is always in-sync
+ntp:
+  pkg.installed
+
 # Uncategorized
 
 curl:
