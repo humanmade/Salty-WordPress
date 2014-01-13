@@ -21,6 +21,10 @@ Vagrant.configure("2") do |config|
 
   config.vm.box = "raring-1304"
   config.vm.box_url = "http://cloud-images.ubuntu.com/vagrant/raring/current/raring-server-cloudimg-i386-vagrant-disk1.box"
+  config.vm.provider "vmware_fusion" do |v, override|
+    override.vm.box = "raring-1304-64bit-vmware"
+    override.vm.box_url = "https://s3.amazonaws.com/life360-vagrant/raring64.box"
+  end
 
   config.vm.hostname = "salty-wordpress"
   config.vm.network :private_network, ip: "192.168.50.10"
