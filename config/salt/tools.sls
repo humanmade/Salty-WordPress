@@ -15,7 +15,10 @@ autojump:
 
 # Ensure server time is always in-sync
 ntp:
-  pkg.installed
+  pkg:
+    - installed
+  service:
+    - running
 
 # Uncategorized
 
