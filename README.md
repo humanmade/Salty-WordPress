@@ -15,7 +15,7 @@ Here's how to get building:
 1. Salty WordPress can also be used with VMWare 6.x instead of Virtualbox. There is a known issue where you'll need to install `nfs-common` in the VM before your shared directories will work. This will be fixed in Vagrant 1.5.
 1. Change into the Salty WordPress directory and run `vagrant up`. This will take some time. Behind the scenes, Vagrant and Salt are downloading all of the system utilities (e.g. Nginx, PHP5-FPM, Memcached, etc.) to run your virtual machine.
 1. In your `/etc/hosts` file, point any domains you plan to work on to `192.168.50.10`. The virtual machine is configured to handle all requests to `*.dev`. The WordPress trunk install, for instance, should be `wordpress-trunk.dev`.
-1. Access your virtual machine with `vagrant ssh`.
+1. Access your virtual machine with `vagrant ssh`. Windows users: You will see an output of the SSH info and the location of the key file instead. Feed this information into any SSH program, but not cmd.exe. Vagrant [suggests PuTTY](http://docs-v1.vagrantup.com/v1/docs/getting-started/ssh.html).
 
 Navigate to `wordpress-trunk.dev` in your browser to see a fully-functional WordPress install, powered by Salty WordPress. The default admin username/password is `humanmade/humanmade`.
 
