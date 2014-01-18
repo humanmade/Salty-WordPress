@@ -20,3 +20,14 @@ grunt-cli:
     - require:
       - pkg: nodejs
       - pkg: npm
+
+yo:
+  npm.installed
+
+generator-hmbase:
+  npm.installed
+
+/home/{{ grains['user'] }}/.config/configstore/update-notifier-yo.yml:
+  file.managed:
+    - user: {{ grains['user'] }}
+    - group: {{ grains['user'] }}  
