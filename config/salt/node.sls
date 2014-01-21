@@ -8,7 +8,11 @@ nodejs:
   pkg.installed
 
 npm:
-  pkg.installed
+  pkg:
+    - installed
+  require:
+    - pkg: nodejs
+    - pkg: python-software-properties
 
 sass:
   gem.installed:
