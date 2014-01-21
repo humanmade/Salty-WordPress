@@ -3,6 +3,7 @@
 
 # 'projects' and 'logs' directories are ignored in the repo, so let's make sure they exist
 FileUtils.mkdir_p(File.dirname(__FILE__)+'/projects')
+FileUtils.mkdir_p(File.dirname(__FILE__)+'/projects/default')
 FileUtils.mkdir_p(File.dirname(__FILE__)+'/logs')
 FileUtils.mkdir_p(File.dirname(__FILE__)+'/databases')
 
@@ -36,23 +37,22 @@ Vagrant.configure("2") do |config|
     config.ssh.max_tries = 150
   end
 
-  nfs = Kernel.is_mac?
-  config.vm.synced_folder "config", "/home/vagrant/config", :nfs => nfs
-  config.vm.synced_folder "projects", "/srv/www", :nfs => nfs
+  config.vm.synced_folder "config", "/home/vagrant/config"
+  config.vm.synced_folder "logs", "/srv/logs"
+  config.vm.synced_folder "config/salt", "/srv/salt"
+
+  if Kernel.is_mac? then
+    config.vm.synced_folder "projects", "/srv/www", :type => "nfs"
+    config.vm.synced_folder "databases", "/var/lib/mysql", :type => "nfs", :nfs => { :mount_options => [ "no_root_squash", "dmode=777", "fmode=777" ] }
+  else
+    config.vm.synced_folder "projects", "/srv/www"
+    config.vm.synced_folder "databases", "/var/lib/mysql", :mount_options => [ "dmode=777", "fmode=777" ]
+  end
 
   if File.exists?(File.join(File.dirname(__FILE__),'Customfile')) then
     eval(IO.read(File.join(File.dirname(__FILE__),'Customfile')), binding)
   end
-  
-  if vagrant_version >= "1.3.0"
-    config.vm.synced_folder "databases", "/var/lib/mysql", :mount_options => [ "dmode=777", "fmode=777" ]
-  else 
-    config.vm.synced_folder "databases", "/var/lib/mysql", :extra => 'dmode=777,fmode=777'
-  end
 
-  config.vm.synced_folder "logs", "/srv/logs", :nfs => nfs
-
-  config.vm.synced_folder "config/salt", "/srv/salt"
   config.vm.provision :salt do |salt|
     salt.verbose = true
     salt.minion_config = 'config/salt/minions/vagrant.conf'
