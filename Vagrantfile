@@ -5,7 +5,6 @@
 FileUtils.mkdir_p(File.dirname(__FILE__)+'/projects')
 FileUtils.mkdir_p(File.dirname(__FILE__)+'/projects/default')
 FileUtils.mkdir_p(File.dirname(__FILE__)+'/logs')
-FileUtils.mkdir_p(File.dirname(__FILE__)+'/databases')
 
 def Kernel.is_mac?
     # Detect if we are running on Mac
@@ -38,10 +37,8 @@ Vagrant.configure("2") do |config|
 
   if Kernel.is_mac? then
     config.vm.synced_folder "projects", "/srv/www", :type => "nfs"
-    config.vm.synced_folder "databases", "/var/lib/mysql", :type => "nfs", :nfs => { :mount_options => [ "no_root_squash", "dmode=777", "fmode=777" ] }
   else
     config.vm.synced_folder "projects", "/srv/www"
-    config.vm.synced_folder "databases", "/var/lib/mysql", :mount_options => [ "dmode=777", "fmode=777" ]
   end
 
   if File.exists?(File.join(File.dirname(__FILE__),'Customfile')) then

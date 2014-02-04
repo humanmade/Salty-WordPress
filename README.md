@@ -47,6 +47,12 @@ For instance, to more easily contribute to WP-CLI, use the following in your `Cu
 
 `config.vm.synced_folder "wp-cli", "/home/vagrant/.wp-cli", :nfs => true`
 
+If you'd like to persist your databases between each destroy, you might want to put them in a mapped directory:
+
+`config.vm.synced_folder "databases", "/var/lib/mysql"`
+
+Note: You'll need to do an initial provision, then copy all of the files in `/var/lib/mysql` to a "databases" directory in your local machine.
+
 ## Contribution guidelines ##
 
 see https://github.com/humanmade/Salty-WordPress/blob/master/CONTRIBUTING.md
