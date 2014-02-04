@@ -9,3 +9,6 @@ python-mysqldb:
     - installed
   require:
     - pkg: python
+
+python-software-properties:
+  pkg.installed

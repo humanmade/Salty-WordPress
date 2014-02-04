@@ -7,9 +7,6 @@ npm-repo:
 nodejs:
   pkg.installed
 
-npm:
-  pkg.installed
-
 sass:
   gem.installed:
     - name: sass
@@ -19,4 +16,3 @@ grunt-cli:
     - name: grunt-cli
     - require:
       - pkg: nodejs
-      - pkg: npm

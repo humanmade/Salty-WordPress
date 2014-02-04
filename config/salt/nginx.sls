@@ -25,6 +25,7 @@ nginx:
     - group: root
     - mode: 644
 
+{% if grains['user'] != 'vagrant' %}
 /srv/www:
   file.directory:
     - user: {{ grains['user'] }}
@@ -38,3 +39,4 @@ nginx:
     - group: {{ grains['user'] }}
     - mode: 644
     - contents: "not found"
+{% endif %}
