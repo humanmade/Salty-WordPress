@@ -16,6 +16,7 @@ wordpress-trunk:
   cmd.run:
     - name: cd /srv/www/wordpress-trunk.dev; wp core config --dbname=wordpress_trunk --dbuser=root; wp core install --title="Salty WordPress" --url=http://wordpress-trunk.dev --admin_name=humanmade --admin_password=humanmade --admin_email=hello@hmn.md
     - unless: cd /srv/www/wordpress-trunk.dev; wp core is-installed
+    - user: {{ grains['user'] }}
     - require:
       - cmd: wp_cli
       - file: wp_cli
