@@ -17,6 +17,10 @@ base:
     - mysql
     - node
 
+  'masterless':
+    - memcached
+    - mysql
+
 {% if 'local' in states %}
     - local
 {% endif %}
