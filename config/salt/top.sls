@@ -17,7 +17,8 @@ base:
     - mysql
     - node
 
-  'masterless':
+  'project:masterless':
+    - match: grain
     - memcached
     - mysql
 
