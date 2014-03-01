@@ -21,6 +21,7 @@ base:
     - match: grain
     - memcached
     - mysql
+    - tools.ruby
 
 {% if 'local' in states %}
     - local
