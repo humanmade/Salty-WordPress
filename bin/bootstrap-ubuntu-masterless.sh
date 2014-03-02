@@ -48,7 +48,7 @@ init_environment() {
 #----------------------------------------------------------------------------------------------------------------------
 init_salty_wordpress() {
     cd /home/ubuntu/
-    if [ ! -d /home/ubuntu/Salty-WordPress ]; ; then
+    if [ ! -d /home/ubuntu/Salty-WordPress ]; then
         # @todo remove branch before merge
         sudo -u ubuntu -H git clone -b masterless https://github.com/humanmade/Salty-WordPress.git /home/ubuntu/Salty-WordPress
     fi
