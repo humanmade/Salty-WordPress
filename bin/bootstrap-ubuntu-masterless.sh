@@ -75,5 +75,15 @@ init_environment
 init_salty_wordpress
 provision_server
 
-echo "Initial provision is complete. Please remember to change your root, ubuntu and MySQL root passwords."
+"
 
+ ###############################################
+ #                                             #
+ # Salty WordPress is ready                    #
+ #                                             #
+ # Please remember to change your root, ubuntu #
+ # and MySQL root passwords.                   #
+ #                                             #
+ ###############################################
+
+"
