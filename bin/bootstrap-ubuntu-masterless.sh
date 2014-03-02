@@ -36,7 +36,7 @@ install_dependencies() {
 #   DESCRIPTION:  (DRY) Initialize requirements for the environment
 #----------------------------------------------------------------------------------------------------------------------
 init_environment() {
-    useradd ubuntu -g ubuntu -G sudo -d /home/ubuntu
+    useradd ubuntu -G sudo -d /home/ubuntu
 }
 
 #---  FUNCTION  -------------------------------------------------------------------------------------------------------
