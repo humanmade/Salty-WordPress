@@ -53,10 +53,10 @@ init_salty_wordpress() {
         sudo -u ubuntu -H git clone -b masterless https://github.com/humanmade/Salty-WordPress.git /home/ubuntu/Salty-WordPress
     fi
     # Put the config files in the right place
-    rm /srv/salt
+    rm -f /srv/salt
     ln -s /home/ubuntu/Salty-WordPress/config/salt /srv/salt
     # Put the minion file in the right place
-    rm /etc/salt/minion
+    rm -f /etc/salt/minion
     ln -s /home/ubuntu/Salty-WordPress/config/salt/minions/masterless.conf /etc/salt/minion
 }
 
