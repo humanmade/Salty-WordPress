@@ -36,7 +36,10 @@ install_dependencies() {
 #   DESCRIPTION:  (DRY) Initialize requirements for the environment
 #----------------------------------------------------------------------------------------------------------------------
 init_environment() {
-    useradd ubuntu -G sudo -d /home/ubuntu -m
+    # Create the ubuntu user
+    if ! id -u ubuntu > /dev/null 2>&1; then
+        useradd ubuntu -G sudo -d /home/ubuntu -m
+    fi
 }
 
 #---  FUNCTION  -------------------------------------------------------------------------------------------------------
