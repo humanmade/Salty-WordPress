@@ -1,0 +1,67 @@
+#!/bin/sh -
+#======================================================================================================================
+# vim: softtabstop=4 shiftwidth=4 expandtab fenc=utf-8 spell spelllang=en cc=120
+#======================================================================================================================
+#
+#          FILE: bootstrap-ubuntu.sh
+#
+#   DESCRIPTION: Bootstrap a WordPress server using Salty WordPress and Ubuntu.
+#                Code cribbed from Salt Stack bootstrap
+#
+#          BUGS: https://github.com/humanmade/Salty-WordPress/issues
+#
+#======================================================================================================================
+
+set -ex
+
+#---  FUNCTION  -------------------------------------------------------------------------------------------------------
+#          NAME:  __apt_get_install_noinput
+#   DESCRIPTION:  (DRY) apt-get install with noinput options
+#----------------------------------------------------------------------------------------------------------------------
+__apt_get_install_noinput() {
+    apt-get install -y -o DPkg::Options::=--force-confold $@; return $?
+}
+
+#---  FUNCTION  -------------------------------------------------------------------------------------------------------
+#          NAME:  install_dependencies
+#   DESCRIPTION:  (DRY) Install necessary dependencies for bootstrap
+#----------------------------------------------------------------------------------------------------------------------
+install_dependencies() {
+    __apt_get_install_noinput git
+    __apt_get_install_noinput salt-common salt-master
+}
+
+#---  FUNCTION  -------------------------------------------------------------------------------------------------------
+#          NAME:  init_environment
+#   DESCRIPTION:  (DRY) Initialize requirements for the environment
+#----------------------------------------------------------------------------------------------------------------------
+init_environment() {
+    useradd ubuntu -G sudo
+}
+
+#---  FUNCTION  -------------------------------------------------------------------------------------------------------
+#          NAME:  init_salty_wordpress
+#   DESCRIPTION:  (DRY) Initialize Salty WordPress
+#----------------------------------------------------------------------------------------------------------------------
+init_salty_wordpress() {
+    sudo -u ubuntu git clone https://github.com/humanmade/Salty-WordPress.git /home/ubuntu/Salty-WordPress
+    ln -s /home/ubuntu/Salty-WordPress/config/salt /srv/salt
+    ln -s /home/ubuntu/Salty-WordPress/config/salt/minions/masterless.conf /etc/salt/minion
+}
+
+#---  FUNCTION  -------------------------------------------------------------------------------------------------------
+#          NAME:  provision_server
+#   DESCRIPTION:  (DRY) Provision the server
+#----------------------------------------------------------------------------------------------------------------------
+provision_server() {
+    salt-call --local state.highstate
+}
+
+# Let's go!
+install_dependencies
+init_environment
+init_salty_wordpress
+provision_server
+
+echo "Initial provision is complete. Please remember to change your root, ubuntu and MySQL root passwords."
+
