@@ -66,7 +66,7 @@ init_salty_wordpress() {
 #----------------------------------------------------------------------------------------------------------------------
 provision_server() {
     cd /home/ubuntu/
-    sudo -u ubuntu -H salt-call --local state.highstate
+    salt-call --local state.highstate
 }
 
 # Let's go!
