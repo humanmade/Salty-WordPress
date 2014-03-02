@@ -47,10 +47,16 @@ init_environment() {
 #   DESCRIPTION:  (DRY) Initialize Salty WordPress
 #----------------------------------------------------------------------------------------------------------------------
 init_salty_wordpress() {
-	# @todo remove branch before merge
     cd /home/ubuntu/
-    sudo -u ubuntu -H git clone -b masterless https://github.com/humanmade/Salty-WordPress.git /home/ubuntu/Salty-WordPress
+    if [ ! -d /home/ubuntu/Salty-WordPress ]; ; then
+        # @todo remove branch before merge
+        sudo -u ubuntu -H git clone -b masterless https://github.com/humanmade/Salty-WordPress.git /home/ubuntu/Salty-WordPress
+    fi
+    # Put the config files in the right place
+    rm /srv/salt
     ln -s /home/ubuntu/Salty-WordPress/config/salt /srv/salt
+    # Put the minion file in the right place
+    rm /etc/salt/minion
     ln -s /home/ubuntu/Salty-WordPress/config/salt/minions/masterless.conf /etc/salt/minion
 }
 
