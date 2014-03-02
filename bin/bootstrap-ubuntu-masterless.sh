@@ -28,7 +28,7 @@ __apt_get_install_noinput() {
 #----------------------------------------------------------------------------------------------------------------------
 install_dependencies() {
     __apt_get_install_noinput git
-    __apt_get_install_noinput salt-common salt-master
+    __apt_get_install_noinput salt-common salt-master salt-minion
 }
 
 #---  FUNCTION  -------------------------------------------------------------------------------------------------------
