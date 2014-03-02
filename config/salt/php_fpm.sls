@@ -9,6 +9,7 @@ php_stack:
       - pkg: php5-gd
       - pkg: php5-mysql
       - pkg: php5-memcache
+      - pkg: php5-memcached
       - pkg: php5-mcrypt
       - pkg: php5-curl
       - pkg: php5-cli
@@ -29,6 +30,10 @@ php_mysql:
 php_memcache:
   pkg.installed:
     - name: php5-memcache
+
+php_memcached:
+  pkg.installed:
+    - name: php5-memcached
 
 php_mcrypt:
   pkg.installed:
