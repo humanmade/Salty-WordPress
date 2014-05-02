@@ -13,7 +13,7 @@ zsh_theme:
     - name: /home/{{ grains['user'] }}/.oh-my-zsh/themes/joeyhoyle.zsh-theme
     - source: salt://config/zsh-themes/joeyhoyle.zsh-theme
     - require:
-      - git.latest: oh_my_zsh
+      - git: oh_my_zsh
 
 {{ grains['user'] }}:
   user.present:
