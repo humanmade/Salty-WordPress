@@ -74,6 +74,11 @@ wp_cli:
     - name: /usr/bin/wp
     - target: /home/{{ grains['user'] }}/.wp-cli/bin/wp
 
+wp_cli_bash:
+  file.managed:
+    - name: /home/{{ grains['user'] }}/.wp_cli_completion.bash
+    - source: salt://config/wp_cli_completion
+
 oh_my_zsh:
   git.latest:
     - name: git://github.com/robbyrussell/oh-my-zsh.git
