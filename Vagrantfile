@@ -19,11 +19,11 @@ Vagrant.configure("2") do |config|
     v.customize ["modifyvm", :id, "--memory", 512]
   end
 
-  config.vm.box = "kylin-1404"
-  config.vm.box_url = "https://vagrantcloud.com/puppetlabs/ubuntu-14.04-64-nocm/version/2/provider/virtualbox.box"
+  config.vm.box = "saucy-1310-64bit-virtualbox"
+  config.vm.box_url = "https://vagrantcloud.com/puppetlabs/ubuntu-13.10-64-nocm/version/2/provider/virtualbox.box"
   config.vm.provider "vmware_fusion" do |v, override|
-    override.vm.box = "kylin-1404-64bit-vmware"
-    override.vm.box_url = "https://vagrantcloud.com/puppetlabs/ubuntu-14.04-64-nocm/version/2/provider/vmware_fusion.box"
+    override.vm.box = "saucy-1310-64bit-vmware"
+    override.vm.box_url = "https://vagrantcloud.com/puppetlabs/ubuntu-13.10-64-nocm/version/2/provider/vmware_fusion.box"
   end
 
   config.vm.hostname = "salty-wordpress"
