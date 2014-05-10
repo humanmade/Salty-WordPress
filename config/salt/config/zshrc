@@ -34,4 +34,4 @@ export PATH=$PATH:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/
 # WP-CLI Bash completions
 autoload bashcompinit
 bashcompinit
-source $HOME/.wp-cli/vendor/wp-cli/wp-cli/utils/wp-completion.bash
+source $HOME/.wp_cli_completion.bash
