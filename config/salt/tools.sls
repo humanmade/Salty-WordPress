@@ -69,6 +69,7 @@ wp_cli:
     - user: {{ grains['user'] }}
     - require:
       - pkg: php5-cli
+      - pkg: php5-json
       - pkg: git
   file.symlink:
     - name: /usr/bin/wp
