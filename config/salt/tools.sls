@@ -64,7 +64,7 @@ htop:
 
 wp_cli:
   cmd.run:
-    - name: curl https://raw.github.com/wp-cli/wp-cli.github.com/master/installer.sh | bash
+    - name: curl https://raw.githubusercontent.com/wp-cli/wp-cli.github.com/master/installer.sh | bash
     - unless: which wp
     - user: {{ grains['user'] }}
     - require:
