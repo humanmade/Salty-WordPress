@@ -47,16 +47,11 @@ wp-cli-tests-mysql:
       - service: mysql
       - pkg: python-mysqldb
 
-php_pear:
-  pkg.installed:
-    - name: php-pear
 
 php_phpunit:
   cmd.run:
-    - name: pear channel-discover pear.phpunit.de ; pear config-set auto_discover 1 ; sudo pear install phpunit/PHPUnit
-    - unless: which phpunit
-    - require:
-      - pkg: php-pear
+    - name: wget https://phar.phpunit.de/phpunit.phar && chmod +x phpunit.phar && sudo mv phpunit.phar /usr/local/bin/phpunit
+
 
 /var/log/php.log:
   file.symlink:
