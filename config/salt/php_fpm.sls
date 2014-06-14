@@ -8,6 +8,7 @@ php_stack:
       - pkg: php5-fpm
       - pkg: php5-gd
       - pkg: php5-mysql
+      - pkg: php5-json
       - pkg: php5-memcache
       - pkg: php5-mcrypt
       - pkg: php5-curl
@@ -25,6 +26,10 @@ php_gd:
 php_mysql:
   pkg.installed:
     - name: php5-mysql
+
+php_json:
+  pkg.installed:
+    - name: php5-json
 
 php_memcache:
   pkg.installed:
