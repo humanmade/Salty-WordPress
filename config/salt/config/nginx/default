@@ -12,7 +12,7 @@ server {
         client_max_body_size 50M;
 
         if ( !-d /srv/www/$root ) {
-                set $root 'default';
+                set $root 'wordpress-trunk.dev';
         }
 
         include /srv/vhosts/nginx-additions*.conf;
