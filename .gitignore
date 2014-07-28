@@ -2,6 +2,7 @@
 .vagrant
 Customfile
 /wp-cli
+/pantheon-cli
 /config/salt/local.sls
 /projects
 /logs
