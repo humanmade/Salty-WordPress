@@ -64,16 +64,13 @@ htop:
 
 wp_cli:
   cmd.run:
-    - name: curl https://raw.githubusercontent.com/wp-cli/wp-cli.github.com/master/installer.sh | bash
+    - name: curl -O https://raw.githubusercontent.com/wp-cli/builds/gh-pages/phar/wp-cli.phar; chmod +x wp-cli.phar; sudo mv wp-cli.phar /usr/bin/wp
     - unless: which wp
     - user: {{ grains['user'] }}
     - require:
       - pkg: php5-cli
       - pkg: php5-json
       - pkg: git
-  file.symlink:
-    - name: /usr/bin/wp
-    - target: /home/{{ grains['user'] }}/.wp-cli/bin/wp
 
 wp_cli_bash:
   file.managed:
