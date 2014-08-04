@@ -19,7 +19,6 @@ wordpress-trunk:
     - user: {{ grains['user'] }}
     - require:
       - cmd: wp_cli
-      - file: wp_cli
       - git: git://github.com/WordPress/WordPress.git
       - mysql_database: wordpress_trunk
       - service: mysql
