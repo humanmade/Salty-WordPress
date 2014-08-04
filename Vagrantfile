@@ -6,11 +6,6 @@ FileUtils.mkdir_p(File.dirname(__FILE__)+'/projects')
 FileUtils.mkdir_p(File.dirname(__FILE__)+'/projects/default')
 FileUtils.mkdir_p(File.dirname(__FILE__)+'/logs')
 
-def Kernel.is_mac?
-    # Detect if we are running on Mac
-    RUBY_PLATFORM.scan(/-darwin/).length == 1
-end
-
 Vagrant.configure("2") do |config|
 
   vagrant_version = Vagrant::VERSION.sub(/^v/, '') 
@@ -36,11 +31,7 @@ Vagrant.configure("2") do |config|
   config.vm.synced_folder "logs", "/srv/logs"
   config.vm.synced_folder "config/salt", "/srv/salt"
 
-  if Kernel.is_mac? then
-    config.vm.synced_folder "projects", "/srv/www", :type => "nfs"
-  else
-    config.vm.synced_folder "projects", "/srv/www"
-  end
+  config.vm.synced_folder "projects", "/srv/www"
 
   if File.exists?(File.join(File.dirname(__FILE__),'Customfile')) then
     eval(IO.read(File.join(File.dirname(__FILE__),'Customfile')), binding)
