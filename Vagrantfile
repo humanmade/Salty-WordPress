@@ -11,7 +11,7 @@ Vagrant.configure("2") do |config|
   vagrant_version = Vagrant::VERSION.sub(/^v/, '') 
 
 	config.vm.provider :virtualbox do |v|
-    v.customize ["modifyvm", :id, "--memory", 512]
+    v.customize ["modifyvm", :id, "--memory", 1024]
     v.customize ["modifyvm", :id, "--natdnshostresolver1", "on"]
   end
 
