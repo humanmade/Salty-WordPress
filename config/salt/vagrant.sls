@@ -14,7 +14,7 @@ wordpress-develop:
       - service: mysql
       - pkg: python-mysqldb
   cmd.run:
-    - name: cd /srv/www/wordpress-develop.dev; wp core config --dbname=wordpress_develop --dbuser=root; wp core install --title="WordPress.org" --url=http://wordpress-develop.dev/src/ --admin_name=wordpress --admin_password=wordpress --admin_email=wordpress@wordpress.org
+    - name: cd /srv/www/wordpress-develop.dev; wp core config --dbname=wordpress_develop --dbuser=root; wp core install --title="WordPress.org" --url=http://wordpress-develop.dev --admin_name=wordpress --admin_password=wordpress --admin_email=wordpress@wordpress.org
     - unless: cd /srv/www/wordpress-develop.dev; wp core is-installed
     - user: {{ grains['user'] }}
     - require:
