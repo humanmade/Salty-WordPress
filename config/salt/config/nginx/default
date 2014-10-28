@@ -15,6 +15,11 @@ server {
                 set $root 'default';
         }
 
+        # For WordPress develop.
+        if ( -d /srv/www/$root/src ) {
+                set $root $root/src;
+        }
+
         include /srv/vhosts/nginx-additions*.conf;
 
         root /srv/www/$root;
@@ -59,7 +64,6 @@ server {
         }
 
         # pass the PHP scripts to FastCGI server listening on 127.0.0.1:9000
-        #
         location ~ \.php$ {
                 fastcgi_split_path_info ^(.+\.php)(/.+)$;
                 # NOTE: You should have "cgi.fix_pathinfo = 0;" in php.ini
