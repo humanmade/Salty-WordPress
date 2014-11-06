@@ -11,7 +11,7 @@ Salty WordPress uses three great technologies: [Salt](http://saltstack.com/), [V
 Here's how to get building:
 
 1. Clone the repo: `cd ~/; git clone git@github.com:humanmade/Salty-WordPress.git`.
-1. Install the latest version of [Vagrant](http://downloads.vagrantup.com/) and version 4.2.12 of [Virtual Box](https://www.virtualbox.org/wiki/Download_Old_Builds_4_2).
+1. Install the latest version of [Vagrant](https://www.vagrantup.com/downloads.html) and version 4.2.12 of [Virtual Box](https://www.virtualbox.org/wiki/Download_Old_Builds_4_2).
 1. Salty WordPress can also be used with VMWare 6.x instead of Virtualbox. There is a known issue where you'll need to install `nfs-common` in the VM before your shared directories will work. Keep in mind that, because the shared folders aren't mounted, your first provision will look like this: `vagrant up --provider=vmware_fusion; vagrant ssh; sudo apt-get install nfs-common; exit; vagrant halt; vagrant up --provision;` This will be fixed in Vagrant 1.5.
 1. Change into the Salty WordPress directory and run `vagrant up`. This will take some time. Behind the scenes, Vagrant and Salt are downloading all of the system utilities (e.g. Nginx, PHP5-FPM, Memcached, etc.) to run your virtual machine.
 1. In your `/etc/hosts` file, point any domains you plan to work on to `192.168.50.10`. The virtual machine is configured to handle all requests to `*.dev`. The WordPress trunk install, for instance, should be `wordpress-trunk.dev`.
