@@ -70,5 +70,8 @@ server {
                 fastcgi_index index.php;
                 include fastcgi_params;
         }
+        
+        location = /favicon.ico { log_not_found off; access_log off;}
+        location = /robots.txt { log_not_found off; access_log off;}
 
 }
