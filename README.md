@@ -14,10 +14,10 @@ Here's how to get building:
 1. Install the latest version of [Vagrant](https://www.vagrantup.com/downloads.html) and version 4.2.12 of [Virtual Box](https://www.virtualbox.org/wiki/Download_Old_Builds_4_2).
 1. Salty WordPress can also be used with VMWare 6.x instead of Virtualbox. There is a known issue where you'll need to install `nfs-common` in the VM before your shared directories will work. Keep in mind that, because the shared folders aren't mounted, your first provision will look like this: `vagrant up --provider=vmware_fusion; vagrant ssh; sudo apt-get install nfs-common; exit; vagrant halt; vagrant up --provision;` This will be fixed in Vagrant 1.5.
 1. Change into the Salty WordPress directory and run `vagrant up`. This will take some time. Behind the scenes, Vagrant and Salt are downloading all of the system utilities (e.g. Nginx, PHP5-FPM, Memcached, etc.) to run your virtual machine.
-1. In your `/etc/hosts` file, point any domains you plan to work on to `192.168.50.10`. The virtual machine is configured to handle all requests to `*.dev`. The WordPress trunk install, for instance, should be `wordpress-trunk.dev`.
+1. In your `/etc/hosts` file, point any domains you plan to work on to `192.168.50.10`. The virtual machine is configured to handle all requests to `*.dev`. The WordPress develop install, for instance, should be `wordpress-develop.dev`.
 1. Access your virtual machine with `vagrant ssh`. Windows users: You will see an output of the SSH info and the location of the key file instead. Feed this information into any SSH program, but not cmd.exe. Vagrant [suggests PuTTY](http://docs-v1.vagrantup.com/v1/docs/getting-started/ssh.html).
 
-Navigate to `wordpress-trunk.dev` in your browser to see a fully-functional WordPress install, powered by Salty WordPress. The default admin username/password is `humanmade/humanmade`.
+Navigate to `wordpress-develop.dev/src/` in your browser to see a fully-functional WordPress install, powered by Salty WordPress. The default admin username/password is `humanmade/humanmade`.
 
 ## Neat Tricks
 
@@ -52,6 +52,14 @@ If you'd like to persist your databases between each destroy, you might want to 
 `config.vm.synced_folder "databases", "/var/lib/mysql"`
 
 Note: You'll need to do an initial provision, then copy all of the files in `/var/lib/mysql` to a "databases" directory in your local machine.
+
+If you have the [Vagrant Hosts Updater](https://github.com/cogitatio/vagrant-hostsupdater) plugin installed you can add any additional hosts without having to edit `/etc/hosts`. You may have to reload the VM to see the changes.
+
+```
+if defined?(VagrantPlugins::HostsUpdater)
+  config.hostsupdater.aliases = [ "wordpress-develop.dev", ... ]
+end
+```
 
 ## Contribution guidelines ##
 
