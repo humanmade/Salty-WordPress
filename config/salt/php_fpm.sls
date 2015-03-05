@@ -13,6 +13,7 @@ php_stack:
       - pkg: php5-mcrypt
       - pkg: php5-curl
       - pkg: php5-cli
+      - pkg: php5-ldap
       - pkg: php-apc
       - pkg: mysql-client
     - watch:
@@ -58,6 +59,10 @@ php_cli:
 php_apc:
   pkg.installed:
     - name: php-apc
+
+php_ldap:
+  pkg.installed:
+    - name: php5-ldap
 
 mysql_client:
   pkg.installed:

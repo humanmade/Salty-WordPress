@@ -11,13 +11,23 @@ server {
 
         client_max_body_size 50M;
 
-        if ( !-d /srv/www/$root ) {
-                set $root 'default';
+        # Thunderhead
+        if ( -d /srv/www/$root/public ) {
+                set $root '${root}/public';
+        }
+
+        # Tab
+        if ( -d /srv/www/$root/htdocs ) {
+                set $root $root/htdocs;
         }
 
         # For WordPress develop.
         if ( -d /srv/www/$root/src ) {
                 set $root $root/src;
+        }
+
+        if ( !-d /srv/www/$root ) {
+                set $root 'default';
         }
 
         include /srv/vhosts/nginx-additions*.conf;
@@ -30,6 +40,11 @@ server {
         if ( -d /srv/www/$root/wordpress ) {
                 rewrite ^(/wp-(admin|includes)/(.*))$ /wordpress$1 last;
                 rewrite ^(/wp-[^/]*\.php)$ /wordpress$1 last;
+        }
+
+        if ( -d /srv/www/$root/wp ) {
+                rewrite ^(/wp-(admin|includes)/(.*))$ /wp$1 last;
+                rewrite ^(/wp-[^/]*\.php)$ /wp$1 last;
         }
 
         # rewrite for multisite in subdirs, e.g. example.com/subsite1/
@@ -57,6 +72,12 @@ server {
         location ~* /(Gruntfile\.js|package\.json|node_modules) {
                 deny all;
                 return 404;
+        }
+
+        # Dev plugin URLs
+        location ~ /dev\-plugins/(?<path>.*)$ {
+                root /dev-plugins;
+                try_files /$path;
         }
 
         location / {

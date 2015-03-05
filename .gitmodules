@@ -1,0 +1,12 @@
+[submodule "dev-plugins/airplane-mode"]
+	path = dev-plugins/airplane-mode
+	url = git@github.com:norcross/airplane-mode.git
+[submodule "dev-plugins/query-monitor"]
+	path = dev-plugins/query-monitor
+	url = git@github.com:johnbillion/query-monitor.git
+[submodule "dev-plugins/user-switching"]
+	path = dev-plugins/user-switching
+	url = git@github.com:johnbillion/user-switching.git
+[submodule "dev-plugins/wp-crontrol"]
+	path = dev-plugins/wp-crontrol
+	url = git@github.com:johnbillion/wp-crontrol.git

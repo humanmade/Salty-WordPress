@@ -13,6 +13,7 @@ Vagrant.configure("2") do |config|
 	config.vm.provider :virtualbox do |v|
     v.customize ["modifyvm", :id, "--memory", 1024]
     v.customize ["modifyvm", :id, "--natdnshostresolver1", "on"]
+    v.customize ["modifyvm", :id, "--natdnsproxy1", "on"]
   end
 
   config.vm.box = "1404-64bit-virtualbox"
@@ -30,6 +31,7 @@ Vagrant.configure("2") do |config|
   config.vm.synced_folder "config", "/home/vagrant/config"
   config.vm.synced_folder "logs", "/srv/logs"
   config.vm.synced_folder "config/salt", "/srv/salt"
+  config.vm.synced_folder "dev-plugins", "/dev-plugins"
 
   config.vm.synced_folder "projects", "/srv/www"
 
