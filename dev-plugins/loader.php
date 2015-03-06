@@ -20,17 +20,24 @@ function hm_load_dev_plugins() {
 			require_once $file;
 
 			// run activation hook once
-			// $file = plugin_basename( $file );
-			// if ( is_multisite() ) {
-			// 	$activated = get_site_option( "hm_dev_activated_{$file}" );
-			// 	$network_wide = true;
-			// } else {
-			// 	$activated = get_option( "hm_dev_activated_{$file}" );
-			// 	$network_wide = false;
-			// }
-			// if ( ! $activated ) {
-			// 	do_action( "activate_{$file}", $network_wide );
-			// }
+			add_action( 'plugins_loaded', function () use ( $file ) {
+				$file = 'dev-plugins/' . plugin_basename( $file );
+				if ( is_multisite() ) {
+					$activated = get_site_option( "hm_dev_activated_{$file}" );
+					$network_wide = true;
+				} else {
+					$activated = get_option( "hm_dev_activated_{$file}" );
+					$network_wide = false;
+				}
+				if ( ! $activated ) {
+					do_action( "activate_{$file}", $network_wide );
+					if ( is_multisite() ) {
+						update_site_option( "hm_dev_activated_{$file}", true );
+					} else {
+						update_option( "hm_dev_activated_{$file}", true );
+					}
+				}
+			} );
 		}
 	}
 	unset( $file );
@@ -89,12 +96,11 @@ function hm_load_dev_plugins() {
 		return $actions;
 	}, 10, 4 );
 
-
 }
 
 $wp_filter = array(
 	'muplugins_loaded' => array(
-		10 => array(
+		0 => array(
 			'load_dev_plugins' => array(
 				'function'      => 'hm_load_dev_plugins',
 				'accepted_args' => 0
