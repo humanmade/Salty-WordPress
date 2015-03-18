@@ -77,7 +77,7 @@ server {
         # Dev plugin URLs
         location ~ /dev\-plugins/(?<path>.*)$ {
                 root /dev-plugins;
-                try_files /$path;
+                try_files /$path $uri;
         }
 
         location / {

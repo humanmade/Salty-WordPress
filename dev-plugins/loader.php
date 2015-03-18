@@ -8,6 +8,11 @@ global $wp_filter;
 
 function hm_load_dev_plugins() {
 
+	// not for wp cli
+	if ( defined( 'WP_CLI' ) ) {
+		return;
+	}
+
 	$hm_dev_plugins = array(
 		'airplane-mode/airplane-mode.php',
 		'query-monitor/query-monitor.php',
