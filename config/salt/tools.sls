@@ -64,7 +64,7 @@ htop:
 
 wp_cli:
   cmd.run:
-    - name: curl -O https://raw.githubusercontent.com/wp-cli/builds/gh-pages/phar/wp-cli.phar; chmod +x wp-cli.phar; sudo mv wp-cli.phar /usr/bin/wp
+    - name: curl -O https://raw.githubusercontent.com/wp-cli/builds/gh-pages/phar/wp-cli-nightly.phar; chmod +x wp-cli.phar; sudo mv wp-cli.phar /usr/bin/wp
     - unless: which wp
     - user: {{ grains['user'] }}
     - require:
