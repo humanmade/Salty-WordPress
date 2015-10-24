@@ -48,7 +48,7 @@ wp-cli-tests-mysql:
 
 php_phpunit:
   cmd.run:
-    - name: wget https://phar.phpunit.de/phpunit.phar && chmod +x phpunit.phar && sudo mv phpunit.phar /usr/local/bin/phpunit
+    - name: wget https://phar.phpunit.de/phpunit-old.phar && chmod +x phpunit-old.phar && sudo mv phpunit-old.phar /usr/local/bin/phpunit
     - unless: which phpunit
 
 
