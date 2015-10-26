@@ -63,4 +63,4 @@ end
 
 ## Contribution guidelines ##
 
-see https://github.com/humanmade/Salty-WordPress/blob/master/CONTRIBUTING.md
+For more information on how to contribute to this project, go [here](CONTRIBUTING.md).
