@@ -47,6 +47,10 @@ php_imagick:
   pkg.installed:
     - name: php5-imagick
 
+php_intl:
+  pkg.installed:
+    - name: php5-intl
+
 # php5-imagick also requires imagemagick
 imagemagick:
   pkg.installed
