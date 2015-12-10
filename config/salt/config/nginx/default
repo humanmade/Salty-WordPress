@@ -73,6 +73,9 @@ server {
                 # With php5-fpm:
                 fastcgi_index index.php;
                 include fastcgi_params;
+
+                # Set server name
+                fastcgi_param SERVER_NAME $host;
         }
 
 }
