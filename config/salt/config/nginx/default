@@ -4,10 +4,23 @@ server {
         set $root $host;
 
         # for subdomains we want the document root to be the root domain only (e.g. notify.hmn.md > hmn.md)
-        # this is for subdomain multisite
-        if ( $host ~* "(.+)\.((.+)\.([a-z]+|co\.uk))$" ) {
-                set $root $2;
+        # but only if the subdomain isn't also a folder in the server root
+        # Since we can't do nested ifs in nginx, this is a bit complicated
+        set $strip_sub 0;
+        set $new_domain 0;
+        if ( !-d /srv/www/$root ) {
+                set $strip_sub 1;
         }
+
+        if ( $host ~* "(.+)\.(?<new_domain>(.+)\.([a-z]+|co\.uk))$" ) {
+                set $strip_sub "${strip_sub}1";
+        }
+
+        if ( $strip_sub = 11 ) {
+                set $root $new_domain;
+        }
+        # end subdomain striping
+
 
         client_max_body_size 50M;
 
