@@ -15,7 +15,7 @@ php_stack:
       - pkg: php5-cli
       - pkg: php-apc
       - pkg: mysql-client
-{% if grains['user'] != 'vagrant' %}
+{% if grains['user'] == 'vagrant' %}
       - pkg: php5-xdebug
 {% endif %}
     - watch:
@@ -50,7 +50,7 @@ php_imagick:
   pkg.installed:
     - name: php5-imagick
 
-{% if grains['user'] != 'vagrant' %}
+{% if grains['user'] == 'vagrant' %}
 php_xdebug:
   pkg.installed:
     - name: php5-xdebug
