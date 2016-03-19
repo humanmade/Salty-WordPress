@@ -31,14 +31,10 @@ php7_stack:
 /etc/php/7.0/fpm/conf.d/20-mcrypt.ini:
   file.symlink:
     - target: ../../mods-available/mcrypt.ini
-    - require:
-      - pkg: php7.0-mcrypt
 
 /etc/php/7.0/cli/conf.d/20-mcrypt.ini:
   file.symlink:
     - target: ../../mods-available/mcrypt.ini
-    - require:
-      - pkg: php7.0-mcrypt
 
 # php7.0-imagick also requires imagemagick
 #
@@ -47,7 +43,7 @@ libmagickwand-dev:
 
 /etc/php/7.0/fpm/php.ini:
   file.managed:
-    - source: salt://config/php5-fpm/php.ini
+    - source: salt://config/php7.0-fpm/php.ini
     - user: root
     - group: root
     - mode: 644
@@ -55,10 +51,11 @@ libmagickwand-dev:
 
 /etc/php/7.0/fpm/pool.d/www.conf:
   file.managed:
-    - source: salt://config/php5-fpm/www.conf
+    - source: salt://config/php7.0-fpm/www.conf
     - user: root
     - group: root
     - mode: 644
+    - template: jinja
 
 pecl:
   pkg.installed:

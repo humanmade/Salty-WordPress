@@ -66,10 +66,6 @@ wp_cli:
   cmd.run:
     - name: curl -O https://raw.githubusercontent.com/wp-cli/builds/gh-pages/phar/wp-cli-nightly.phar; chmod +x wp-cli-nightly.phar; sudo mv wp-cli-nightly.phar /usr/bin/wp
     - user: {{ grains['user'] }}
-    - require:
-      - pkg: php5-cli
-      - pkg: php5-json
-      - pkg: git
 
 wp_cli_bash:
   file.managed:
@@ -81,7 +77,7 @@ oh_my_zsh:
     - name: git://github.com/robbyrussell/oh-my-zsh.git
     - rev: master
     - target: /home/{{ grains['user'] }}/.oh-my-zsh
-    - runas: root
+    - user: root
     - submodules: False
     - force: False
     - require:

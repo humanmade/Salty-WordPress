@@ -5,67 +5,26 @@ php5_pkgrepo:
 
 php_stack:
   pkg.installed:
-    - name: php5-fpm
+    - name: php5.6-fpm
+    - name: php5.6-gd
+    - name: php5.6-mysql
+    - name: php5.6-json
+    - name: php5.6-memcache
+    - name: php5.6-mcrypt
+    - name: php5.6-curl
+    - name: php5.6-imagick
+    - name: php5.6-cli
+    - name: php-apc
+    - name: mysql-client
   service.running:
-    - name: php5-fpm
-    - require:
-      - pkg: php5-fpm
-      - pkg: php5-gd
-      - pkg: php5-mysql
-      - pkg: php5-json
-      - pkg: php5-memcache
-      - pkg: php5-mcrypt
-      - pkg: php5-curl
-      - pkg: php5-cli
-      - pkg: php-apc
-      - pkg: mysql-client
+    - name: php5.6-fpm
     - watch:
-      - file: /etc/php5/fpm/php.ini
-      - file: /etc/php5/fpm/pool.d/www.conf
-
-php_gd:
-  pkg.installed:
-    - name: php5-gd
-
-php_mysql:
-  pkg.installed:
-    - name: php5-mysql
-
-php_json:
-  pkg.installed:
-    - name: php5-json
-
-php_memcache:
-  pkg.installed:
-    - name: php5-memcache
-
-php_mcrypt:
-  pkg.installed:
-    - name: php5-mcrypt
-
-php_curl:
-  pkg.installed:
-    - name: php5-curl
-
-php_imagick:
-  pkg.installed:
-    - name: php5-imagick
+      - file: /etc/php/5.6/fpm/php.ini
+      - file: /etc/php/5.6/fpm/pool.d/www.conf
 
 # php5-imagick also requires imagemagick
 imagemagick:
   pkg.installed
-
-php_cli:
-  pkg.installed:
-    - name: php5-cli
-
-php_apc:
-  pkg.installed:
-    - name: php-apc
-
-mysql_client:
-  pkg.installed:
-    - name: mysql-client
 
 libssh2-1-dev:
   pkg.installed:
@@ -79,22 +38,20 @@ composer:
   cmd.run:
     - name: curl -sS https://getcomposer.org/installer | php; mv composer.phar /usr/local/bin/composer
     - unless: which composer
-    - require:
-      - pkg: php_cli
 
 # Configuration files for php5-fpm
 
-/etc/php5/fpm/php.ini:
+/etc/php/5.6/fpm/php.ini:
   file.managed:
-    - source: salt://config/php5-fpm/php.ini
+    - source: salt://config/php5.6-fpm/php.ini
     - user: root
     - group: root
     - template: jinja
     - mode: 644
 
-/etc/php5/fpm/pool.d/www.conf:
+/etc/php/5.6/fpm/pool.d/www.conf:
   file.managed:
-    - source: salt://config/php5-fpm/www.conf
+    - source: salt://config/php5.6-fpm/www.conf
     - user: root
     - group: root
     - template: jinja

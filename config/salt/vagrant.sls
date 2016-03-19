@@ -3,7 +3,7 @@ wordpress-develop:
     - name: git://develop.git.wordpress.org/
     - rev: master
     - target: /srv/www/wordpress-develop.dev
-    - runas: vagrant
+    - user: vagrant
     - submodules: True
     - force: False
     - require:
@@ -22,7 +22,6 @@ wordpress-develop:
       - git: git://develop.git.wordpress.org/
       - mysql_database: wordpress_develop
       - service: mysql
-      - pkg: php5-mysql
 
 wp-cli-tests-mysql:
   mysql_user.present:

@@ -15,15 +15,10 @@ Vagrant.configure("2") do |config|
     v.customize ["modifyvm", :id, "--natdnshostresolver1", "on"]
   end
 
-  config.vm.box = "1404-64bit-virtualbox"
-  config.vm.box_url = "http://hmn-uploads.s3.amazonaws.com/salty-wordpress/salty-wordpress-14-04-vbox-2014-07-12.box"
-  config.vm.provider "vmware_fusion" do |v, override|
-    override.vm.box = "1404-64bit-vmware"
-    override.vm.box_url = "http://hmn-uploads.s3.amazonaws.com/salty-wordpress/salty-wordpress-14-04-vmware-2014-07-12.box"
-  end
+  config.vm.box = "puphpet/ubuntu1404-x64"
 
   config.vm.hostname = "salty-wordpress"
-  config.vm.network :private_network, ip: "192.168.50.10"
+  config.vm.network :private_network, ip: "192.168.51.11"
 
   config.ssh.forward_agent = true
 
