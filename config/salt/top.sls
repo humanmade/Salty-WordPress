@@ -6,7 +6,8 @@ base:
     - tools
     - config
     - nginx
-    - php_fpm
+    - php5
+    - php7
     - postfix
 
   'salty-wordpress':

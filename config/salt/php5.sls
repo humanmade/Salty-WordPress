@@ -1,4 +1,8 @@
 # PHP5 modules and configuration
+php5_pkgrepo:
+  pkgrepo.managed:
+    - ppa: ondrej/php
+
 php_stack:
   pkg.installed:
     - name: php5-fpm
