@@ -1,23 +1,45 @@
 # PHP7 modules and configuration
 php7_pkgrepo:
   pkgrepo.managed:
-    - ppa: ondrej/php
+    - name: deb http://ppa.launchpad.net/ondrej/php/ubuntu trusty main
+
+php7.0-fpm:
+  pkg.installed
+
+php7.0-gd:
+  pkg.installed
+
+php7.0-mysql:
+  pkg.installed
+
+php7.0-mcrypt:
+  pkg.installed
+
+php7.0-curl:
+  pkg.installed
+
+php7.0-cli:
+  pkg.installed
+
+php7.0-opcache:
+  pkg.installed
+
+php7.0-json:
+  pkg.installed
+
+php7.0-dev:
+  pkg.installed
+
+php-memcached:
+  pkg.installed
+
+php-ssh2:
+  pkg.installed
+
+pkg-config:
+  pkg.installed
 
 php7_stack:
-  pkg.installed:
-    - name: php7.0-fpm
-    - name: php7.0-gd
-    - name: php7.0-mysql
-    - name: php-memcached
-    - name: php7.0-mcrypt
-    - name: php7.0-curl
-    - name: php7.0-cli
-    - name: php7.0-opcache
-    - name: mysql-client
-    - name: php7.0-json
-    - name: php-ssh2
-    - name: php7.0-dev
-    - name: pkg-config
   service.running:
     - name: php7.0-fpm
     - require:

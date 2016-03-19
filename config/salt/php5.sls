@@ -1,21 +1,51 @@
 # PHP5 modules and configuration
-php5_pkgrepo:
+php7_pkgrepo:
   pkgrepo.managed:
-    - ppa: ondrej/php
+    - name: deb http://ppa.launchpad.net/ondrej/php/ubuntu trusty main
+
+php5:
+  pkg.removed
+
+php5.6-fpm:
+  pkg.installed
+
+php5.6-gd:
+  pkg.installed
+
+php5.6-mysql:
+  pkg.installed
+
+php5.6-json:
+  pkg.installed
+
+php5.6-mcrypt:
+  pkg.installed
+
+php5.6-curl:
+  pkg.installed
+
+php5.6-cli:
+  pkg.installed
+
+php-apc:
+  pkg.installed
+
+pecl-config:
+  cmd.run:
+    - name: pecl config-create /etc/php/5.6/ pecl.conf ; pecl -C /etc/php/5.6/pecl.conf config-set php_suffix 5.6 ; pecl -C /etc/php/5.6/pecl.conf config-set php_bin /usr/bin/php5.6
+    - unless: ls /etc/php/5.6/pecl.conf
+
+imagick:
+  cmd.run:
+    - name: yes '' | pecl -C /etc/php/5.6/pecl.conf install imagick ; echo "extension=imagick.so" > /etc/php/5.6/mods-available/imagick.ini ; ln -s /etc/php/5.6/mods-available/imagick.ini /etc/php/5.6/cli/conf.d/imagick.ini ; ln -s /etc/php/5.6/mods-available/imagick.ini /etc/php/5.6/fpm/conf.d/imagick.ini
+    - unless: php5.6 -m | grep imagick
+
+memcache:
+  cmd.run:
+    - name: yes '' | pecl -C /etc/php/5.6/pecl.conf install memcache ; echo "extension=memcache.so" > /etc/php/5.6/mods-available/memcache.ini ; ln -s /etc/php/5.6/mods-available/memcache.ini /etc/php/5.6/cli/conf.d/memcache.ini ; ln -s /etc/php/5.6/mods-available/memcache.ini /etc/php/5.6/fpm/conf.d/memcache.ini
+    - unless: php5.6 -m | grep memcache
 
 php_stack:
-  pkg.installed:
-    - name: php5.6-fpm
-    - name: php5.6-gd
-    - name: php5.6-mysql
-    - name: php5.6-json
-    - name: php5.6-memcache
-    - name: php5.6-mcrypt
-    - name: php5.6-curl
-    - name: php5.6-imagick
-    - name: php5.6-cli
-    - name: php-apc
-    - name: mysql-client
   service.running:
     - name: php5.6-fpm
     - watch:
