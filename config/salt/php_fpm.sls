@@ -15,6 +15,9 @@ php_stack:
       - pkg: php5-cli
       - pkg: php-apc
       - pkg: mysql-client
+{% if grains['user'] == 'vagrant' %}
+      - pkg: php5-xdebug
+{% endif %}
     - watch:
       - file: /etc/php5/fpm/php.ini
       - file: /etc/php5/fpm/pool.d/www.conf
@@ -46,6 +49,12 @@ php_curl:
 php_imagick:
   pkg.installed:
     - name: php5-imagick
+
+{% if grains['user'] == 'vagrant' %}
+php_xdebug:
+  pkg.installed:
+    - name: php5-xdebug
+{% endif %}
 
 # php5-imagick also requires imagemagick
 imagemagick:
