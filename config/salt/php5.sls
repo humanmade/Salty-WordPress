@@ -27,6 +27,9 @@ php5.6-curl:
 php5.6-cli:
   pkg.installed
 
+php5.6-xml:
+  pkg.installed
+
 php-apc:
   pkg.installed
 
