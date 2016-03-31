@@ -7,8 +7,8 @@ base:
     - config
     - nginx
     - php-common
-    # - php5
-    - php7
+    - php5
+    # - php7
     - postfix
 
   'salty-wordpress':

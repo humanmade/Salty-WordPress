@@ -2,50 +2,52 @@
 php5:
   pkg.removed
 
-php5.6-fpm:
-  pkg.installed
-
-php5.6-gd:
-  pkg.installed
-
-php5.6-mysql:
-  pkg.installed
-
-php5.6-json:
-  pkg.installed
-
-php5.6-mcrypt:
-  pkg.installed
-
-php5.6-curl:
-  pkg.installed
-
-php5.6-cli:
-  pkg.installed
-
-php5.6-xml:
-  pkg.installed
-
-php-apc:
-  pkg.installed
-
-php-pear:
-  pkg.installed
+php5.6_packages:
+  pkg.installed:
+    - pkgs:
+      - php5.6-fpm
+      - php5.6-gd
+      - php5.6-mysql
+      - php5.6-json
+      - php5.6-mcrypt
+      - php5.6-curl
+      - php5.6-cli
+      - php5.6-xml
+      - php5.6-dev
+      - php-apc
+      - php-pear
+      - php-mbstring
+      - imagemagick
+      - libmagickwand-dev
+      - libssh2-1-dev
+      - libssh2-php
 
 pecl-config:
   cmd.run:
     - name: pecl config-create /etc/php/5.6/ pecl.conf ; pecl -C /etc/php/5.6/pecl.conf config-set php_suffix 5.6 ; pecl -C /etc/php/5.6/pecl.conf config-set php_bin /usr/bin/php5.6
     - unless: ls /etc/php/5.6/pecl.conf
 
-imagick:
+{% if not salt['file.file_exists']('/etc/php/5.6/cli/conf.d/imagick.ini') %}
+/etc/php/5.6/cli/conf.d/imagick.ini:
+  file.symlink:
+    - target: /etc/php/5.6/mods-available/imagick.ini
+{% endif %}
+
+{% if not salt['file.file_exists']('/etc/php/5.6/mods-available/imagick.ini') %}
+/etc/php/5.6/mods-available/imagick.ini:
+  file.symlink:
+    - target: /etc/php/5.6/fpm/conf.d/imagick.ini
+{% endif %}
+
+php5.6-imagick:
   cmd.run:
-    - name: yes '' | pecl -C /etc/php/5.6/pecl.conf install imagick ; echo "extension=imagick.so" > /etc/php/5.6/mods-available/imagick.ini ; ln -s /etc/php/5.6/mods-available/imagick.ini /etc/php/5.6/cli/conf.d/imagick.ini ; ln -s /etc/php/5.6/mods-available/imagick.ini /etc/php/5.6/fpm/conf.d/imagick.ini
+    - name: yes '' | pecl -C /etc/php/5.6/pecl.conf install imagick ; echo "extension=imagick.so" > /etc/php/5.6/mods-available/imagick.ini ; sudo service php5.6-fpm restart
     - unless: php5.6 -m | grep imagick
 
-memcache:
-  cmd.run:
-    - name: yes '' | pecl -C /etc/php/5.6/pecl.conf install memcache ; echo "extension=memcache.so" > /etc/php/5.6/mods-available/memcache.ini ; ln -s /etc/php/5.6/mods-available/memcache.ini /etc/php/5.6/cli/conf.d/memcache.ini ; ln -s /etc/php/5.6/mods-available/memcache.ini /etc/php/5.6/fpm/conf.d/memcache.ini
-    - unless: php5.6 -m | grep memcache
+#memcache:
+#  cmd.run:
+#    - name: yes '' | pecl -C /etc/php/5.6/pecl.conf install memcache ; echo "extension=memcache.so" > /etc/php/5.6/mods-available/memcache.ini ; ln -s /etc/php/5.6/mods-available/memcache.ini /etc/php/5.6/cli/conf.d/memcache.ini ; ln -s /etc/php/5.6/mods-available/memcache.ini /etc/php/5.6/fpm/conf.d/memcache.ini
+#    - unless: php5.6 -m | grep memcache
 
 php5_stack:
   service.running:
@@ -53,18 +55,6 @@ php5_stack:
     - watch:
       - file: /etc/php/5.6/fpm/php.ini
       - file: /etc/php/5.6/fpm/pool.d/www.conf
-
-# php5-imagick also requires imagemagick
-imagemagick:
-  pkg.installed
-
-libssh2-1-dev:
-  pkg.installed:
-    - name: libssh2-1-dev
-
-libssh2-php:
-  pkg.installed:
-    - name: libssh2-php
 
 composer:
   cmd.run:
