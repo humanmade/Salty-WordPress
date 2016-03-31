@@ -27,27 +27,15 @@ pecl-config:
     - name: pecl config-create /etc/php/5.6/ pecl.conf ; pecl -C /etc/php/5.6/pecl.conf config-set php_suffix 5.6 ; pecl -C /etc/php/5.6/pecl.conf config-set php_bin /usr/bin/php5.6
     - unless: ls /etc/php/5.6/pecl.conf
 
-{% if not salt['file.file_exists']('/etc/php/5.6/cli/conf.d/imagick.ini') %}
-/etc/php/5.6/cli/conf.d/imagick.ini:
-  file.symlink:
-    - target: /etc/php/5.6/mods-available/imagick.ini
-{% endif %}
-
-{% if not salt['file.file_exists']('/etc/php/5.6/mods-available/imagick.ini') %}
-/etc/php/5.6/mods-available/imagick.ini:
-  file.symlink:
-    - target: /etc/php/5.6/fpm/conf.d/imagick.ini
-{% endif %}
-
 php5.6-imagick:
   cmd.run:
-    - name: yes '' | pecl -C /etc/php/5.6/pecl.conf install imagick ; echo "extension=imagick.so" > /etc/php/5.6/mods-available/imagick.ini ; sudo service php5.6-fpm restart
+    - name: yes '' | pecl -C /etc/php/5.6/pecl.conf install imagick ; echo "extension=imagick.so" > /etc/php/5.6/mods-available/imagick.ini ; ln -s /etc/php/5.6/mods-available/imagick.ini /etc/php/5.6/cli/conf.d/imagick.ini ; ln -s /etc/php/5.6/mods-available/imagick.ini /etc/php/5.6/fpm/conf.d/imagick.ini ; sudo service php5.6-fpm restart
     - unless: php5.6 -m | grep imagick
 
-#memcache:
-#  cmd.run:
-#    - name: yes '' | pecl -C /etc/php/5.6/pecl.conf install memcache ; echo "extension=memcache.so" > /etc/php/5.6/mods-available/memcache.ini ; ln -s /etc/php/5.6/mods-available/memcache.ini /etc/php/5.6/cli/conf.d/memcache.ini ; ln -s /etc/php/5.6/mods-available/memcache.ini /etc/php/5.6/fpm/conf.d/memcache.ini
-#    - unless: php5.6 -m | grep memcache
+php5.6-memcache:
+  cmd.run:
+    - name: yes '' | pecl -C /etc/php/5.6/pecl.conf install memcache ; echo "extension=memcache.so" > /etc/php/5.6/mods-available/memcache.ini ; ln -s /etc/php/5.6/mods-available/memcache.ini /etc/php/5.6/cli/conf.d/memcache.ini ; ln -s /etc/php/5.6/mods-available/memcache.ini /etc/php/5.6/fpm/conf.d/memcache.ini ; sudo service php5.6-fpm restart
+    - unless: php5.6 -m | grep memcache
 
 php5_stack:
   service.running:
