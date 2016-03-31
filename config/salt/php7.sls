@@ -1,5 +1,5 @@
 # PHP7 modules and configuration
-php_packages:
+php7_packages:
   pkg.installed:
     - pkgs:
       - php7.0-fpm
