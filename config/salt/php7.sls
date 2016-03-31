@@ -1,8 +1,4 @@
 # PHP7 modules and configuration
-php7_pkgrepo:
-  pkgrepo.managed:
-    - name: deb http://ppa.launchpad.net/ondrej/php/ubuntu trusty main
-
 php7.0-fpm:
   pkg.installed
 
@@ -39,6 +35,12 @@ php-ssh2:
 pkg-config:
   pkg.installed
 
+php7.0-xml:
+  pkg.installed
+
+php7.0-mbstring:
+  pkg.installed
+
 php7_stack:
   service.running:
     - name: php7.0-fpm
@@ -58,8 +60,6 @@ php7_stack:
   file.symlink:
     - target: ../../mods-available/mcrypt.ini
 
-# php7.0-imagick also requires imagemagick
-#
 libmagickwand-dev:
   pkg.installed
 
@@ -83,7 +83,10 @@ pecl:
   pkg.installed:
     - name: php-pear
 
-php_imagemagick:
-  pecl.installed:
-    - name: imagick
-    - defaults: True
+imagick:
+  cmd.run:
+    - name: yes '' | pecl -C /etc/php/7.0/pecl.conf install imagick-beta ; echo "extension=imagick.so" > /etc/php/7.0/mods-available/imagick.ini ; ln -s /etc/php/7.0/mods-available/imagick.ini /etc/php/7.0/cli/conf.d/imagick.ini ; ln -s /etc/php/7.0/mods-available/imagick.ini /etc/php/7.0/fpm/conf.d/imagick.ini; sudo service php7.0-fpm restart
+    - unless: php7.0 -m | grep imagick
+
+imagemagick:
+  pkg.installed

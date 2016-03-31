@@ -6,7 +6,8 @@ base:
     - tools
     - config
     - nginx
-    - php5
+    - php-common
+    # - php5
     - php7
     - postfix
 

@@ -1,8 +1,4 @@
 # PHP5 modules and configuration
-php7_pkgrepo:
-  pkgrepo.managed:
-    - name: deb http://ppa.launchpad.net/ondrej/php/ubuntu trusty main
-
 php5:
   pkg.removed
 
@@ -33,6 +29,9 @@ php5.6-xml:
 php-apc:
   pkg.installed
 
+php-pear:
+  pkg.installed
+
 pecl-config:
   cmd.run:
     - name: pecl config-create /etc/php/5.6/ pecl.conf ; pecl -C /etc/php/5.6/pecl.conf config-set php_suffix 5.6 ; pecl -C /etc/php/5.6/pecl.conf config-set php_bin /usr/bin/php5.6
@@ -48,7 +47,7 @@ memcache:
     - name: yes '' | pecl -C /etc/php/5.6/pecl.conf install memcache ; echo "extension=memcache.so" > /etc/php/5.6/mods-available/memcache.ini ; ln -s /etc/php/5.6/mods-available/memcache.ini /etc/php/5.6/cli/conf.d/memcache.ini ; ln -s /etc/php/5.6/mods-available/memcache.ini /etc/php/5.6/fpm/conf.d/memcache.ini
     - unless: php5.6 -m | grep memcache
 
-php_stack:
+php5_stack:
   service.running:
     - name: php5.6-fpm
     - watch:

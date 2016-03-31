@@ -82,7 +82,7 @@ server {
                 # NOTE: You should have "cgi.fix_pathinfo = 0;" in php.ini
 
                 # With php5-cgi alone:
-                fastcgi_pass 127.0.0.1:9000;
+                fastcgi_pass 127.0.0.1:9001;
                 # With php5-fpm:
                 fastcgi_index index.php;
                 include fastcgi_params;
