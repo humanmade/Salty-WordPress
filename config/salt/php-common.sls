@@ -5,4 +5,4 @@ php_pkgrepo:
     - keyserver: keyserver.ubuntu.com
     - require_in:
       - pkg: php5_stack
-      # - pkg: php7_stack
+      - pkg: php7_stack
