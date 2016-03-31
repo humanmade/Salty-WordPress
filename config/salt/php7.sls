@@ -1,45 +1,23 @@
 # PHP7 modules and configuration
-php7.0-fpm:
-  pkg.installed
-
-php7.0-gd:
-  pkg.installed
-
-php7.0-mysql:
-  pkg.installed
-
-php7.0-mcrypt:
-  pkg.installed
-
-php7.0-curl:
-  pkg.installed
-
-php7.0-cli:
-  pkg.installed
-
-php7.0-opcache:
-  pkg.installed
-
-php7.0-json:
-  pkg.installed
-
-php7.0-dev:
-  pkg.installed
-
-php-memcached:
-  pkg.installed
-
-php-ssh2:
-  pkg.installed
-
-pkg-config:
-  pkg.installed
-
-php7.0-xml:
-  pkg.installed
-
-php7.0-mbstring:
-  pkg.installed
+php_packages:
+  pkg.installed:
+    - pkgs:
+      - php7.0-fpm
+      - php7.0-gd
+      - php7.0-mysql
+      - php7.0-mcrypt
+      - php7.0-curl
+      - php7.0-cli
+      - php7.0-opcache
+      - php7.0-json
+      - php7.0-dev
+      - php-memcached
+      - php-ssh2
+      - pkg-config
+      - php7.0-xml
+      - php7.0-mbstring
+      - imagemagick
+      - libmagickwand-dev
 
 php7_stack:
   service.running:
@@ -59,9 +37,6 @@ php7_stack:
 /etc/php/7.0/cli/conf.d/20-mcrypt.ini:
   file.symlink:
     - target: ../../mods-available/mcrypt.ini
-
-libmagickwand-dev:
-  pkg.installed
 
 /etc/php/7.0/fpm/php.ini:
   file.managed:
@@ -87,6 +62,3 @@ imagick:
   cmd.run:
     - name: yes '' | pecl -C /etc/php/7.0/pecl.conf install imagick-beta ; echo "extension=imagick.so" > /etc/php/7.0/mods-available/imagick.ini ; ln -s /etc/php/7.0/mods-available/imagick.ini /etc/php/7.0/cli/conf.d/imagick.ini ; ln -s /etc/php/7.0/mods-available/imagick.ini /etc/php/7.0/fpm/conf.d/imagick.ini; sudo service php7.0-fpm restart
     - unless: php7.0 -m | grep imagick
-
-imagemagick:
-  pkg.installed
