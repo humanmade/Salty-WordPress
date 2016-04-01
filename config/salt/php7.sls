@@ -61,4 +61,4 @@ pecl:
 imagick:
   cmd.run:
     - name: yes '' | pecl -C /etc/php/7.0/pecl.conf install imagick-beta ; echo "extension=imagick.so" > /etc/php/7.0/mods-available/imagick.ini ; ln -s /etc/php/7.0/mods-available/imagick.ini /etc/php/7.0/cli/conf.d/imagick.ini ; ln -s /etc/php/7.0/mods-available/imagick.ini /etc/php/7.0/fpm/conf.d/imagick.ini; sudo service php7.0-fpm restart
-    - unless: php7.0 -m | grep imagick
+    - unless: php7.0 -m | grep Imagick

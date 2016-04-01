@@ -34,7 +34,7 @@ pecl-config:
 php5.6-imagick:
   cmd.run:
     - name: yes '' | pecl -C /etc/php/5.6/pecl.conf install imagick ; echo "extension=imagick.so" > /etc/php/5.6/mods-available/imagick.ini ; ln -s /etc/php/5.6/mods-available/imagick.ini /etc/php/5.6/cli/conf.d/imagick.ini ; ln -s /etc/php/5.6/mods-available/imagick.ini /etc/php/5.6/fpm/conf.d/imagick.ini ; sudo service php5.6-fpm restart
-    - unless: php5.6 -m | grep imagick
+    - unless: php5.6 -m | grep Imagick
 
 php5.6-memcache:
   cmd.run:
