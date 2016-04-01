@@ -16,6 +16,7 @@ php7_packages:
       - pkg-config
       - php7.0-xml
       - php7.0-mbstring
+      - php-pear
       - imagemagick
       - libmagickwand-dev
 

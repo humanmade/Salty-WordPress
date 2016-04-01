@@ -22,10 +22,6 @@ php5.6_packages:
       - libssh2-1-dev
       - libssh2-php
 
-php5.6-pecl:
-  pkg.installed:
-    - name: php-pear
-
 pecl-config:
   cmd.run:
     - name: pecl config-create /etc/php/5.6/ pecl.conf ; pecl -C /etc/php/5.6/pecl.conf config-set php_suffix 5.6 ; pecl -C /etc/php/5.6/pecl.conf config-set php_bin /usr/bin/php5.6
