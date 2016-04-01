@@ -14,9 +14,9 @@ php5.6_packages:
       - php5.6-cli
       - php5.6-xml
       - php5.6-dev
+      - php5.6-mbstring
       - php-apc
       - php-pear
-      - php-mbstring
       - imagemagick
       - libmagickwand-dev
       - libssh2-1-dev
