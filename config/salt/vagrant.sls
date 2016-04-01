@@ -50,11 +50,10 @@ php_phpunit:
     - name: wget https://phar.phpunit.de/phpunit-old.phar && chmod +x phpunit-old.phar && sudo mv phpunit-old.phar /usr/local/bin/phpunit
     - unless: which phpunit
 
-{% if not salt['file.file_exists']('/srv/logs/php.log') %}
 /var/log/php.log:
   file.symlink:
     - target: /srv/logs/php.log
-{% endif %}
+    - force: True
 
 dnsmasq:
   pkg:
