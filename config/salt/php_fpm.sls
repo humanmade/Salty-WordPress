@@ -10,6 +10,7 @@ php_stack:
       - pkg: php5-mysql
       - pkg: php5-json
       - pkg: php5-memcache
+      - pkg: php5-memcached
       - pkg: php5-mcrypt
       - pkg: php5-curl
       - pkg: php5-cli
