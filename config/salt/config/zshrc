@@ -3,6 +3,7 @@ ZSH=$HOME/.oh-my-zsh
 
 export EDITOR=vim
 export WP_TESTS_DIR=/srv/www/wordpress-develop.dev/tests/phpunit
+export WP_DEVELOP_DIR=/srv/www/wordpress-develop.dev
 
 alias ack=ack-grep
 alias git=hub
