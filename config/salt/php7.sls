@@ -20,6 +20,14 @@ php7_packages:
       - imagemagick
       - libmagickwand-dev
 
+php7.0-pecl-config:
+  cmd.run:
+    - names:
+      - pecl config-create / /etc/php/7.0/pecl.conf
+      - pecl -C /etc/php/7.0/pecl.conf config-set php_suffix 7.0
+      - pecl -C /etc/php/7.0/pecl.conf config-set php_bin /usr/bin/php7.0
+    - unless: ls /etc/php/7.0/pecl.conf
+
 php7_stack:
   service.running:
     - name: php7.0-fpm
@@ -61,5 +69,10 @@ pecl:
 
 imagick:
   cmd.run:
-    - name: yes '' | pecl -C /etc/php/7.0/pecl.conf install imagick-beta ; echo "extension=imagick.so" > /etc/php/7.0/mods-available/imagick.ini ; ln -s /etc/php/7.0/mods-available/imagick.ini /etc/php/7.0/cli/conf.d/imagick.ini ; ln -s /etc/php/7.0/mods-available/imagick.ini /etc/php/7.0/fpm/conf.d/imagick.ini; sudo service php7.0-fpm restart
+    - names:
+      - yes '' | pecl -C /etc/php/7.0/pecl.conf install imagick-beta
+      - echo "extension=imagick.so" > /etc/php/7.0/mods-available/imagick.ini
+      - ln -s /etc/php/7.0/mods-available/imagick.ini /etc/php/7.0/cli/conf.d/imagick.ini
+      - ln -s /etc/php/7.0/mods-available/imagick.ini /etc/php/7.0/fpm/conf.d/imagick.ini
+      - sudo service php7.0-fpm restart
     - unless: php7.0 -m | grep Imagick

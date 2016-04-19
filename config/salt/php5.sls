@@ -22,19 +22,32 @@ php5.6_packages:
       - libssh2-1-dev
       - libssh2-php
 
-pecl-config:
+php5.6-pecl-config:
   cmd.run:
-    - name: pecl config-create /etc/php/5.6/ pecl.conf ; pecl -C /etc/php/5.6/pecl.conf config-set php_suffix 5.6 ; pecl -C /etc/php/5.6/pecl.conf config-set php_bin /usr/bin/php5.6
+    - names:
+      - pecl config-create / /etc/php/5.6/pecl.conf
+      - pecl -C /etc/php/5.6/pecl.conf config-set php_suffix 5.6
+      - pecl -C /etc/php/5.6/pecl.conf config-set php_bin /usr/bin/php5.6
     - unless: ls /etc/php/5.6/pecl.conf
 
 php5.6-imagick:
   cmd.run:
-    - name: yes '' | pecl -C /etc/php/5.6/pecl.conf install imagick ; echo "extension=imagick.so" > /etc/php/5.6/mods-available/imagick.ini ; ln -s /etc/php/5.6/mods-available/imagick.ini /etc/php/5.6/cli/conf.d/imagick.ini ; ln -s /etc/php/5.6/mods-available/imagick.ini /etc/php/5.6/fpm/conf.d/imagick.ini ; sudo service php5.6-fpm restart
+    - names:
+      - yes '' | pecl -C /etc/php/5.6/pecl.conf install imagick
+      - echo "extension=imagick.so" > /etc/php/5.6/mods-available/imagick.ini
+      - ln -s /etc/php/5.6/mods-available/imagick.ini /etc/php/5.6/cli/conf.d/imagick.ini
+      - ln -s /etc/php/5.6/mods-available/imagick.ini /etc/php/5.6/fpm/conf.d/imagick.ini
+      - sudo service php5.6-fpm restart
     - unless: php5.6 -m | grep Imagick
 
 php5.6-memcache:
   cmd.run:
-    - name: yes '' | pecl -C /etc/php/5.6/pecl.conf install memcache ; echo "extension=memcache.so" > /etc/php/5.6/mods-available/memcache.ini ; ln -s /etc/php/5.6/mods-available/memcache.ini /etc/php/5.6/cli/conf.d/memcache.ini ; ln -s /etc/php/5.6/mods-available/memcache.ini /etc/php/5.6/fpm/conf.d/memcache.ini ; sudo service php5.6-fpm restart
+    - names:
+      - yes '' | pecl -C /etc/php/5.6/pecl.conf install memcache
+      - echo "extension=memcache.so" > /etc/php/5.6/mods-available/memcache.ini
+      - ln -s /etc/php/5.6/mods-available/memcache.ini /etc/php/5.6/cli/conf.d/memcache.ini
+      - ln -s /etc/php/5.6/mods-available/memcache.ini /etc/php/5.6/fpm/conf.d/memcache.ini
+      - sudo service php5.6-fpm restart
     - unless: php5.6 -m | grep memcache
 
 php5_stack:
@@ -46,7 +59,9 @@ php5_stack:
 
 composer:
   cmd.run:
-    - name: curl -sS https://getcomposer.org/installer | php; mv composer.phar /usr/local/bin/composer
+    - names:
+      - curl -sS https://getcomposer.org/installer | php
+      - mv composer.phar /usr/local/bin/composer
     - unless: which composer
 
 # Configuration files for php5-fpm
