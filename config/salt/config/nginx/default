@@ -49,8 +49,8 @@ server {
         # if the file doest exist for wp-admin/* or wp-*.php, try looking in the parent dir
         if ( !-e $request_filename ) {
                 rewrite /wp-admin$ $scheme://$host$uri/ permanent;
-                rewrite ^(/[^/]+)?(/wp-.*) $2 last;
-                rewrite ^(/[^/]+)?(/.*\.php) $2 last;
+                rewrite ^(/[^/]+)?(/wp-.*) /wordpress$2 last;
+                rewrite ^(/[^/]+)?(/.*\.php) /wordpress$2 last;
         }
 
         # wordpress multisite files handler (this is technically legacy but
