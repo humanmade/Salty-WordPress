@@ -17,6 +17,12 @@ base:
     - mysql
     - node
 
+  'role:masterless':
+    - match: grain
+    - memcached
+    - mysql
+    - tools.ruby
+
 {% if 'local' in states %}
     - local
 {% endif %}

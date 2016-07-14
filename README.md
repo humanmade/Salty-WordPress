@@ -19,6 +19,14 @@ Here's how to get building:
 
 Navigate to [http://wordpress-develop.dev](http://wordpress-develop.dev) in your browser to see a fully-functional WordPress install, powered by Salty WordPress. The default admin username/password is `wordpress/wordpress`.
 
+### Launch a production machine on Digital Ocean or AWS
+
+@todo describe how to set up
+
+SSH in as your root user and use this call:
+
+`wget -O - https://raw.github.com/humanmade/Salty-WordPress/masterless/bin/bootstrap-ubuntu-masterless.sh | sudo sh`
+
 ## Neat Tricks
 
 Make your Salty WordPress experience even more awesome with these neat tricks.

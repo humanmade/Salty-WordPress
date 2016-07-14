@@ -39,6 +39,10 @@ php_memcache:
   pkg.installed:
     - name: php5-memcache
 
+php_memcached:
+  pkg.installed:
+    - name: php5-memcached
+
 php_mcrypt:
   pkg.installed:
     - name: php5-mcrypt
