@@ -25,6 +25,13 @@ nginx:
     - group: root
     - mode: 644
 
+/etc/nginx/sites-enabled/no-default:
+  file.managed:
+    - source: salt://config/nginx/no-default
+    - user: root
+    - group: root
+    - mode: 644
+
 {% if grains['user'] != 'vagrant' %}
 /srv/www:
   file.directory:
