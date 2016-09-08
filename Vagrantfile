@@ -6,6 +6,14 @@ FileUtils.mkdir_p(File.dirname(__FILE__)+'/projects')
 FileUtils.mkdir_p(File.dirname(__FILE__)+'/projects/default')
 FileUtils.mkdir_p(File.dirname(__FILE__)+'/logs')
 
+update_script = <<SCRIPT
+  wget https://apt.puppetlabs.com/pubkey.gpg
+  apt-key add pubkey.gpg
+  apt-get update --yes
+  # This for the gpg bug https://github.com/puphpet/puphpet/commit/ea07fd4564077473ff962b3ddd8a3feba0f92cd6
+  yes "Y" | DEBIAN_FRONTEND=noninteractive apt-get upgrade --yes
+SCRIPT
+
 Vagrant.configure("2") do |config|
 
   vagrant_version = Vagrant::VERSION.sub(/^v/, '') 
@@ -36,6 +44,8 @@ Vagrant.configure("2") do |config|
   if File.exists?(File.join(File.dirname(__FILE__),'Customfile')) then
     eval(IO.read(File.join(File.dirname(__FILE__),'Customfile')), binding)
   end
+
+  config.vm.provision "shell", inline: update_script
 
   config.vm.provision :salt do |salt|
     salt.verbose = true
